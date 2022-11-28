@@ -75,17 +75,19 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>삼양홀딩스-NEWS</title>
+    <link rel="apple-touch-icon-precomposed" href="../app_icon.png">
+    <link rel="apple-touch-startup-image" href="../startup.png">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../sub4/common/css/sub4common.css">
+    <link rel="stylesheet" href="../sub4/css/sub4_content1.css">
     <link rel="stylesheet" href="./css/view.css">
-
+	<script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery-migrate-1.4.1.min.js"></script>
     <script src="https://kit.fontawesome.com/2b8b92cff2.js" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <script src="../common/js/prefixfree.min.js"></script>
+    <script src="../js/prefixfree.min.js"></script>
 	<script>
 		function check_input()
 		{
@@ -97,17 +99,6 @@
 			}
 			document.ripple_form.submit();
 		}
-
-		function check_input2()
-		{
-			if (!document.modify_form.ripple_content.value){
-				alert("내용을 입력하세요!");    
-				document.modify_form.ripple_content.focus();
-				return;	
-			}
-			document.modify_form.submit();
-		}
-
 		function del(href) 
 		{
 			if(confirm("한번 삭제한 자료는 복구할 방법이 없습니다.\n\n정말 삭제하시겠습니까?")) {
@@ -121,16 +112,16 @@
         <a href="#content">본문바로가기</a>
         <a href="#gnb">글로벌네비게이션바로가기</a>
     </div>
-    <? include "../common/sub_header.html" ?> 
+    <? include "../sub_header.html" ?>
         <div class="main">
             <h3>고객지원</h3>
         </div>
-		<div class="subNav">
+        <div class="subNav">
             <ul>
                 <li><a class="current" href="./list.php">NEWS</a></li>
-                <li><a href="../sub6/sub6_2.html">FAQ</a></li>
-                <li><a href="../sub6/sub6_3.html">Contact Us</a></li>
-                <li><a href="../sub6/sub6_4.html">찾아오시는길</a></li>
+                <li><a href="../sub4/sub4_2.html">FAQ</a></li>
+                <li><a href="../sub4/sub4_3.html">오시는길</a></li>
+                <li><a href="../sub4/sub4_4.html">인재채용</a></li>
             </ul>
         </div>
         <article id="content">
@@ -142,7 +133,7 @@
                 </div>
                 <h2>NEWS</h2>
             </div>
-			<div class="contentArea">
+            <div class="contentArea">
                 <!-- 본문콘텐츠영역 -->
 				<div class="summary">
 					<p>더 나은 세상을 만들어나가기 위해 지속적으로 노력하는<br>삼양홀딩스의 다양한 소식들을 만나보세요</p>
@@ -165,10 +156,10 @@
 							if ($image_copied[$i])
 							{
 								$img_name = $image_copied[$i];
-								$img_name = "./data/".$img_name;
+								$img_name = "../../news/data/".$img_name;
 								$img_width = $image_width[$i];
 								
-								echo "<img src='$img_name' width='$img_width'>"."<br><br>";
+								echo "<img src='$img_name' width='100%'>"."<br><br>";
 							}
 						}
 					?>
@@ -199,53 +190,19 @@
 				?>
 					<ul class="ripple_content">
 						<li><?=$ripple_nick?></li>
-						<li>
-							<? 
-							if($mode=="ripple_modify"){
-								if($this_ripple==$ripple_num){
-						
-							?>
-								<form class="modify_form" name="modify_form" method="post" action="insert_ripple.php?table=<?=$table?>&num=<?=$item_num?>&list_style=<?=$list_style?>&mode=ripple_modify&page=<?=$page?>&scale=<?=$scale?>&ripple_num=<?=$this_ripple?>">
-								<textarea rows="5" cols="65" name="ripple_content"><?=$ripple_content?></textarea>
-								<a href="#" onclick="check_input2()">완료</a>
-								</form>
-							<?
-								}else{
-							?>	
-								<?=$ripple_content?>
-							<?	
-								}
-					
-							}else if($mode!="ripple_modify"){
-							?>
-							<?=$ripple_content?>
-							<?
-								}
-							?>
-						</li>
+						<li><p><?=$ripple_content?></p></li>
 						<li><?=$ripple_date?></li>
 						<li> 
-							<?
-								if($userid==$ripple_id && $mode!=="ripple_modify"){
-							?>
-								<a href='view.php?table=<?=$table?>&list_style=<?=$list_style?>&num=<?=$num?>&mode=ripple_modify&this_ripple=<?=$ripple_num?>&page=<?=$page?>&scale=<?=$scale?>'>[수정]</a>
-							<?
-								}
-							?>
 							<? 
-								if($userid=="admin" || $userid==$ripple_id && $mode!=="ripple_modify"){
+								if($userid=="admin" || $userid==$ripple_id)
+								echo "<a class='delate_btn' href='delete_ripple.php?table=$table&num=$item_num&ripple_num=$ripple_num'>삭제</a>"; 
 							?>
-								<a href='delete_ripple.php?table=<?=$table?>&num=<?=$item_num?>&ripple_num=<?=$ripple_num?>&list_style=<?=$list_style?>&page=<?=$page?>&scale=<?=$scale?>'>[삭제]</a>
-							<?
-								}
-							?>
-							
 						</li>
 					</ul>
 				<?
 						}
 				?>			
-					<form class="ripple_form" name="ripple_form" method="post" action="insert_ripple.php?table=<?=$table?>&num=<?=$item_num?>&list_style=<?=$list_style?>&page=<?=$page?>&scale=<?=$scale?>">  
+					<form class="ripple_form" name="ripple_form" method="post" action="insert_ripple.php?table=<?=$table?>&num=<?=$item_num?>">  
 						<div id="ripple_box">
 							<span><?=$usernick?></span>
 							<textarea rows="5" cols="65" name="ripple_content"></textarea>
@@ -269,7 +226,9 @@
 			</div>
 		</div>
 	</div> 
-</article>
-<? include "../common/sub_footer.html" ?> 
+	</article>
+	<? include "../sub_footer.html" ?>
+<script src="../js/index.js"></script>
+<script src="../js/familysite.js"></script>
 </body>
 </html>
