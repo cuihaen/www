@@ -172,8 +172,11 @@
 									
 									<span><?= $item_subject ?>
 									<?
-										if ($num_ripple)
-										echo "<strong>[$num_ripple]</strong>";
+										if ($num_ripple){
+									?>
+										<strong><i class="fa-solid fa-comments"></i><?=$num_ripple?></strong>
+									<?
+										}
 									?>
 									</span>
 									<p><?=$item_content?></p></a>

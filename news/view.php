@@ -97,6 +97,17 @@
 			}
 			document.ripple_form.submit();
 		}
+
+		function check_input2()
+		{
+			if (!document.modify_form.ripple_content.value){
+				alert("내용을 입력하세요!");    
+				document.modify_form.ripple_content.focus();
+				return;	
+			}
+			document.modify_form.submit();
+		}
+
 		function del(href) 
 		{
 			if(confirm("한번 삭제한 자료는 복구할 방법이 없습니다.\n\n정말 삭제하시겠습니까?")) {
@@ -166,8 +177,11 @@
 				<div class="ripple">
 					<span>댓글
 					<?
-						if ($num_ripple)
-						echo "<strong>[$num_ripple]</strong>";
+						if ($num_ripple){
+					?>
+						<strong><i class="fa-solid fa-comments"></i><?=$num_ripple?></strong>
+					<?
+						}
 					?>
 					</span>
 				<?
@@ -185,19 +199,53 @@
 				?>
 					<ul class="ripple_content">
 						<li><?=$ripple_nick?></li>
-						<li><p><?=$ripple_content?></p></li>
+						<li>
+							<? 
+							if($mode=="ripple_modify"){
+								if($this_ripple==$ripple_num){
+						
+							?>
+								<form class="modify_form" name="modify_form" method="post" action="insert_ripple.php?table=<?=$table?>&num=<?=$item_num?>&list_style=<?=$list_style?>&mode=ripple_modify&page=<?=$page?>&scale=<?=$scale?>&ripple_num=<?=$this_ripple?>">
+								<textarea rows="5" cols="65" name="ripple_content"><?=$ripple_content?></textarea>
+								<a href="#" onclick="check_input2()">완료</a>
+								</form>
+							<?
+								}else{
+							?>	
+								<?=$ripple_content?>
+							<?	
+								}
+					
+							}else if($mode!="ripple_modify"){
+							?>
+							<?=$ripple_content?>
+							<?
+								}
+							?>
+						</li>
 						<li><?=$ripple_date?></li>
 						<li> 
-							<? 
-								if($userid=="admin" || $userid==$ripple_id)
-								echo "<a class='delate_btn' href='delete_ripple.php?table=$table&num=$item_num&ripple_num=$ripple_num'>삭제</a>"; 
+							<?
+								if($userid==$ripple_id && $mode!=="ripple_modify"){
 							?>
+								<a href='view.php?table=<?=$table?>&list_style=<?=$list_style?>&num=<?=$num?>&mode=ripple_modify&this_ripple=<?=$ripple_num?>&page=<?=$page?>&scale=<?=$scale?>'>[수정]</a>
+							<?
+								}
+							?>
+							<? 
+								if($userid=="admin" || $userid==$ripple_id && $mode!=="ripple_modify"){
+							?>
+								<a href='delete_ripple.php?table=<?=$table?>&num=<?=$item_num?>&ripple_num=<?=$ripple_num?>&list_style=<?=$list_style?>&page=<?=$page?>&scale=<?=$scale?>'>[삭제]</a>
+							<?
+								}
+							?>
+							
 						</li>
 					</ul>
 				<?
 						}
 				?>			
-					<form class="ripple_form" name="ripple_form" method="post" action="insert_ripple.php?table=<?=$table?>&num=<?=$item_num?>">  
+					<form class="ripple_form" name="ripple_form" method="post" action="insert_ripple.php?table=<?=$table?>&num=<?=$item_num?>&list_style=<?=$list_style?>&page=<?=$page?>&scale=<?=$scale?>">  
 						<div id="ripple_box">
 							<span><?=$usernick?></span>
 							<textarea rows="5" cols="65" name="ripple_content"></textarea>
