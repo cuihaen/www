@@ -16,8 +16,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>삼양홀딩스-NEWS</title>
-    <link rel="stylesheet" href="../common/css/common.css">
-    <link rel="stylesheet" href="../sub6/common/css/sub6common.css">
+	<link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../sub4/common/css/sub4common.css">
     <link rel="stylesheet" href="./css/list.css">
 
     <script src="https://kit.fontawesome.com/2b8b92cff2.js" crossorigin="anonymous"></script>
