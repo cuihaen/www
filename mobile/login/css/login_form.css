@@ -23,6 +23,6 @@ input,select{border:none}
 #content .find li:nth-child(1)::after{content:'';background: #bbb;width:2px;height:13px;position:absolute;right: 0;top:50%;
                                       transform: translateY(-50%)}
 
-#content #join_button{width:50%;margin: 40px auto 0}
+#content #join_button{width:65%;margin: 40px auto 0}
 #content #join_button span{color:#999;font-size: .8em;margin-right: 10px}
 #content #join_button a{padding:8px;color:#1b8ab3;font-weight: 500;font-size: .95em}
