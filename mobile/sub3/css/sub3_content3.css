@@ -1,0 +1,104 @@
+/* content영역 */
+.contentArea p{line-height: 1.9em}
+.contentArea{padding:50px 0 20px}
+.summary{text-align: center;width: 90%;margin: 0 auto}
+
+/* tab 영역 */
+.tab_menu{display: grid;grid-template-columns: repeat(3,1fr);grid-gap: 0;margin:50px auto 30px;width:90%;border:1px solid #ccc;grid-auto-rows: 40px}
+.tab_menu li{border-right:1px solid #ccc;text-align: center;line-height: 40px;color:#0c3c4e}
+.tab_menu li a{display: block}
+.tab_menu li:last-child{border:none}
+
+/* 공통부분 */
+.contentArea h3{margin: 50px 0 0 20px;font-size: 1.3em;font-weight: 500;position: relative}
+.contentArea h3::before{content:'';width:8px;height:8px;border-radius: 50%;position: absolute;left:-10px;top:-3px;background:rgb(33,157,203)}
+
+
+.contentArea h4{font-size: 1.3em;color:#1b8ab3;font-weight: 500;margin: 0 0 30px 8%}
+
+.top{padding:30px 0;overflow: hidden;text-align: justify}
+.top .imgBox01,.top .imgBox02{width:100%;height:200px;overflow: hidden}
+.top .imgBox03{width:100%;height:250px;overflow: hidden}
+.top .imgBox01{background: url(../images/content3/together.jpg) center no-repeat;background-size: cover}
+.top .imgBox02{background: url(../images/content3/classroom.jpg) center no-repeat;background-size: cover}
+.top .imgBox03{background: url(../images/content3/shudang.jpg) center -50px no-repeat;background-size: cover}
+
+.top dl{width:90%;margin: 30px auto 0}
+.top dt{font-size: 1.35em;color:#0c3c4e;font-weight: 500;border-bottom: 1px solid #ccc;padding: 10px 0 20px}
+.top dt i{font-size: 1.4em;color:#1b8ab3}
+
+.top dd{margin-top: 25px}
+.top dd p{margin:5px 0}
+
+/* 장학금 및 지원실적 */
+.performance{width:100%;background: url(../images/content3/background.jpg)center no-repeat;background-size: cover}
+.performance .innerBox{width:90%;margin:50px auto 0;overflow: hidden}
+.innerBox .title{padding:30px 0 10px;overflow: hidden}
+.innerBox .title h4{color:#ffea01;font-weight: 500;text-align: center;margin: 0 0 10px 0}
+.innerBox .title span{float: right;font-size: .9em;color:#fff;margin-right:3%;font-weight: 400}
+
+.innerBox.box01 ul{display: grid;grid-template-columns: repeat(3,1fr);grid-gap: 0;margin-bottom:30px;width:100%;grid-auto-rows: 200px;padding-bottom:20px;color:#fff}
+.innerBox.box02 ul{display: grid;grid-template-columns: repeat(5,1fr);grid-gap: 0;margin-bottom:30px;width:100%;grid-auto-rows: 200px;padding-bottom:20px;color:#fff}
+.innerBox li{text-align: center;border-right: 1px dashed rgba(255,255,255,.2);padding:20px 0 20px}
+.innerBox li:last-child{border-right: none}
+
+.innerBox li i{font-size: 2.8em}
+.innerBox li span{display: block;margin: 3px 0}
+.innerBox li span:nth-child(1){font-size: 1.1em;font-weight: 500}
+.innerBox li span:nth-child(2){margin:20px 0}
+
+/* 장학금 신청방법 */
+.howTo{padding:50px 0}
+
+.howTo p{text-align: center;width: 90%;margin: 0 auto;letter-spacing: -.3px;}
+
+.howTo .flow01{overflow: hidden;width:85%;margin: 20px auto 30px;color:#fff}
+.howTo .flow01 li{width: 100%;height:20px;text-align: center;padding:15px 0;border-radius: 20px;margin: 10px auto}
+.howTo .flow01 span{font-size: 1.18em;font-weight: 500}
+.howTo .flow01 li:nth-child(1){background:rgba(27,138,179,.38)}
+.howTo .flow01 li:nth-child(2){background:rgba(27,138,179,.47)}
+.howTo .flow01 li:nth-child(3){background:rgba(27,138,179,.55)}
+.howTo .flow01 li:nth-child(4){background:rgba(27,138,179,.75)}
+.howTo .flow01 li:nth-child(5){background:rgba(27,138,179,.85)}
+
+
+
+
+.howTo .flow02{list-style:inside;width:100%;margin:0 auto;background: #f8f8f8;padding: 50px 0}
+.howTo .flow02 li{margin:0 auto 15px;width:90%}
+.howTo .flow02 li span{display: block;font-weight: 500;color:#0c3c4e;margin-bottom: 3px;font-size: 1.05em}
+.howTo .flow02 li:last-child{margin-bottom:0}
+
+.howTo a,.award a{width:85%;height:45px;display: block;margin: 20px auto 0;line-height: 43px;border: 1px solid #ccc;
+                  text-align: center;color:rgba(27,138,179,.75)}
+.howTo a span i{margin-left: 10px}
+
+/* 수당상 영역 */
+.award{padding:50px 0}
+.awardBox{padding-top:80px}
+.awardBox h4{text-align: center;color:#ffea01;margin: 0;}
+.awardBox>p{text-align: center;color:#fff;padding-bottom: 80px;width:90%;margin: 0 auto}
+.awardBox>p span{font-family: 'Noto Serif KR', serif;font-size: 1.2em;color: #ffea01}
+
+.award .awardBox{width:100%;background: url(../images/content3/achieve.jpg) center no-repeat;background-size: cover}
+.awardTop{display: grid;grid-template-columns: repeat(3,1fr);grid-gap: 8px;margin: 30px auto;width: 90%;}
+.awardTop li{color:#fff;text-align: center;background: rgba(0,0,0,.3);
+             padding:30px 0;border-radius: 20px}
+
+.awardTop li span{display: block}
+.awardTop li .first{font-size: 1.1em;font-weight: 500}
+.awardTop li span>i{font-size: 3em;margin-bottom: 15px}
+
+.text1{overflow: hidden;padding:60px 0 20px}
+.awardLogo{overflow: hidden;width:95%;margin: 0 auto}
+.awardLogo .logoImg{width:30%;height:90px;background: url(../images/content3/award_logo.jpg) center no-repeat;background-size: contain;float: left}
+.awardLogo p{line-height: 1.7em;width: 65%;float: right;text-align: justify;margin-right: 10px;letter-spacing: -.5px;}
+.awardLogo p span{font-weight: 500}
+
+.condition{width:100%;margin: 0 auto;background: #f8f8f8;padding: 30px 0;margin-top: 50px}
+.condition li{width:90%;margin:15px auto 20px}
+.condition dt{font-size: 1.15em;font-weight: 500;color:#0c3c4e;margin-bottom: 15px}
+.condition dd{margin: 10px 0}
+.condition dd span{font-weight: 500;color:#1b8ab3;display: block}
+.award>a span i{margin-right: 10px}
+

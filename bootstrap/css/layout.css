@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600;700&display=swap');
+
+
+/* font-family: 'Playfair Display', serif; */
+/* font-family: 'Noto Sans KR', sans-serif; */
+/* font-family: 'Noto Serif KR', serif; */
+
+*{margin:0;padding:0}
+ul,li{list-style: none;padding:0}
+a{text-decoration: none;color:#333}
+a:hover{color:#513929}
+
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    color: #333;
+    width:100%;
+  }
+  body .container-fluid{padding:0}
+  .hidden, #skipNav{position: absolute; display: block;width:1px; height: 1px;
+     left:-1000%; top:0; overflow: hidden; color: #fff;}
+
+    
+  .navbar{overflow: hidden;padding:15px;background: #d6cbc5 ;}
+  .navbar h1{margin: 0;width:170px;height:34px;background: url(../images/marshall-logo-black.svg)0 0 no-repeat;background-size: contain}
+  .navbar .navbar-brand{display: block;overflow: hidden;padding:0 20px 0 30px}
+  .navbar .navbar-toggler{border:none}
+  .navbar-toggler:focus{box-shadow: none;background: rgba(231, 222, 217,.3)}
+  .navbar .navbar-nav{text-transform: uppercase;font-family:'Playfair Display', serif;}
+  .navbar .navbar-nav .nav-item .nav-link{color:#fff;font-weight: 500;display: block;width:100%;border-bottom: 2px solid rgba(152, 109, 82,0);transition: all .3s ease-out}
+  .navbar .navbar-nav .nav-item .nav-link.active{color:#513929;border-bottom: 2px solid #986d52}
+
+  .navbar .navbar-nav .nav-item .nav-link h2{font-size: 1.1em;margin: 0}
+  section.move{padding-top:100px;opacity: 0}
+  section.move.active{padding:80px 0;opacity: 1}
+  /* section.best{max-width: 1120px;margin: 0 auto} */
+
+  section h3{font-family: 'Playfair Display', serif;font-weight: 700;margin: 0;color:#513929;text-transform: uppercase;text-align: center}
+  section p{text-align: center;margin: 10px 0}
+
+  #myCarousel {margin-bottom: 4rem}
+  /* Since positioning the image, we need to help out the caption */
+  #myCarousel .carousel-caption {bottom: 6rem;z-index: 10;}
+  
+  /* Declare heights because of positioning of img element */
+  #myCarousel .carousel-item {height:720px}
+  #myCarousel .carousel-item img{object-fit: cover;width:100%;height:100%;object-position: 50% 90%}
+  #myCarousel .carousel-item span{font-weight: 500;margin-bottom: 10px;display: block}
+
+  #content{width:100%}
+  #content .best{max-width:1120px;margin: 30px auto;}
+  #content .best>h3{font-family: 'Playfair Display', serif;color:#513929}
+  #content .best>h3, #content .row>p{text-align: center}
+  .best .col-lg-4 {margin: 1.5rem 0;text-align: center}
+
+  .best .col-lg-4 .imgBox{width:180px;height:180px;border-radius: 50%;overflow: hidden;margin: 0 auto}
+  .best .col-lg-4 img{object-fit: cover;width:100%;height:100%;object-position: 50% 50%}
+  .best .col-lg-4 .product_name{font-size: 1.5em;font-weight: 500;text-transform: uppercase;font-family:'Playfair Display', serif;margin: 20px 0 10px;display: block;color:#513929}
+
+  .best .col-lg-4 p {margin-right: .75rem;margin-left: .75rem}
+  .best .col-lg-4 p span{display: block;font-size: .5em;margin: 5px 0 10px}
+  .best .col-lg-4 .btn{background: #986d52;border: none;color:#fff}
+  
+  .limited.move{height:650px;overflow: hidden;padding-top:100px;transition: all .5s ease-out}
+  .limited.move.active{height:650px;overflow: hidden;padding:0}
+  .limited .imgBox{overflow: hidden;height:100%;float: left}
+  .limited .imgBox img{object-fit: cover;width:100%;height:100%;object-position: 50% 50%}
+  .limited .txtBox{background: #76716c;height:100%;float: right;padding: 150px 5%;color:#fff}
+  .limited .txtBox h3{margin-bottom: 20px;text-align: center;font-family: 'Playfair Display', serif;text-transform: uppercase;color:#fff}
+  .limited .txtBox p{line-height: 2em;font-size: 1.5em;font-weight: 300;text-align: justify}
+  .limited .txtBox p span{text-transform: uppercase;font-weight: 400}
+
+  #products{background: #e3e1e1}
+  #products .tab_menu{overflow: hidden;width:310px;margin: 20px auto;padding:10px}
+  #products .tab_menu .tab_btn{width:140px;border:none;border-radius: 20px;background: #986d52;padding:4px 10px;color:#fff;
+                               font-family:'Playfair Display', serif;font-weight: 500}
+  #products .tab_menu .tab_btn.active{background: #493325;box-shadow: 3px 3px 5px 3px rgba(0,0,0,.1)}
+  #products .carousel-control-next-icon,#products .carousel-control-prev-icon{filter:invert(1) sepia(80)}
+  #products .carousel-inner{padding:0 20%}
+  #products .carousel-item{overflow: hidden}
+  #products .carousel-item li{float:left;padding: 0 5%}
+  #products .carousel-item li img{object-fit: contain;object-position: 50% 50%;width:100%;height:100%;box-shadow: 5px 5px 10px 3px rgba(0,0,0,.1);}
+  #products .carousel-item li dl{text-align: center;margin-top: 10px}
+  #products .carousel-item li dt{font-size: 1.1em;font-weight: 500}
+
+  #brandStory{padding-bottom: 0}
+  #brandStory p{width:60%;margin: 20px auto}
+  #brandStory .youtubeBox{width:70%;margin: 50px auto 70px}
+  #brandStory .youtubeBox div{position: relative;width: 100%; height: 0; padding-top: 56.25%;}
+  #brandStory .youtubeBox div iframe{position: absolute;left: 0;top: 0;width: 100%;height: 100%}
+
+  #brandStory>.imgBox{background: url(../images/background_img.jpg) center bottom no-repeat;padding:80px;background-size: cover}
+  #brandStory>.imgBox span{font-weight: 600;text-align: center;font-size: 3.5vw;text-transform: uppercase;display: block;margin: 0 auto;color:#fff;text-shadow: 3px 3px 5px rgba(0,0,0,.1)}
+  #brandStory .bottom{background: #f4eae4;padding:60px 15% 80px;overflow: hidden}
+  #brandStory .bottom p{width:auto;text-align: justify;line-height: 2em}
+  #brandStory .bottom .gridArea{overflow: hidden;display: grid;
+                                grid-template-columns: repeat(4,1fr);
+                                grid-auto-rows: 150px;
+                                grid-gap:8px;
+                                grid-template-areas: 
+                                'a a c c'
+                                'a a c c'
+                                'b b c c'
+                                'b b c c'
+                                'd e f g';}
+  #brandStory .bottom .gridArea .imageBox img{object-fit: cover;width:100%;height:100%;object-position: 50% 50%}
+  #brandStory .bottom .gridArea .grid-item1{grid-area: a}   
+  #brandStory .bottom .gridArea .grid-item2{grid-area: b}
+  #brandStory .bottom .gridArea .grid-item2 p{margin:0;padding:5% 0}
+  #brandStory .bottom .gridArea .grid-item2 span{display: block;text-align: center;font-size: 2em}
+  #brandStory .bottom .gridArea .grid-item3{grid-area: c}  
+  #brandStory .bottom .gridArea .grid-item4{grid-area: d}  
+  #brandStory .bottom .gridArea .grid-item5{grid-area: e}  
+  #brandStory .bottom .gridArea .grid-item6{grid-area: f}
+  #brandStory .bottom .gridArea .grid-item7{grid-area: g}
+
+  footer{background: #493325;color:#e3e1e1;padding:60px 10%;width:100%}
+  footer .bi{width:100px;margin-top: 10px}
+  footer .copyright{font-size: .8em}
+  footer .sns{width:100px;font-size: 1.2em;}
+  footer .sns li{width:25px;text-align: center}
+  footer .sns li i{color:#e3e1e1}
+
+  .topMove{position:fixed;right:45px;bottom:100px;z-index: 10;width:55px;height:45px;background: #986d52;text-align: center;line-height: 45px;
+           border-radius: 15px;box-shadow: 3px 3px 5px 3px rgba(0,0,0,.1);display: none;color:#fff;font-weight: 500;font-family:'Playfair Display', serif;text-transform: uppercase}
+  .topMove:hover{color:#fff}
+
+  .modal-content .modal-header span{text-align: center;width:100%;font-family: 'Playfair Display', serif;text-transform: uppercase;font-weight: 500;color:#493325}
+  .modal-content .modal-body .tab-content{overflow: hidden}
+  .modal-content .modal-body .modal_imgBox{width:38%;float: left;overflow: hidden;background: #76716c;margin: 2% 2% 2% 0}
+  .modal-content .modal-body .modal_imgBox img{object-fit: contain;width:100%;height:100%;object-position: 50% 50%}
+  .modal-content .modal-body dl{width:56%;margin: 2% 2% 2% 2%;overflow: hidden;float: left}
+  .modal-content .modal-body dt{font-size: 1.4em;font-family:'Playfair Display', serif;text-transform: uppercase;font-weight: 500;color:#493325;margin-bottom: 15px}
+  .modal-content .modal-body dt span{font-size: .7em;color:#333;font-family: 'Noto Sans KR', sans-serif;padding-left: 10px}
+  .modal-content .modal-body dd{text-align: justify;line-height: 1.8em}
+  .modal-content .modal-body dd:last-child{font-weight: 500;font-size: 1.2em;color:#6a0f0f;padding:5px 10px;border-bottom: 2px solid #493325;width:80px;text-align: center}
+  .modal-content .modal-body .modal-pop-menu{overflow: hidden;margin-bottom: 0}
+  .modal-content .modal-body .modal-pop-menu .tabBtn{float: left}
+  .modal-content .modal-body .modal-pop-menu .tabBtn .nav-link{border:none;text-align: center;margin: 0 5px;width:80px;padding:5px 10px;border-radius: 5px;text-transform: uppercase;font-weight: 400}
+  .modal-content .modal-body .modal-pop-menu .tabBtn .nav-link:focus,
+  .modal-content .modal-body .modal-pop-menu .tabBtn .nav-link:hover,
+  .modal-content .modal-body .modal-pop-menu .tabBtn .nav-link.active{background: #986d52;color:#fff}
+
+  /* 일반pc */
+@media screen and (max-width:1200px) {
+  .limited .txtBox{padding: 120px 5%}
+  .limited .txtBox .display-6{font-size: 2em}
+  .limited .txtBox p{font-size: 1.3em}
+  #brandStory .youtubeBox{width:80%;margin: 40px auto}
+  #brandStory .bottom .gridArea .grid-item2 span{font-size: 1.7em}
+}
+
+
+
+
+/* 테블릿 */
+@media screen and (max-width:992px) {
+  .limited{height:500px;overflow: hidden}
+  .limited .txtBox .display-6{font-size: 1.8em}
+  .limited .txtBox p{font-size: 1.1em}
+  
+  #products .carousel-item li{width:33.33%}
+  #brandStory .youtubeBox{width:80%;margin: 40px auto}
+  #brandStory .bottom .col-lg-6.left{float: none;padding-right:0}
+  #brandStory .bottom .col-lg-6.right{float: none}
+  #brandStory .bottom .gridArea{grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+    'a a a'
+    'a a a'
+    'b b b'
+    'b b b'
+    'd e f';}
+    #brandStory .bottom .gridArea .grid-item2 span{font-size: 2em}
+    #brandStory .bottom .gridArea .grid-item3{grid-area: c;display: none}
+    #brandStory .bottom .gridArea .grid-item7{grid-area: g;display: none}
+
+
+    .modal-content .modal-body .modal_imgBox{width:auto;float: none;overflow: hidden;background: #76716c;margin: 2%;height:300px}
+    .modal-content .modal-body .modal_imgBox img{object-fit: contain;width:100%;height:100%;object-position: 50% 50%}
+    .modal-content .modal-body dl{width:auto;margin: 2%;overflow: hidden;float: none}
+    .modal-content .modal-body dt{margin-top: 30px;border-bottom: 2px solid #493325;padding-bottom: 5px}
+    .modal-content .modal-body dd:last-child{float: right;margin-right: 60px}
+}
+
+/* 소형테블릿 */
+@media screen and (max-width:768px) {
+  .limited{height: 700px}
+  .limited .imgBox{width:auto;float: none;height: 400px}
+  .limited .txtBox{width:auto;float: none;height: 300px;padding:60px 5%}
+  .limited .txtBox p{line-height: 1.8em}
+
+  #products .carousel-item li{width:auto}
+
+  #brandStory .bottom{background: #f4eae4;padding:60px 10%;overflow: hidden}
+  footer .sns{width:100px;margin: 20px auto 0}
+
+
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+  .limited .imgBox{height: 380px}
+  .limited .txtBox{padding:50px 5%;height: 320px}
+  .limited .txtBox .display-6{font-size: 1.5em}
+  #brandStory .bottom .gridArea{overflow: hidden;display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+    'a a'
+    'a a'
+    'b b'
+    'b b'
+    'd e';}
+  #brandStory .bottom .gridArea .grid-item6{grid-area: f;display: none}
+
+}

@@ -1,0 +1,52 @@
+/* content영역 */
+.contentArea p{line-height: 2em}
+.contentArea{width:1200px;margin:0 auto;padding:80px 0 150px;overflow: hidden}
+.summary{margin: 50px 0;text-align: center}
+.contentArea img{margin-bottom: 50px}
+
+.intro p{text-align: justify;margin-bottom: 30px;padding:0 50px}
+.contentArea .subPop_menu .openPop{display: block;width:300px;height:40px;background: #ccc;color: #fff;text-align: center;
+               padding: 10px 0 5px; float: left; transition:all .5s ease-out;margin-top: 50px}
+.contentArea .subPop_menu .openPop:hover{background: #1b8ab3;box-shadow: 5px 5px 15px 3px rgba(0,0,0,.2)}
+.contentArea .subPop_menu .openPop i{margin-left: 20px;width:35px;height:27px;border-radius: 50%;padding-top:8px;transition: all .5s ease-out}
+.contentArea .subPop_menu .openPop:hover i{background: #fff;color:#1b8ab3}
+.contentArea .btn1{margin-left: 280px}
+.contentArea .btn2{margin-left: 40px}
+
+
+/* popup창 */
+
+#content .modal_box{position: fixed; left: 0; top: 0; z-index: 50; width: 100%; height: 100%; 
+    background: rgba(0,0,0,.45); display: none}
+#content .sub_popup{position: fixed; top: 50%; left: 50%; margin: -400px 0 0 -600px; 
+    width: 1140px; height: 734px;background: #fff; box-shadow: 5px 5px 20px 3px rgba(0,0,0,.3);
+    z-index: 60; display:none;overflow: hidden;padding:30px;overflow: hidden;border-top: 6px solid #0c3c4e}
+
+#content .sub_popup h3{text-align: center;font-size: 1.2em; font-weight: 500; margin-top: 20px; color: #1b8ab3}
+#content .sub_popup h4{font-weight: 500;margin-bottom: 8px;color:#0c3c4e}
+
+#content .sub_popup .top>span{text-align: center;font-weight: 500;width:400px;margin: 20px auto 10px;display: block;color:#666}
+#content .sub_popup .top ul{overflow: hidden;margin: 0 auto;padding:15px 0}
+#content .sub_popup .top ul li{float: left; width:250px;font-size: .8em;text-align: center}
+#content .sub_popup .top .circle{display: block;width:130px;height:130px;background: rgba(33,157,203,.4);
+                                 margin: 0 auto;font-size: 1.2em;font-weight: 500;
+                                 border-radius: 50%;border: 10px solid rgba(255,255,255,.5)}
+
+
+#content .sub_popup.popup0 ul{width:1000px}
+#content .sub_popup.popup0 .top .circle>span{margin-top: 50px;display: block}
+
+#content .sub_popup.popup1 ul{width:750px}
+
+#content .sub_popup.popup1 .top li .circle>span{margin-top: 27px;display: block}
+#content .sub_popup.popup1 .top li:nth-child(1) .circle>span{margin-top: 40px}
+
+
+
+#content .sub_popup .top ul li .explain{margin: 20px 0 10px;display: block}                               
+#content .sub_popup .bottom{overflow: hidden;background: #ecf3f5;padding:20px 10px}
+#content .sub_popup .bottom .content{float: left;width:520px;margin: 0 20px}
+#content .sub_popup .bottom .content p{font-size: .85em;text-align: justify;line-height: 2em;margin-bottom: 5px}
+#content .sub_popup .bottom .content .lastTitle{margin-top: 25px}
+#content  .sub_popup .sub_close_btn{position: absolute; top: -3px; right: 3px; display: block; overflow: hidden; width: 50px; 
+    height: 50px; padding: 9px 9px;color:rgba(33,157,203,.7);text-align: center;font-size: 2em;z-index: 70}

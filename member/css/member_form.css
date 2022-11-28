@@ -1,0 +1,32 @@
+input:focus,select:focus{outline: none}
+input::placeholder{color:#bbb}
+input,select{border:none}
+
+body{background: #ecf3f5}
+.logo{margin: 50px auto 0; display: block; width:250px}
+#content{width: 750px; margin: 50px auto;padding: 70px;background: #fff;box-shadow: 5px 5px 30px 3px rgba(0,0,0,.05)} 
+
+#content .lineMap{width:100%;margin: 0 auto 40px;overflow: hidden}
+#content .lineMap span{display:block;float:left;width:33.33%;text-align: center;padding:12px 0 8px;
+                    border-bottom: 3px solid #ccc;color:#ccc;height:30px}
+#content .lineMap .current{border-color: #1b8ab3;color: rgb(12,60,78);font-size: 1.2em;font-weight: 500;padding:8px 0;     
+                        height:34px}
+table{width:100%;margin-bottom: 20px}
+.must{color:#bd0202;margin: 5px}
+table tr{padding:10px;background-color: #eee;margin: 10px 0;display: block;overflow: hidden;
+        box-shadow: inset 3px 3px 5px 2px rgba(0,0,0,.01)}
+table th{color:rgb(12,60,78);width:180px;border-right: 2px solid #fff;font-weight: 500;display: block;float: left}
+table td{padding-left: 10px;overflow: hidden;display: block}
+table td input,table td select{border:none;background: none;padding:5px;
+                               font-family:'Noto Sans KR', sans-serif;font-size: 14px}
+
+table td select{padding:5px 8px}
+
+table td #loadtext,table td #loadtext2,table td #loadtext3{font-size: .8em;float: right;display: block;margin: 5px 10px 0 0}
+
+
+.button .join{float: left;width: 50%;line-height: 24px;padding: 12px 0;border: 2px solid rgb(12,60,78);
+                  background: rgb(12,60,78);color: #fff;font-size: 14px;cursor: pointer;
+                  box-sizing: border-box;text-align: center}
+.button .reset{width:50%;line-height: 24px;padding: 12px 0;border: none;background: #999;    
+                      color: #fff;font-size: 14px;cursor: pointer;border:2px solid #999;box-sizing: border-box}

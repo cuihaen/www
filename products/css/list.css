@@ -1,0 +1,84 @@
+input:focus,select:focus{outline: none}
+input::placeholder{color:#bbb}
+input,select{border:none;box-sizing: border-box}
+
+/* content영역 */
+.contentArea{width:1200px;margin:0 auto;padding:80px 0 0;position:relative}
+
+.contentArea h3{font-size: 2em;padding:40px 0 0 60px;font-weight: 500;position:relative;color:#0c3c4e}
+.contentArea h3::before{content:'';width:10px;height:10px;border-radius: 50%;
+                         position: absolute;left:43px;top:43px;background:rgb(33,157,203)}
+.summary{text-align: center;margin-bottom: 20px}
+
+.board{margin: 30px 0;background: #ecf3f5;padding:20px 400px}
+.board #find{background: #fff;padding:8px 15px;border:2px solid #ccc;text-align: center}
+.board #search{padding:9px 15px;border:2px solid #ccc;width:220px}
+.board #searchBtn{padding:8px 20px;background: #0c3c4e;color:#fff;margin-top: 2px}
+
+.top_section{overflow: hidden}
+.top_section #total_list{float:left;margin-left: 15px}
+.top_section #total_list span{color:#1b8ab3;font-weight: 500}
+.top_section .right{float: right;overflow: hidden}
+.top_section .list_style{float: left;overflow: hidden;margin-right: 5px;border: 1px solid #ccc;margin-top: 1px}
+.top_section .list_style li{float: left}
+.top_section .list_style li.active a i{color:#1b8ab3}
+.top_section .list_style li:nth-child(1){border-right: 1px solid #ccc}
+.top_section .list_style li a{display: block;padding:4px 12px}
+.top_section .list_count{float: right}
+.top_section .list_count #scale{border: 2px solid #ccc;padding:8px 15px}
+
+.main_board{margin: 15px 0 140px;border-top:1px solid #666;position:relative}
+.main_board #list_top_title{overflow: hidden;width:100%;background: #eee;border-bottom:1px solid #ccc;padding:4px 0}
+.main_board #list_top_title li{float: left;padding:8px 0;text-align: center}
+.main_board #list_top_title li{float: left;padding:8px 0;text-align: center}
+.main_board #list_item_img{width:180px;margin:0 10px;overflow: hidden;height:130px}
+.main_board #list_item_img img{object-fit: cover;width:100%;height:100%;object-position: 50% 50%}
+.main_board #list_title2{margin-left: 200px}
+.main_board #list_title1,.main_board #list_item1{width:120px}
+.main_board #list_item1,.main_board #list_item3,.main_board #list_item4,.main_board #list_item5{line-height: 120px}
+.main_board #list_title2,.main_board #list_item2{width:400px}
+.main_board #list_item2 span{display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 1;overflow: hidden;text-overflow: ellipsis;transition:all .5s ease-out;font-weight: 500;color:#0c3c4e;margin-top: 10px}
+.main_board #list_item2:hover span{color:#1b8ab3}
+.main_board #list_item2 p{display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 3;overflow: hidden;text-overflow: ellipsis;font-size:.85em;margin-top: 8px}
+
+.main_board #list_title3,.main_board #list_item3{width:180px}
+.main_board #list_title4,.main_board #list_item4{width:180px}
+.main_board #list_title5,.main_board #list_item5{width:120px}
+.main_board #list_item5 i{display: none}
+
+.main_board #list_item2{text-align: left}
+
+.main_board #list_content #list_item{overflow: hidden;width:100%;border-bottom:1px solid #ccc;padding:6px 0}
+.main_board #list_content #list_item li{float: left;padding:8px 0;text-align: center}
+.main_board #list_content #list_item #list_item2{text-align: left;padding-left: 20px;box-sizing: border-box}
+
+.main_board #page_button{position:absolute;left:50%;bottom:-80px;transform: translateX(-50%)}
+.main_board #page_button #page_num b{color:#1b8ab3;font-weight: 500}
+
+
+.main_board #button{position:absolute;right:10px;bottom:-60px}
+.main_board #button a{margin: 0 2px;color:#fff;font-weight: 500;font-size: .9em;text-align: center;padding:5px 20px;background: #0c3c4e}
+.main_board #button .write{background: #1b8ab3}
+
+/* style=box */
+.main_board.box{margin: 15px 0 140px;border: none;position:relative}
+.main_board.box #list_top_title{display: none}
+.main_board.box #list_content{overflow: hidden}
+.main_board.box #list_content #list_item{float: left;overflow: hidden;width:560px;border:2px solid #ccc;padding:15px;margin: 15px 20px;box-sizing: border-box;transition: all .5s ease-out}
+.main_board.box #list_content #list_item:hover{border-color: #1b8ab3}
+.main_board.box #list_content #list_item #list_item_img{margin: 0 10px 0 0}
+.main_board.box #list_content #list_item li{float: left;padding:0;text-align: center}
+.main_board.box #list_item1{display: none}
+.main_board.box #list_content #list_item #list_item2{width:320px;margin-left: 8px;padding:8px 0;border-bottom: 1px solid #eee}
+.main_board.box #list_content #list_item #list_item2 span{font-size: 1.15em;font-weight: 500;color:#1b8ab3;margin-bottom: 5px}
+.main_board.box #list_content #list_item #list_item2 p{display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 1;overflow: hidden;text-overflow: ellipsis;font-size: .9em}
+
+.main_board.box #list_content #list_item #list_item3{color:#1b8ab3;width:50px;margin:10px 0 0 10px;padding:0 10px 0 0;position:relative}
+.main_board.box #list_content #list_item #list_item3::after{content:'';display: block;height:15px;width:2px;background: #ccc;position: absolute;right:0;top:50%;transform: translateY(-50%)}
+.main_board.box #list_item4{position:relative;padding: 0 20px ;margin-top: 10px;width:100px}
+.main_board.box #list_content #list_item #list_item4::after{content:'';display: block;height:15px;width:2px;background: #ccc;position: absolute;right:0;top:50%;transform: translateY(-50%)}
+
+.main_board.box #list_content #list_item #list_item5{overflow: hidden;width:40px;padding:0 10px;margin-top: 10px}
+.main_board.box #list_content #list_item #list_item5 i{display: block;float: left;margin-top: 1px}
+
+.main_board.box #list_item1,.main_board.box #list_item3,.main_board.box #list_item4,.main_board.box #list_item5{line-height: 1em;font-size: .9em}

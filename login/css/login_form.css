@@ -1,0 +1,34 @@
+input:focus{outline: none}
+input::placeholder{color:#bbb}
+
+body{background: #ecf3f5}
+input:focus,select:focus{outline: none}
+input::placeholder{color:#bbb}
+input,select{border:none}
+
+body{background: #ecf3f5}
+
+.logo{margin: 50px auto 0; display: block; width:250px}
+#content{width: 500px; margin: 50px auto;padding: 70px;background: #fff;box-shadow: 5px 5px 30px 3px rgba(0,0,0,.05)} 
+#content h2{text-align: center;font-size: 1.4em;color:rgb(12,60,78);position:relative}
+#content h2::after{content:'';width:40px;height:3px;background: #1b8ab3;display: block;position:absolute;bottom:-20px;
+                   left:50%;transform: translateX(-50%)}
+#content>p{font-size: .8em;text-align: center;margin: 50px 0 30px}
+#content #id_pw_input{width:90%;margin: 0 auto}
+
+#content input{width:450px;padding:15px 5px 15px 20px;margin-bottom: 5px;box-sizing: border-box;border: 2px solid #eee;font-size: .9em}
+
+#content #login_button{width:450px;margin: 10px auto 20px}
+#content #login_button button{width: 100%;line-height: 24px;padding: 12px 0;border: 2px solid rgb(12,60,78);
+    background: rgb(12,60,78);color: #fff;font-size: 14px;cursor: pointer;
+    box-sizing: border-box;text-align: center}
+
+#content .find{overflow: hidden;width:60%;margin: 0 auto}
+#content .find li{width:50%;float: left;text-align: center;box-sizing: border-box;position:relative;font-size: .9em}
+#content .find li a{color: #666}
+#content .find li:nth-child(1)::after{content:'';background: #bbb;width:2px;height:13px;position:absolute;right: 0;top:50%;
+                                      transform: translateY(-50%)}
+
+#content #join_button{width:50%;margin: 40px auto 0}
+#content #join_button span{color:#999;font-size: .8em;margin-right: 10px}
+#content #join_button a{padding:8px;color:#1b8ab3;font-weight: 500;font-size: .95em}

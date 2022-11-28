@@ -1,0 +1,37 @@
+/* content영역 */
+.contentArea{width:1000px;margin:90px auto 120px}
+.contentArea h3{color:#0c3c4e;font-size: 1.35em;font-weight: 500;margin:30px 0 20px 30px;position: relative}
+.contentArea h3::before{content:'';display: block;width:10px;height:10px;border-radius: 50%;
+                        background: #1b8ab3;position: absolute;left: -15px;top:0}
+
+/* 아코디언 영역 */
+.question{margin-bottom: 80px}
+.question .hgroup{position:relative;margin:0 0 10px 0;}  
+.question .hgroup .all{position:absolute; top:0; right:10px; color:#1b8ab3;display: block;
+                       height:50px;width:50px;text-align: center;line-height: 48px;font-size: 1.8em;background: none}
+
+.question ul{border-top: 2px solid #1b8ab3}  
+.question .q{height:55px;line-height: 55px;overflow: hidden;border-bottom:1px solid #ccc;position: relative}  
+.question .q a.trigger{text-align:left;display: block}  
+.question .hide .q a.trigger{font-weight:normal;background:none}  
+.question .q a.trigger:hover,  
+.question .q a.trigger:active,  
+.question .q a.trigger:focus{background:#ecf3f5;color:#000} 
+.question .q>span{display: block; width:55px;height:55px;position: absolute; right: 5px; top:0;text-align: center;
+                  line-height: 55px;color:rgba(33,157,203,.7);font-size: 1.1em} 
+.question .a{margin:0;padding:25px 15px;line-height:1.5em; margin-top:0px; margin-bottom:0px; 
+            display: none;text-align: justify;border-bottom: 1px solid #ccc;font-size: .95em}
+.question i{margin: 0 15px;border-radius: 50%}
+.question .q i:nth-child(1){background: #1b8ab3;padding:8px 9px;color:#fff}
+.question .a i{margin: 0 15px 30px 0;float: left;padding:8px 10px;background: #ccc;color:#fff}
+
+
+/* 추가 문의 */
+.moreQuestion{height:90px;margin: 0 auto;padding:80px;color:#fff;
+              background:url(../images/content2/background.jpg) center no-repeat}
+.moreQuestion p{text-align: center;font-size: 1.35em}
+.moreQuestion a{display: block;width:180px;height:45px;background: rgba(12,60,78,.7);
+                text-align: center;line-height: 45px;border-radius: 25px;color:#fff;margin: 20px auto}
+.moreQuestion a i{margin-left: 10px}
+
+

@@ -1,0 +1,97 @@
+/* content영역 */
+.contentArea{width:1200px;margin:0 auto;padding-top:80px}
+.contentArea p{text-align: justify; line-height: 2em}
+
+.contentArea .summary{text-align: center}
+
+.it{position: relative;width:2000px;left:50%;top:0;margin-left: -1000px;padding:120px 0;
+    background: url(../images/content5/it_background.jpg) 0 -150px no-repeat;margin-top: 60px}
+
+.beauty{position: relative;width:2000px;left:50%;top:0;margin-left: -1000px;padding:120px 0;
+        background: url(../images/content5/beauty_background.jpg) 0 -150px no-repeat}
+
+.innerBox{width:1200px;margin: 0 auto;padding:80px 100px; background: rgba(255,255,255,.95);
+         box-shadow: 5px 5px 20px 3px rgba(0,0,0,.1);overflow: hidden;position: relative}
+.innerBox>img{box-shadow: 5px 5px 20px 3px rgba(0,0,0,.1);float: left;border-radius: 50px 0;margin-right: 60px}
+.innerBox>h3{margin:20px 0;font-size: 1.8em;font-weight: 500;color:#1b8ab3}
+.innerBox .text1{font-size:1.15em;margin:10px 0}
+.innerBox>p{color:#666;margin-top:15px}
+
+.innerBox>ul{overflow: hidden;padding:15px 0}
+.innerBox li{float: left}
+
+
+.innerBox>.btn a{display: block;width:43px; height:43px;color: #fff;background: #ccc;
+        font-size: 1.5em;text-align: center;border-radius: 50%;
+        transition:all .5s ease-out;position: absolute;right:100px;top:100px}
+
+.innerBox .btn a:hover{background: #1b8ab3}
+
+/* it사업 */
+.innerBox .mainService{margin-top: 30px;}
+.innerBox .mainService li .openPop{width:280px;height:45px;background: #ccc;margin: 8px 30px 15px 0;display: block;
+                         padding: 15px 30px 0 50px;color:#666;transition: all .5s ease-out;overflow: hidden;position: relative}
+.innerBox .mainService .openPop span{margin-left: 30px;width:200px}
+.innerBox .mainService .openPop{display: block}
+.innerBox .mainService .openPop i:last-child{margin-left: 30px;color:#ccc;float: right;margin-top: 5px}
+.innerBox .mainService .openPop:hover{background: #1b83ab;color: #fff;box-shadow: 5px 5px 20px 3px rgba(0,0,0,.1)}
+
+.innerBox .mainService .openPop:hover::after{content:'';width:6px;height:60px;background:#11546e;position:absolute;right:0; top:0}
+
+/* popup창 */
+.subPop .sub_modal_box{position: fixed; left: 0; top: 0; z-index: 50; width: 100%; height: 100%; 
+        background: rgba(0,0,0,.45); display: none}
+.subPop .sub_pop_btn{position: fixed; left: 0; top: 50%;  width: 100%; height: 0;  display: none;font-size: 3em;z-index: 50;margin-top: -30px}
+.subPop .sub_pop_btn a{display: block; position: absolute; top:50%; left:50%; color: rgba(255,255,255,4); margin-top: -10px;transition: all .5s;z-index: 60}
+.subPop .sub_pop_btn a:hover{color:rgba(255,255,255,8)}
+.subPop .sub_pop_btn .pre{margin-left: -560px}
+.subPop .sub_pop_btn .next{margin-left: 530px}
+
+.subPop .sub_popup{position: fixed; top: 50%; left: 50%; margin: -310px -470px; 
+        width: 880px; height:560px; background: #fff; box-shadow: 5px 5px 20px 3px rgba(0,0,0,.3);
+        z-index: 60; display:none;overflow: hidden;padding:30px;overflow: hidden;border-top: 6px solid #0c3c4e}
+
+.subPop .sub_popup h4{color:#1b8ab3;font-size: 1.2em;font-weight: 500;text-align: center;margin: 10px 0}
+.subPop .sub_popup>p{font-size: .9em;text-align: center;line-height: 2em}
+
+/* popup0 공공/제조/서비스 */
+.subPop .popup_0 .visual>ul{overflow: hidden;width:740px;margin: 20px auto 0}
+.subPop .popup_0 .visual>ul>li{font-size: .9em;padding:15px;text-align: center}
+.subPop .popup_0 .visual>ul li span{display: block}
+.subPop .popup_0 .visual>ul li .title{color:#11546e;margin-bottom: 5px;font-weight: 500}
+.subPop .popup_0 .visual>ul li .explain{font-size: .9em}
+.subPop .popup_0 .visual>ul li .explain li{font-size: .9em}
+
+.subPop .popup_0 .visual>ul .topBox{border:2px solid rgba(33,157,203,.7);height: 160px;width:180px}
+.subPop .popup_0 .visual>ul .bottomBox{border:2px solid rgba(0,0,0,.3);margin-top: 30px;width:200px;height:142px}
+.subPop .popup_0 .visual>ul li:nth-child(5){margin: 30px 18px 0}
+.subPop .popup_0 .visual>ul .center{background: rgba(33,157,203,.3);border-radius: 50%;width:120px;height:120px;
+                                   margin:25px 80px 0;position:relative}
+.subPop .popup_0 .visual>ul .center .title{margin-top: 35px;font-size: 1.2em;font-weight: 500}
+.subPop .popup_0 .visual>ul .center .arrow{position:absolute;font-size: 1.7em}
+.subPop .popup_0 .visual>ul .center .arrow01{left:-50px;top:58px}
+.subPop .popup_0 .visual>ul .center .arrow02{right:-50px;top:58px}
+.subPop .popup_0 .visual>ul .center .arrow03{right:-15px;bottom:-13px;transform: rotate(45deg)}
+.subPop .popup_0 .visual>ul .center .arrow04{left:-15px;bottom:-13px;transform: rotate(-45deg)}
+.subPop .popup_0 .visual>ul .center .arrow05{left:68px;bottom:-43px}
+
+/* popup1 금융 */
+
+/* popup2 통신 */
+
+/* popup3 네트워크 */
+
+/* popup4 클라우드 */
+
+
+
+.subPop .sub_popup .sub_close_btn{position: absolute; top: -3px; right: 3px; display: block; overflow: hidden; width: 50px; 
+                        height: 50px; padding: 9px 9px;color:rgba(33,157,203,.7);text-align: center;font-size: 2em;z-index: 70}
+
+/* 뷰티사업 */
+.innerBox .aboutme li{width:800px;margin: 0 20px 0 50px;overflow: hidden;text-align: center;padding:10px 0 15px 10px}
+.innerBox .aboutme li i{display:block;width:50px;height:45px;padding:15px;font-size: 2.4em;background: #f8f8f8;float: left;
+                        border-radius: 30px;box-shadow: 5px 5px 13px 3px rgba(0,0,0,.1);margin-right: 30px;color:#666}
+.innerBox .aboutme li span{text-align: justify;display: block;margin-top: 25px}
+
+.innerBox .aboutme li:hover i{color:#855b42}

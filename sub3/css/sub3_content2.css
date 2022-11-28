@@ -1,0 +1,77 @@
+/* content영역 */
+.contentArea p{line-height: 2em}
+.contentArea{width:1200px;margin:0 auto;padding-top:80px}
+.summary{margin: 30px 0 50px;text-align: center}
+
+.graph{position:relative;width:2000px;left:50%;top:0;margin-left: -1000px;background: url(../images/content2/background.jpg) 0 0 no-repeat;
+       height:600px;background-attachment: fixed}
+.graph .innerBox{width:1200px;height:600px;margin:0 auto;overflow: hidden;position:relative}
+.innerBox>img{position:absolute}
+.innerBox>.line01{width:380px;left: 110px;top:200px}
+.innerBox>.line02{height:250px;left: 715px;top:150px}
+
+/* 그래프 공통영역 */
+.innerBox>div{float: left;width:510px;height:600px;color:#fff;margin:0 45px}
+.innerBox>div .top{margin-top: 50px;color:#fff;width:500px;font-size: 1.5em;overflow: hidden;height:50px}
+.innerBox>div .top>span:last-child{font-size: .6em;float: right;display: block;margin-top: 20px}
+
+.graph01,.graph02{overflow: hidden;;height:335px;padding-bottom: 50px;position:relative;padding:80px 0;background: url(../images/content2/graph_background.svg) 0 80px no-repeat;}
+.graph01>li, .graph02>li{float: left;width:170px;height:255px;overflow: hidden;border-bottom: 2px solid rgba(255,255,255,.5);}
+.graph01>li>div, .graph02>li>div{background: linear-gradient(to bottom,  rgba(27,138,179,.9) 0%,rgba(108, 148, 162, 0.3) 100%);
+                                 width:40px;float:left;margin-left: 37px;margin-right:8px}
+.graph01>li>div:last-child, .graph02>li>div:last-child{background: linear-gradient(to bottom,  rgba(106, 152, 168, 0.9) 0%,rgba(141, 152, 156, 0.3) 100%);
+                                                        margin-left:8px; margin-right:37px}
+.graph01>li>strong, .graph02>li>strong{position:absolute;bottom:120px}
+.graph01>.first>strong, .graph02>.first>strong{left:53px}
+.graph01>.second>strong, .graph02>.second>strong{left:225px}
+.graph01>.third>strong, .graph02>.third>strong{right:55px}
+
+
+/* 왼쪽 그래프 */
+
+.graph .graph01 .first>.one{height:60px;margin-top:195px}
+.graph .graph01 .first>.two{height:80px;margin-top:175px}
+
+.graph .graph01 .second>.one{height:120px;margin-top:135px}
+.graph .graph01 .second>.two{height:140px;margin-top:115px}
+
+.graph .graph01 .third>.one{height:170px;margin-top:85px}
+.graph .graph01 .third>.two{height:220px;margin-top:35px}
+
+/* 오른쪽 그래프 */
+
+.graph .graph02 .first>.one{height:30px;margin-top:225px}
+.graph .graph02 .first>.two{height:35px;margin-top:220px}
+
+.graph .graph02 .second>.one{height:90px;margin-top:165px}
+.graph .graph02 .second>.two{height:95px;margin-top:160px}
+
+.graph .graph02 .third>.one{height:215px;margin-top:40px}
+.graph .graph02 .third>.two{height:220px;margin-top:35px}
+
+/* 레이블 영역 */
+.graph .lable01,.graph .lable02{position:absolute;bottom:80px;overflow: hidden;padding:0 30px 0 20px;width:360px;height:30px;border:2px solid rgba(255,255,255,.3)}
+.graph .lable01{left: 50px}
+.graph .lable02{right:50px}
+
+.graph .lable01 span,.graph .lable02 span{color:#fff;float: left;display: block;height:30px;padding-left: 45px;position: relative}
+.graph .lable01 span:nth-child(1)::before,.graph .lable02 span:nth-child(1)::before{content: '';width:25px;height:6px;background: rgba(27,138,179,.9);position:absolute;right: 75px;top:12px}
+.graph .lable01 span:nth-child(2)::before,.graph .lable02 span:nth-child(2)::before{content: '';width:25px;height:6px;background: rgba(106, 152, 168, 0.9);position:absolute;right: 92px;top:12px}
+.graph .lable01 span:last-child::before,.graph .lable02 span:last-child::before{content: '';width:25px;height:3px;background: rgba(255, 255, 255, 0.9);position:absolute;top:14px}
+.graph .lable01 span:last-child::before{right: 60px}
+.graph .lable02 span:last-child::before{right: 75px}
+
+/* 재무현황표 */
+.financial01,.financial02{padding:80px 0}
+.financial02{position:relative;width:2000px;left: 50%;top:0;margin-left: -1000px;background: #f5f5f5;padding-bottom: 120px} 
+.financial02 .innerBox{width:1200px;margin:0 auto;overflow: hidden}
+.financial01 h3,.financial02 h3{font-size: 1.5em;color:#0c3c4e;font-weight: 500;margin-left: 115px;position:relative}
+
+.financial01 h3::before,.financial02 h3::before{content: '';width:8px;height: 8px;background: #1b8ab3;position:absolute;left: -13px;top:3px;border-radius: 50%}
+.financial01 h3 span,.financial02 h3 span{font-size: .6em;color:#666;font-family: 'Noto Serif KR', serif;margin-left: 10px}
+.financial01 h3 span:last-child,.financial02 h3 span:last-child{font-family: 'Noto Sans KR', sans-serif;float: right;margin:15px 120px 0 0}
+
+.financial01 table, .financial02 table{border-top: 2px solid #0c3c4e;border-bottom: 2px solid #ccc;width:1000px;margin: 20px auto 0}
+.financial01 thead, .financial02 thead{background: #ecf3f5}
+.financial01 tr, .financial02 tr{height:65px;border-bottom: 1px dashed #ccc;text-align: center}
+.financial01 .hap, .financial02 .hap{font-weight: 500;background: #f8f8f8;border-bottom: 1px solid #999}

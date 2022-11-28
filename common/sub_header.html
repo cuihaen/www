@@ -1,0 +1,102 @@
+<!-- header 공통요소 -->
+<div class="wrap">
+    <header id="headerArea">
+        <div class="headerInner">
+            <h1><a href="../index.html">삼양홀딩스 로고</a></h1>
+            <nav id="gnb">
+                <ul class="dropdownmenu">
+                    <li class="m1 menu">
+                      <h3><a class="depth1" href="../sub1/sub1_1.html">그룹소개</a></h3>
+                      <ul>
+                        <li><a href="../sub1/sub1_1.html">삼양홀딩스소개</a></li>
+                        <li><a href="../sub1/sub1_2.html">CEO인사말</a></li>
+                        <li><a href="../sub1/sub1_3.html">삼양가치</a></li>
+                        <li><a href="../sub1/sub1_4.html">CI소개</a></li>
+                        <li><a href="../sub1/sub1_5.html">주요연혁</a></li>
+                    </ul>
+                  </li>
+                  <li class="m2 menu">
+                      <h3><a class="depth1" href="../sub2/sub2_1.html">사업부문</a></h3>
+                      <ul>
+                        <li><a href="../sub2/sub2_1.html">화학사업</a></li>
+                        <li><a href="../sub2/sub2_2.html">식품사업</a></li>
+                        <li><a href="../sub2/sub2_3.html">의약바이오사업</a></li>
+                        <li><a href="../sub2/sub2_4.html">패키징사업</a></li>
+                        <li><a href="../sub2/sub2_5.html">개별사업</a></li>
+                    </ul>
+                  </li>
+                  <li class="m3 menu">
+                      <h3><a class="depth1" href="../sub3/sub3_1.html">정보센터</a></h3>
+                      <ul>
+                        <li><a href="../sub3/sub3_1.html">홍보관</a></li>
+                        <li><a href="../sub3/sub3_2.html">투자정보</a></li>
+                        <li><a href="../sub3/sub3_3.html">IR자료실</a></li>
+                        <li><a href="../products/list.php">제품검색</a></li>
+                    </ul>
+                  </li>
+                  <li class="m4 menu">
+                      <h3><a class="depth1" href="../sub4/sub4_1.html">사회공헌</a></h3>
+                      <ul>
+                        <li><a href="../sub4/sub4_1.html">사회공헌개요</a></li>
+                        <li><a href="../sub4/sub4_2.html">주요활동</a></li>
+                        <li><a href="../sub4/sub4_3.html">재단</a></li>
+                        <li><a href="../sub4/sub4_4.html">사이클팀</a></li>
+                        <li><a href="../esg_news/list.php">활동소식</a></li>
+                    </ul>
+                  </li>
+                  <li class="m5 menu">
+                      <h3><a class="depth1" href="../sub5/sub5_1.html">인재채용</a></h3>
+                      <ul>
+                        <li><a href="../sub5/sub5_1.html">인재상</a></li>
+                        <li><a href="../sub5/sub5_2.html">채용절차</a></li>
+                        <li><a href="../sub5/sub5_3.html">인재육성</a></li>
+                        <li><a href="../sub5/sub5_4.html">평가 및 보상</a></li>
+                    </ul>
+                  </li>
+                  <li class="m6 menu">
+                      <h3><a class="depth1" href="../sub6/sub6_1.html">고객지원</a></h3>
+                      <ul>
+                        <li><a href="../news/list.php">NEWS</a></li>
+                        <li><a href="../sub6/sub6_2.html">FAQ</a></li>
+                        <li><a href="../sub6/sub6_3.html">Contact Us</a></li>
+                        <li><a href="../sub6/sub6_4.html">찾아오시는길</a></li>
+                      </ul>
+                     </li>
+                </ul>
+            </nav>
+            <div class="topMenu">
+              <?
+                @extract($_POST);
+                @extract($_GET);
+                @extract($_SESSION);
+                
+                //$userid=$_SESSION['userid']; 정식 문법!
+                  
+                if(!$userid)
+                {
+              ?>
+              <ul>
+                  <li><a href="../login/login_form.php">LOGIN</a></li>
+                  <li><a href="../member/member_check.html">JOIN</a></li>
+                  <li><a class="search" href="#"><span class="hidden">검색</span>
+                    <i class="fa-solid fa-magnifying-glass"></i></a>
+                  </li>
+              </ul>
+              <?
+                }
+                else
+                {
+              ?>
+              <ul>
+                <li><a href="../login/logout.php">LOGOUT</a></li>
+                <li><a href="../member/member_form_modify.php">정보수정</a></li>
+                <li><a class="search" href="#"><span class="hidden">검색</span>
+                  <i class="fa-solid fa-magnifying-glass"></i></a>
+                </li>
+              </ul>
+              <?
+                }
+              ?>
+          </div>
+        </div>
+    </header>

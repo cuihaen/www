@@ -1,0 +1,112 @@
+@keyframes step {
+	0% {opacity:0}
+	80% {opacity:.5}
+	100% {opacity:1}
+}
+
+/* #content{width:80%; margin:0 auto} */
+section{padding:100px 0}
+section h3{font-size: 2vw;background-color:rgba(243,189,25,1);font-weight: bold;position: relative;
+           background-image: linear-gradient(135deg, rgba(249,189,25,1) 0%,rgba(249,242,149,1) 25%,rgba(222,174,71,1) 62%,rgba(237,201,103,1) 100%);
+           background-size: 100%;-webkit-background-clip: text;-webkit-text-fill-color: transparent;font-family:'Quintessential', cursive}
+.intro{padding: 100px 0;position:relative}
+.intro h3{text-align: center;margin-bottom: 20px}
+
+.intro>p{text-align: center;line-height: 2em;width:100%;font-size: 1.4em;margin: 0 30% 15px 0;width:80%;margin: 0 auto}
+
+.mainCharacters{background: url(../images/background.jpeg) center no-repeat;background-size: cover;padding:80px 10%;overflow: hidden;margin: 80px 0}
+.mainCharacters h4{font-size: 1.5vw;background-color:rgba(243,189,25,1);font-weight: bold;position: relative;margin-bottom: 15px;
+                    background-image: linear-gradient(135deg, rgba(249,189,25,1) 0%,rgba(249,242,149,1) 25%,rgba(222,174,71,1) 62%,rgba(237,201,103,1) 100%);
+                    background-size: 100%;-webkit-background-clip: text;-webkit-text-fill-color: transparent;font-family:'Quintessential', cursive}
+.mainCharacters li ul{overflow: hidden;margin: 40px 0;background: rgba(0,0,0,.75);padding:5%}
+.mainCharacters .imageBox{width:40%;height: 400px;overflow: hidden;background-color: #fff;border: 5px solid transparent;
+                          border-image: linear-gradient(135deg, rgba(249,189,25,1) 0%,rgba(249,242,149,1) 25%,rgba(222,174,71,1) 62%,rgba(237,201,103,1) 100%);
+                          border-image-slice: 1;box-sizing: border-box;margin: 30px 0;
+                          /* border-radius: 50% 20% / 10% 40% */
+}
+.mainCharacters .txtBox{width:57%}
+.mainCharacters .txtBox p{text-align: justify;font-size: 1.2vw;line-height: 2.7vw;margin-bottom: 15px}
+.mainCharacters .imageBox.left{float: left}
+.mainCharacters .imageBox.right{float: right}
+.mainCharacters .txtBox.left{float: left}
+.mainCharacters .txtBox.right{float: right}
+.mainCharacters .imageBox img{object-fit: cover;object-position: 50% 50%;width:100%;height:100%}
+
+.otherCharacters{display: grid;grid-template-columns: repeat(4,1fr);grid-gap: 15px;width:80%;margin: 0 auto;padding:80px 10%}
+.otherCharacters li .characterBox{overflow: hidden;border-radius: 14% 23% / 19% 5%;border-bottom: 5px solid #000;transition: all .3s ease-out}
+.otherCharacters li .characterBox img{object-fit: cover;width:100%;height:100%}
+.otherCharacters li span{text-align: center;font-size: 1.15px;display: block;margin: 15px 0 20px;font-family: 'Quintessential', cursive;letter-spacing: 1px;transition: all .3s ease-out}
+.otherCharacters li:hover .characterBox{border-bottom: 5px solid rgba(222,174,71,1);}
+.otherCharacters li:hover span{color:rgba(222,174,71,1)}
+.backimg{position:relative;width:100%;height: 300px;background: url(../images/back2.jpg) center bottom no-repeat;background-attachment: fixed;background-size:contain}
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+/* #content{width:90%; margin:0 auto} */
+section{padding: 80px 5%}
+section h3{font-size: 2.6vw}
+/* section .moreBtn{width:45px;height:45px;line-height: 38px;font-size: 2em} */
+.intro{padding: 100px 0}
+.mainCharacters{padding:80px 5%}
+.mainCharacters .imageBox{width:40%;height: 300px}
+
+.backimg{position:relative;width:100%;height: 300px;background: url(../images/back2.jpg) center bottom no-repeat;background-attachment: fixed;background-size:100%}
+
+
+}
+
+/* 테블릿 1024px */
+@media screen and (max-width:1024px) {
+.imgBox h3{font-size: 2.2vw}
+section h3{font-size: 2.8vw}
+.intro p{font-size: 2vw;line-height: 3.5vw}
+.mainCharacters .txtBox p{text-align: justify;font-size: 1.7vw;line-height: 3vw;margin-bottom: 15px}
+.otherCharacters{display: grid;grid-template-columns: repeat(3,1fr);grid-gap: 15px;width:90%;margin: 0 auto;padding:80px 5%}
+.backimg{position:relative;width:100%;height: 250px;background: url(../images/back2.jpg) center no-repeat;background-attachment:scroll;background-size:100%}
+
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+section.move h3{font-size: 3.2vw}
+.down{font-size: 2vw;}
+
+/* about(768px) */
+.intro p{font-size: 1.7vw;line-height: 3.3vw}
+.mainCharacters{padding:50px 5%}
+.mainCharacters li ul:nth-child(1){margin-top:0}
+.mainCharacters h4{font-size: 3vw;text-align: center}
+.mainCharacters .txtBox p{text-align: justify;font-size: 2.1vw;line-height: 3.5vw;margin-bottom: 15px}
+.mainCharacters .imageBox.left{float: none;width:100%}
+.mainCharacters .imageBox.right{float: none;width:100%}
+.mainCharacters .txtBox.left{float: none;width:100%}
+.mainCharacters .txtBox.right{float: none;width:100%}
+
+.backimg{height:200px}
+
+
+}
+
+
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+section h3{font-size: 3.7vw}
+section .moreBtn{width:35px;height:35px;line-height: 33px;font-size: 1.8em;top:75px}
+
+
+.intro p{font-size: 3vw;line-height: 5.5vw}
+.otherCharacters{display: grid;grid-template-columns: repeat(2,1fr);grid-gap: 15px;width:90%;margin: 0 auto;padding:50px 5% 0}
+}
+
+
+/* 최소 사이즈 처리 */
+@media screen and (max-width:480px) {
+#wrap {min-width:320px}
+section h3{font-size: 5vw}
+
+}
+
+
+

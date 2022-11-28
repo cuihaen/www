@@ -1,0 +1,64 @@
+input:focus,select:focus{outline: none}
+input::placeholder{color:#bbb}
+input,select{border:none}
+
+body{background: #ecf3f5}
+.logo{margin: 50px auto 0; display: block; width:250px}
+#content{width: 90%; margin: 50px 0;padding: 5%;background: #fff;box-shadow: 5px 5px 30px 3px rgba(0,0,0,.05)}  
+
+.join{text-align: left; position: relative}
+
+.join h3{font-size: 28px; color: rgb(12,60,78);text-align: center;position:relative}
+/* .join h3::before{content: ''; position: absolute; bottom: -20px; left: 50%; width: 40px; height: 3px;
+                background: #1b8ab3;transform: translateX(-50%)} */
+
+.join .lineMap{width:100%;margin: 0 auto 40px;overflow: hidden}
+.join .lineMap span{display:block;float:left;width:33.33%;text-align: center;padding:12px 0 8px;
+                    border-bottom: 3px solid #ccc;color:#ccc;height:30px}
+.join .lineMap .current{border-color: #1b8ab3;color: rgb(12,60,78);font-size: 1.2em;font-weight: 500;padding:8px 0;     
+                        height:34px}
+
+.join h4{font-size: 20px;margin: 30px 0 30px 10px; color: rgb(12,60,78);position:relative}
+.join h4::before{content:'';display: block;width:8px;height:8px;
+                background: #1b8ab3;border-radius: 50%;
+                position: absolute;left:-8px;top:-8px}
+
+.join .policy{padding: 10px; overflow-y: scroll; height: 80px; margin: 20px 0;border: 1px solid #ddd;
+             background: #fff; font-size: 14px; line-height: 1.5em;}
+.join .check{color: #333; margin: 20px 0 40px}
+.join .allcheck_box{padding:0 0 25px 0}
+.join .allcheck{width:40%;padding:10px 0 20px}
+.join .allcheck .check_btn{display: inline-block;width: 15px; height: 15px; background-color: transparent;
+                           border: 2px solid #999; border-radius: 50%;margin: 0px 15px -3px 0px}
+.join .allcheck .check_btn.active{background:#fff url(../images/checked_bg.png) center center no-repeat;
+                                  border: 2px solid rgb(12,60,78)}
+.join .allcheck span{font-weight: 500;font-size: 1.1em;margin-right: 10px;color:rgb(12,60,78)}
+.join .button{overflow: hidden}
+.join .button .ok{float: left;width: 50%;line-height: 24px;padding: 12px 0;border: 2px solid rgb(12,60,78);
+                     background: rgb(12,60,78);color: #fff;font-size: 1.3em;cursor: pointer;
+                     box-sizing: border-box;text-align: center}
+.join .button .cancel{width:50%;line-height: 24px;padding: 12px 0;border: none;background: #999;    
+                      color: #fff;font-size: 1.3em;cursor: pointer;border:2px solid #999;box-sizing: border-box}
+
+
+/* + 바로 다음에 나오는 형제 찾는것! */
+input[type=checkbox] + label::before {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: 2px solid #999;
+    border-radius: 50%;
+    content: '';
+    margin: 0px 15px -6px 0px;
+}
+input[type=checkbox] {
+    display: none;
+}
+input[type=checkbox] + label {
+    cursor: pointer;
+}
+input[type=checkbox]:checked + label::before {
+    background: #fff url(../images/checked_bg.png) center center no-repeat;
+    border: 2px solid rgb(12,60,78);
+}

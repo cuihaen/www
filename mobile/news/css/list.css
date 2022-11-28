@@ -1,0 +1,91 @@
+input:focus,select:focus{outline: none}
+input::placeholder{color:#bbb}
+input,select{border:none;box-sizing: border-box}
+
+/* content영역 */
+/* content영역 */
+.contentArea p{text-align: center;line-height: 2em;width:85%;margin: 0 auto}
+.summary{padding:50px 0}
+
+.find_box{overflow: hidden;width:100%;margin: 30px 0 0;background: #ecf3f5;}
+.board{width:375px;margin:20px auto}
+.board #find{background: #fff;padding:8px 15px;border:2px solid #ccc;text-align: center}
+.board #search{padding:9px 15px;border:2px solid #ccc;width:220px}
+.board #searchBtn{padding:8px 20px;background: #0c3c4e;color:#fff;margin-top: 2px}
+
+.top_section{overflow: hidden}
+.top_section #total_list{margin: 8px 40px 0}
+.top_section #total_list span{color:#1b8ab3;font-weight: 500}
+.top_section .top{overflow: hidden;padding:0 30px}
+.top_section .list_style1{float: right;overflow: hidden;border: 1px solid #ccc;margin-top: 2px}
+.top_section .list_style1 li{float: left}
+.top_section .list_style1 li.active a i{color:#1b8ab3}
+.top_section .list_style1 li:nth-child(1){border-right: 1px solid #ccc}
+.top_section .list_style1 li a{display: block;padding:4px 12px}
+.top_section .list_count{float: left}
+.top_section .list_count #scale{border: 2px solid #ccc;padding:4px 10px;border-radius: none}
+
+.main_board{margin: 15px 0 130px;border: none;position:relative}
+.main_board #list_top_title{display: none}
+.main_board #list_content{overflow: hidden;display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 13px;
+    width: 90%;
+    margin: 0 auto}
+.main_board #list_content #list_item{overflow: hidden;width:100%;border:2px solid #ccc;padding:15px;box-sizing: border-box;transition: all .5s ease-out}
+.main_board #list_content #list_item:hover{border-color: #1b8ab3}
+.main_board #list_content #list_item li{float: left;padding:0;text-align: center;box-sizing: border-box}
+.main_board #list_content #list_item #list_item_img{width:100%;height:140px}
+.main_board #list_content #list_item #list_item_img img{object-fit: cover;width:100%;height:100%;padding:0}
+.main_board #list_item1{display: none}
+.main_board #list_content #list_item #list_item2{width:100%;padding:8px 0;border-bottom: 1px solid #eee;text-align: left;margin-bottom: 10px}
+.main_board #list_content #list_item #list_item2 span{font-size: 1.15em;font-weight: 500;color:#1b8ab3;margin-bottom: 5px;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 1;overflow: hidden;text-overflow: ellipsis}
+.main_board #list_content #list_item #list_item2 p{display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden;text-overflow: ellipsis;font-size: .9em;width:100%;margin: 0}
+.main_board #list_content #list_item #list_item3{color:#1b8ab3;width:30%;position:relative;font-size: .8em}
+.main_board #list_content #list_item #list_item3::after{content:'';display: block;height:15px;width:2px;background: #ccc;position: absolute;right:0;top:50%;transform: translateY(-50%)}
+.main_board #list_content #list_item #list_item4{position:relative;padding: 0 ;width:40%;font-size: .8em}
+.main_board #list_content #list_item #list_item4::after{content:'';display: block;height:15px;width:2px;background: #ccc;position: absolute;right:0;top:50%;transform: translateY(-50%)}
+
+.main_board #list_content #list_item #list_item5{overflow: hidden;width:30%;padding:0;font-size: .8em;text-align: left}
+.main_board #list_content #list_item #list_item5 i{float: left;margin-top: 3px;padding:0 8px 0 15px}
+
+/* style=list */
+
+.main_board.list{margin: 15px auto 130px;border:none;border-top:1px solid #666;position:relative;width:90%}
+.main_board.list #list_top_title{overflow: hidden;width:100%;background: #eee;border-bottom:1px solid #ccc;padding:4px 0}
+.main_board.list #list_top_title li{float: left;padding:8px 0;text-align: center}
+.main_board.list #list_top_title li{float: left;padding:8px 0;text-align: center}
+.main_board.list #list_content{overflow: hidden;display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 0;
+    width: 100%;
+    margin: 0 auto}
+.main_board.list #list_content #list_item #list_item_img{width:40%;margin:0 10px;overflow: hidden;height:160px;float: left}
+.main_board.list #list_content #list_item #list_item_img img{object-fit: cover;width:100%;height:100%;padding:0}
+.main_board.list #list_item1{width:120px}
+.main_board.list #list_content #list_item #list_item2{width:55%;padding:0;margin-bottom: 5px}
+.main_board.list #list_item2 span{display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 1;overflow: hidden;text-overflow: ellipsis;transition:all .5s ease-out;font-weight: 500;color:#0c3c4e;margin-top: 10px}
+.main_board.list #list_item2:hover span{color:#1b8ab3}
+.main_board.list #list_content #list_item #list_item2 p{display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 4;overflow: hidden;text-overflow: ellipsis;font-size:.85em;margin-top: 5px;text-align: left;line-height: 1.8em;margin-bottom: 5px}
+
+.main_board.list #list_content #list_item #list_item3{width:15%}
+.main_board.list #list_content #list_item #list_item3::after,.main_board.list #list_content #list_item #list_item4::after{content:'';display: block;height:15px;width:2px;background: #ccc;position: absolute;right:0;top:50%;transform: translateY(-50%)}
+.main_board.list #list_content #list_item #list_item4{width:18%}
+.main_board.list #list_content #list_item #list_item5{width:18%;text-align: left}
+.main_board.list #list_content #list_item #list_item5 i{float: none;margin-right: 0}
+
+.main_board.list #list_item2{text-align: left}
+
+.main_board.list #list_content #list_item{overflow: hidden;width:100%;border:none;border-bottom:1px solid #ccc;padding:6px 0;margin: 0}
+.main_board.list #list_content #list_item li{float: left;padding:8px 0;text-align: center}
+.main_board.list #list_content #list_item #list_item2{text-align: left;box-sizing: border-box}
+.main_board.list #list_content #list_item #list_item3,.main_board.list #list_content #list_item #list_item4,.main_board.list #list_content #list_item #list_item5{margin: 0;padding:0}
+.main_board #page_button{position:absolute;left:50%;bottom:-70px;transform: translateX(-50%)}
+.main_board #page_button #page_num b{color:#1b8ab3;font-weight: 500}
+
+
+.main_board #button{position:absolute;right:10px;bottom:-40px}
+.main_board #button a{margin: 0 2px;color:#fff;font-weight: 500;font-size: .9em;text-align: center;padding:5px 20px;background: #0c3c4e}
+.main_board #button .write{background: #1b8ab3}
+
+

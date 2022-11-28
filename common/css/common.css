@@ -1,0 +1,152 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600;700&display=swap');
+
+/* CSS Reset */
+
+html, body, div , span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{margin: 0; padding: 0; border: 0; font-size: 100%}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section{display: block}
+body{font-family: 'Noto Sans KR', sans-serif; font-size: 18px;color: #333}
+ol, ul{list-style: none}
+table{border-collapse: collapse; border-spacing: 0}
+address{font-style: normal}
+a{color: #333; text-decoration: none}
+img{border: 0; vertical-align: top}
+.hidden{display: block;position: absolute;left: -1000px;width: 1px;height: 1px;overflow: hidden;color:#fff}
+#skipNav{position:relative;width: 100%;overflow: hidden;z-index: 60}
+#skipNav a{display: block;height:1px;margin-bottom: -1px;font-size: 1.2em;
+           color: #fff;overflow: hidden;text-align: center}
+#skipNav a:hover, #skipNav a:focus, #skipNav a:active{height: auto;padding:10px 0;background: #1b8ab3}           
+.wrap{width:100%; overflow: hidden}
+
+/* font-family: 'Noto Sans KR', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Noto Serif KR', serif; */
+
+/* header영역 */
+#headerArea{width:2000px; height:145px; position: fixed; left:50%; top:0;margin-left: -1000px;
+            background: rgba(255,255,255,0); z-index: 50; transition: background .5s}
+
+/* header class추가영역 */
+#headerArea.on .headerInner h1 a{background: url(../svg/samyang_CI.svg)0 50% no-repeat}
+#headerArea.on .topMenu li:nth-child(1)::after{background: #333}
+
+#headerArea .headerInner{width: 1200px; margin: 0 auto;position:relative}
+
+#headerArea .headerInner h1 a{width:209px;height:70px;text-indent: -1000px;overflow: hidden;color:#fff;
+                              background: url(../svg/samyang_white.svg)0 50% no-repeat;display: block}
+#headerArea:hover .headerInner h1 a{background: url(../svg/samyang_CI.svg)0 50% no-repeat}
+   #gnb{clear:both;width:1200px} 
+
+   #gnb ul.dropdownmenu{float:left; width: 100%;height:50px}
+   #gnb ul.dropdownmenu li.menu{position:relative;float:left;width:16.66%}
+
+   #gnb ul.dropdownmenu li a.depth1{display:block;padding: 20px 0;  color: #fff;
+            text-align: center; transition: all .5s}
+   #gnb ul.dropdownmenu li.menu h3{font-weight: 500;font-size: 1.111em}     
+
+   /* 2depth */
+   #gnb ul.dropdownmenu li ul{width:100%;height:300px; position:absolute;top:60px;left:0;
+                              line-height:2em; display:none}
+   
+   #gnb ul.dropdownmenu li ul li{ text-align:center}
+   #gnb ul.dropdownmenu li ul li a::after{content:'';width:120px;height:7px;border-radius: 2px;position: absolute;left:50%;top:30px;
+                                          margin-left: -60px;background:rgba(33,157,203,.2);transform:scaleX(0);transition: all .5s ease-out}
+   #gnb ul.dropdownmenu li ul li a{display:block;  color:#333; transition: all .5s;padding: 3px 0;transition:all .5s ease-out;position: relative}
+   #gnb ul.dropdownmenu li ul li:hover a::after{transform:scaleX(1)}
+   #gnb ul.dropdownmenu li ul li a:hover{color:#0c3c4e;font-weight: 500}
+
+#headerArea .topMenu{height:80px;position: absolute;right:20px;top:30px;overflow: hidden} 
+#headerArea .topMenu ul{position:relative;float: left}
+#headerArea .topMenu li{float:left;margin-right: 30px;position: relative;font-size: .889em;color:#fff}
+
+#headerArea .topMenu li:nth-child(1)::after{content: '';display: block;width:2px;height: 12px;background:#fff;
+                                     ;position: absolute;right:-17px;top:8px}
+#headerArea .topMenu li a{color:#fff}
+
+#headerArea:hover .headerInner .topMenu li{color:#333}
+#headerArea:hover .headerInner .topMenu li:nth-child(1)::after{background-color:#333}
+
+
+
+
+/* footer 공통영역 */ 
+#footerArea{background: #f8f8f8;height:240px}
+#footerArea .footerInner{width:1200px;margin:0 auto; position: relative}
+
+.topMove{display:block; width: 60px; height: 60px; background: rgba(12,60,78,.6); border-radius: 50%;
+         position: fixed; left:50%; margin-left: 820px;  bottom:80px;transition: all .5s ease-out;
+         color:#fff;text-align: center;line-height: 58px;box-shadow: 3px 3px 15px 3px rgba(0,0,0,.1)}
+.topMove:hover{background: rgba(12,60,78,.8)}
+
+#footerArea img{float: left; margin:70px 20px 100px 0;width:209px;height:35px}
+#footerArea .listMenu{overflow: hidden}
+
+#footerArea .listMenu li{transition:all .2s ease-out;height:20px;position:relative;position:absolute;top:30px}
+#footerArea .listMenu li:nth-child(1){left:230px}
+#footerArea .listMenu li:nth-child(2){left:360px}
+#footerArea .listMenu li:nth-child(3){left:450px}
+#footerArea .listMenu li:nth-child(4){left:610px}
+#footerArea .listMenu li:nth-child(5){left:785px}
+#footerArea .listMenu li:nth-child(6){left:845px}
+#footerArea .listMenu li:hover{font-weight: 500;letter-spacing: -.1px;}
+
+#footerArea address{overflow: hidden;margin-top: 70px}
+#footerArea address p{float: left; margin-right: 30px;line-height: 2em}
+
+#footerArea .family{width: 200px;background: #f8f8f8; position: absolute;right:0;top:60px}
+
+#footerArea .family .arrow span{display: block;margin: 0 22px;float: left}
+#footerArea .family .arrow span i{margin-left: 10px}
+#footerArea .family .arrow{display: block;padding: 15px 0 15px 25px;border:2px solid #1b8ab3;overflow: hidden;
+                           color: #1b8ab3;font-size: 16px;transition: all .5s ease-out}
+#footerArea .family .arrow:hover{background: #1b8ab3; color:#fff}
+
+#footerArea .family .aList{position:absolute; top:-240px; left:0; width: 198px; border:1px solid rgba(33,157,203,.5); display:none}
+#footerArea .family .aList li{ line-height:1.5em; border-bottom:1px solid rgba(33,157,203,.5);}
+#footerArea .family .aList li a{display:block;text-align: center;padding:10px;background: rgba(255,255,255,1);font-size: .9em}
+#footerArea .family .aList li a:hover{ background:#ecf3f5;color:#1b8ab3}
+
+
+#footerArea .sns{position: absolute; right:0;top: 130px; overflow: hidden}
+#footerArea .sns li{float: left; margin-right: 5px;display:block;width:35px;height:32px;background:#fff; border-radius: 50%;
+          transition: all .5s ease-out;text-align: center; padding-top: 3px}
+#footerArea .sns a{color:rgba(33,157,203,.7)}
+
+#footerArea .sns li:hover{background: #1b8ab3}
+#footerArea .sns li:hover a{color:#fff}
+
+/* 팝업 */
+.pop .popup_box{position: fixed; left: 0; top: 0; z-index: 60; width: 100%; height:430px; 
+   background: rgba(255,255,255,.98);display: none;box-shadow:3px 3px 15px 1px rgba(0,0,0,.08)}
+.pop .popup{position: fixed; top: 0; left: 50%; margin-left: -600px;
+            width: 1200px; height: 380px;padding:100px 0 50px;
+            z-index: 70;display: none}
+.pop .popup>dl{width: 94%; margin:10px 3%; text-align: center}
+.pop .popup>dl>dt{font-size: 1.4em; font-weight: 500; margin-bottom: 10px; color: #0c3c4e}
+.searchArea{width:800px;height:57px;overflow: hidden;border:3px solid #333;
+            border-radius:50px;margin: 30px auto 10px}
+.popup .searchArea #search{width:700px;height:55px;border:none;float: left;margin-left: 30px;font-size: 1.15em;outline:none}
+.popup .searchArea .btn{margin: 13px 25px 13px 0;float: right;color: #333;width:30px;height:30px;display: block;
+                        background: url(../images/magnifying-glass-solid.svg);border:none;cursor: pointer}
+
+.pop .popup>dl>dd:last-child dl{width:600px;margin:0 auto;overflow: hidden}
+.pop .popup>dl>dd:last-child dt{font-size: 1.1em;color:#1b8ab3;font-weight: 500;height:325px;float: left;margin: 20px 0;width:200px;padding-top: 5px}                        
+.pop .popup>dl>dd:last-child dd{height: 320px;width:200px;float: left;padding-top: 10px}
+.pop .popup>dl>dd:last-child dd span{display: block;width:170px;height:40px;line-height: 40px;background: #eee;border-radius: 30px;margin:15px 10px}
+.pop .popup .close_btn{position: absolute; top: 25px; right: 40px; display: block; overflow: hidden; width: 50px; 
+                       height: 50px; padding: 9px 9px;color:rgba(33,157,203,.7);text-align: center;font-size: 2em}

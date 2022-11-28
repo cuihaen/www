@@ -1,0 +1,33 @@
+/* content영역 */
+.contentArea p{text-align: center;line-height: 2em}
+.summary{padding-top:80px}
+
+/* tab 영역 */
+.tab_menu{overflow: hidden;border:1px solid #ccc;margin:70px 0 330px;width:1201px}
+.tab_menu li{width:600px;height:66px;border-right:1px solid #ccc;float: left;text-align: center;
+       line-height: 66px;color:#0c3c4e;transition:all .5s ease-out}
+.tab_menu li:last-child{border:none}
+.tab_menu li:hover{background: rgba(12,60,78,.8)}
+.tab_menu li:hover a{color:#fff;display: block}
+
+/* 삼양 계열사 */
+.contlist{position:relative;left: 50%;top:0;width:2000px;margin-left: -1000px;background: #ecf3f5;
+       padding:290px 0 80px}
+
+.contlist iframe{position:absolute;left:50%;top:-240px;margin-left: -450px;border-radius: 30px}
+.contlist .videoTitle{font-size: 1.32em;font-weight: 500;margin:0 auto 20px;text-align: center;display: block;width:1400px;color:#0c3c4e}
+
+.contlist ul{overflow: hidden;width:1200px;margin:0 auto}
+.contlist li{float:left;width: 250px;height:220px;border-radius: 20px;margin:25px;font-weight: 500;
+             margin-top: 30px;background: #fff;box-shadow: 5px 5px 15px 3px rgba(0,0,0,.05)}
+
+.contlist a{position: relative;height:200px}
+.contlist a i{position: absolute;left: 95px;top:40px;font-size: 3em;color: rgba(0,0,0,.7);transition: all .3s ease-out;}
+
+
+.contlist  li .imgBox{border-radius: 20px 20px 0 0;margin-bottom: 20px;width: 250px;height:136px;overflow: hidden}
+.contlist li img{transition: all .5s ease-out}
+.contlist a:hover img{transform: scale(1.15)}
+.contlist a:hover i{color:#bd0202}
+
+.contlist  li span{font-size: .9em;text-align: center;display: block;}

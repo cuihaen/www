@@ -1,0 +1,45 @@
+/* content영역 */
+.contentArea p{text-align: center;line-height: 2em;width:85%;margin: 0 auto}
+.summary{padding:50px 0}
+
+/* 삼양 계열사 */
+.affiliate{margin-bottom: 50px;width: 100%}
+.affiliate ul{overflow: hidden;display: grid;grid-template-columns: repeat(2,1fr);grid-gap: 8px;margin: 0 auto 20px;width:90%}
+.affiliate li{background: #f8f8f8;overflow: hidden;border: 2px solid #eee}
+.affiliate li img{width: 100%}
+.affiliate dl{width:100%;margin:10px auto 0;text-align: justify;position: relative}
+.affiliate dt{font-weight: 500;font-size: 1.1em;color: #1b8ab3;width:95%;margin: 0 auto;text-align: center}
+.affiliate .subPop_menu .openPop{display: block;height:20px;font-size: .859em;text-align: center;color: #999;padding:5px 0 8px;width:80%;margin: 0 auto}
+
+
+
+/* popup창 */
+.subPop .sub_modal_box{position: fixed; left: 0; top: 0; z-index: 50; width: 100%; height: 100%; 
+    background: rgba(0,0,0,.45); display: none}
+.subPop .sub_pop_btn{position: fixed; left: 0; top: 50px;  width: 100%; height: 0;  display: none;font-size: 1.3em;z-index: 100;margin-top: -30px}
+.subPop .sub_pop_btn a{display: block; position: absolute; top:0; left:50%; color:rgba(33,157,203,.7); margin-top: -10px;transition: all .5s;z-index: 100}
+.subPop .sub_pop_btn .pre{margin-left: -90px}
+.subPop .sub_pop_btn .next{margin-left: 70px}
+
+.subPop  .sub_popup{position:fixed;top:0;left:0;width: 100%;height:100%;background: #fff;
+                    z-index: 85; display:none;overflow-y: scroll;padding-top: 50px}
+
+.subPop .sub_popup .pop_header{width:100%;height:45px;position:fixed;left: 0;top:0;background: #ecf3f5;box-shadow: 5px 5px 10px 2px rgba(0,0,0,.1);
+                               z-index: 100;text-align: center;line-height: 45px;font-size: 1.3em;color:rgba(33,157,203,.7)}
+.subPop .sub_popup .sub_close_btn{position: absolute; top: -10px; right: -3px; display: block; overflow: hidden; width: 50px; 
+                                  height: 50px; padding: 9px 9px;color:rgba(33,157,203,.7);text-align: center;font-size: 1.5em;z-index: 90}
+
+.subPop .sub_popup .top img{width:80%;margin: 20px auto 0;display: block}
+.subPop .sub_popup .top dl{width:80%;text-align: center;margin:20px auto}
+.subPop .sub_popup .top dt{font-size: 1.2em; font-weight: 500; margin-bottom: 10px; color: #0c3c4e}
+.subPop .sub_popup .top dd:nth-child(1){font-size: 1.15em;color:#1b8ab3;font-family: 'Noto Serif KR', serif}
+
+.subPop .sub_popup .top  table{width:90%;border-top: 2px solid #1b8ab3;border-bottom: 1px solid #666;font-size: .8em;margin: 10px auto 0}
+.subPop .sub_popup .top  table tr{border-bottom:1px solid #ccc}
+.subPop .sub_popup .top  table tr:last-child{border:none}
+.subPop .sub_popup .top  table th,.subPop .sub_popup .top dd table td{padding:3px 0;line-height: 2em}
+.subPop .sub_popup .top  table th{background: #ecf3f5;padding:0 10px;width:30%}
+.subPop .sub_popup .top  table td{text-align: left;padding-left: 10px;width:70%}
+
+.subPop .sub_popup .textBox{width:100%;background: #ecf3f5;padding: 40px 0 120px;margin-top: 30px;}
+.subPop .sub_popup .textBox p{text-align: justify;margin-bottom: 10px;line-height:2.2em;font-size: .85em;}

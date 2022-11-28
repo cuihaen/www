@@ -1,0 +1,128 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600;700&display=swap');
+
+/* 모바일 코딩 필수 공통영역 */
+* {margin:0;padding:0}
+body {color:#333;font-size:14px;font-family: 'Noto Sans KR', sans-serif}
+img, fieldset { border:0; vertical-align:top }
+ul, ol, li, dl { list-style:none; }
+h1, h2, h3, h4, h5, h6 {font-size:100%;font-weight:normal}
+hr { display:none}
+a { color:inherit }
+a, a:link {color:#333;text-decoration:none}
+a:visited { color:#333; }
+a:hover, a:active { color:#333; text-decoration:none}
+em, i, address {font-style:normal;font-weight:normal}
+legend, caption {display:none;clear:both}
+input, textarea, select, button, table {font-size:inherit;font-family:inherit;line-height:inherit}
+section, nav, article, aside, hgroup, header, footer { display:block }
+textarea, input {border-radius:1px}
+textarea {resize:none}
+label {cursor:pointer}
+.hidden,#skipNav{display: block; position: absolute; left:-1000%;top:0; width: 1px; height: 1px; overflow: hidden; color: #fff}
+
+/* font-family: 'Noto Sans KR', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Noto Serif KR', serif; */
+
+/* 전체 공통 */
+#wrap{ width:100%; position: relative;  overflow:hidden}
+
+/* 헤더공통 */
+#headerArea{width:100%;height:60px;position:fixed;top:0;left:0;z-index: 40;}
+#headerArea .headerInner{position: relative;}
+#headerArea .headerInner h1>a{width: 150px;height:30px;text-indent: -1000px;overflow: hidden;color:#fff;
+                                background: url(../svg/samyang_white.svg)0 50% no-repeat;display: block;
+                            margin:18px 0 0 18px}
+
+#headerArea.on .headerInner h1 a{background: url(../svg/samyang_CI.svg)0 50% no-repeat}
+#headerArea.on .menu_ham span{background: #333}
+#headerArea.on .menu_ham span::before{background: #333}
+#headerArea.on .menu_ham span::after{background: #333}
+
+/* nav 영역*/
+#gnb{position: absolute; width: 100%;  right:-100%; top:-20px; opacity: 0; background: #fff;z-index:60 }
+#gnb::before{content: '';display: block;width:150px;height:30px;background: url(../svg/samyang_CI.svg)0 0 no-repeat;position:absolute;left: 20px;top:25px}
+#gnb li h3{font-weight:500;font-size: 1.4em;color:#0c3c4e}
+#gnb .mainMenu{margin-top: 90px;position: relative}
+#gnb .mainMenu li h3 a{display: block; padding: 10px 30px} 
+#gnb .mainMenu li a>span{margin-left: 15px;color:#1b8ab3}
+#gnb .mainMenu li>ul{margin: 0 30px;background:#ecf3f5; display: none;padding:5px 0}
+#gnb .mainMenu li>ul a{display: block;padding: 3px 20px;font-size: 1.1em}
+
+#gnb .btnBox{position:absolute;top:430px;left: 50%;width:207px;margin-left: -103px}
+
+#gnb .btnBox li{text-align: center}
+#gnb .btnBox .btn a{color:#1b8ab3}
+#gnb .btnBox .btn a:nth-child(1){margin-right: 30px;position:relative}
+#gnb .btnBox .btn a:nth-child(1)::after{content:'';display:block;height:12px;border-right: 1px solid #1b8ab3;position: absolute;top:5px;right:-18px}
+#gnb .btnBox .sns{overflow: hidden;margin: 0 auto;width:207px}
+#gnb .btnBox .sns li{float: left; margin: 15px 8px 0 0;display:block;width:35px;height:32px;background:rgba(33,157,203,.5); border-radius: 50%;
+                    text-align: center; padding-top: 3px;line-height: 28px}
+#gnb .btnBox .sns li:last-child{margin-right: 0}
+#gnb .btnBox .sns a{color:#fff}
+
+/* 햄버거 메뉴 */
+#headerArea .menu_ham {display: block; height: 50px; position: absolute;top:-15px;right:5px; border-radius: 5px;
+}
+#headerArea .menu_ham span {width: 20px;height: 3px; background: #fff;position: relative;
+    text-indent: -9999px;display: block;margin: 26px 15px;border-radius: 5px;transition: all .3s;
+}
+#headerArea .menu_ham span::before {
+    content: '';display: block;width: 20px;height: 3px;
+    background: #fff; position: absolute;
+    top: -7px;left: 0;border-radius: 5px;
+}
+#headerArea .menu_ham span::after {
+    content: '';display: block;
+    width: 20px;height: 3px;background: #fff;
+    position: absolute;top: 7px;left: 0;border-radius: 5px;
+}
+
+/* 메뉴가 열렸을때 */
+#headerArea.mn_open .menu_ham span, #headerArea.mn_open .menu_ham span::before, #headerArea.mn_open .menu_ham span::after {
+    background: #1b8ab3;transition: all .3s;z-index: 70}
+#headerArea.mn_open .menu_ham span {background: rgba(0,0,0,0)}
+#headerArea.mn_open .menu_ham span::before {transform: rotate(45deg);top: 0}
+#headerArea.mn_open .menu_ham span::after {transform: rotate(-45deg);top: 0}
+
+/* footer 공통영역 */ 
+#footerArea{background: #f8f8f8;height:280px}
+#footerArea .footerInner{width:100%;margin:0 auto}
+
+.topMove{display:block; width: 44px; height: 44px; background: rgba(255,255,255,.8); border-radius: 50%;
+         position: fixed; right:5%; bottom:30px;transition: all .5s ease-out;font-size: 1.3em;
+         text-align: center;line-height: 44px;box-shadow: 3px 3px 15px 3px rgba(0,0,0,.1);
+         z-index: 80}
+.topMove i{color:#1b8ab3}
+
+#footerArea img{float: left;width:130px;height:23px;margin: 20px 0 0 4%}
+#footerArea .listMenu{overflow: hidden;clear: both;width:290px;margin: 0 auto;padding-top: 15px}
+
+#footerArea .listMenu li{height:20px;float: left}
+#footerArea .listMenu li:nth-child(1){margin-right: 8px}
+#footerArea .listMenu li:nth-child(2){margin-right: 8px;font-weight: 500}
+#footerArea address{overflow: hidden;font-size: .9em;width:80%;margin: 10px auto;display: block}
+#footerArea address p{line-height: 1.7em;text-align: center}
+
+#footerArea .family{width: 50%;background: #f8f8f8;margin: 5px auto 0;position:relative}
+#footerArea .family .arrow{padding:5px}
+#footerArea .family .arrow span{display: block;width:100%;text-align: center}
+#footerArea .family .arrow span i{margin-left: 10px}
+#footerArea .family .arrow{display: block;border:2px solid #999;overflow: hidden;
+                           color: #999;font-size: 16px;transition: all .5s ease-out}
+
+#footerArea .family .aList{position:absolute; bottom:36px; left:1%; width: 97%; border:1px solid rgba(33,157,203,.5); display:none;margin: 0 auto}
+#footerArea .family .aList li{ line-height:1.5em; border-bottom:1px solid rgba(33,157,203,.5)}
+#footerArea .family .aList li a{display:block;text-align: center;padding:10px;background: rgba(255,255,255,1);font-size: 1em}
+
+#footerArea .copyright{font-size: .87em;text-align: center;color:#999;letter-spacing: -.5px;margin-top: 15px}
+
+
+
+
+
+
+

@@ -1,0 +1,48 @@
+/* content영역 */
+.contentArea p{text-align: justify; line-height: 1.75em}
+.contentArea{width:1200px;margin:0 auto;padding:80px 0 0}
+
+/* CI소개 */
+.summary{padding:80px 0}
+.summary img:nth-child(1){margin:0 300px 60px}
+.summary p{margin: 50px 0;text-align: center}
+.summary span{display: block;text-align: center;color:#1b8ab3;
+              font-size: 1.2em;font-weight: 500}
+.summary .slogan{font-family: 'Noto Serif KR', serif;font-size: 2.5em}
+
+/* 다운로드 */
+.summary .download{overflow: hidden;padding:0 80px}
+.summary .download img{border:4px solid #ccc;margin: 30px 0 30px 6px}
+.summary .download div{float:left;width:440px;padding:0 40px}
+.summary .download a{display: block;float: left;width:140px;background: #f2f2f2;
+                     padding:10px 20px;margin:0 15px;overflow: hidden;color:#666;
+                     transition:all .5s ease-out}
+.summary .download i{float: right;margin-top: 5px}
+
+.summary a:hover{background: #4b93ae;color: #fff}
+
+/* 사용규정 */
+.rule{position: relative;left:50%;top:0;width:2000px;margin-left:-1000px;
+      background: #f8f8f8;padding:80px 0}
+.rule dl{width:1200px;margin:0 auto}
+.rule dt{text-align: center;font-family: 'Noto Serif KR', serif;
+         font-size: 1.4em;margin-bottom: 40px}
+.rule span{font-size: 1.05em;color:#1b8ab3}
+.rule dd{overflow: hidden}
+.rule p{text-align: center}
+.rule div{float: left;width:460px;height:250px;background: #fff;margin:50px;padding: 20px}
+.rule .example01 img{margin-top: 25px}
+.rule .example02 img{margin-top: 13px}
+
+/* 색상 규정 */
+.samyangColor{padding:80px 0}
+.samyangColor p{text-align: center;margin-bottom: 5px}
+.samyangColor ul{overflow: hidden;padding:40px;margin-top: 20px}
+.samyangColor li{width: 280px;height:380px;box-shadow: 5px 5px 20px 3px rgba(0,0,0,.1);
+                 float: left;border-radius: 50px 0;margin: 0 20px; padding:20px}
+.samyangColor span{display: block;margin-bottom: 10px;text-align: center}
+.samyangColor span:nth-child(1){width:110px;height:100px;border-radius: 50%; padding:50px 20px 0 20px;
+                                margin:40px auto 30px;color:#fff; font-weight: 500}
+.samyangColor .blue{background: rgb(33,158,203)}
+.samyangColor .red{background: rgb(240,83,51)}
+.samyangColor .green{background: rgb(156,178,39)}

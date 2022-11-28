@@ -1,0 +1,42 @@
+/* content영역 */
+.contentArea{width:1200px;margin:0 auto;padding:80px 0 0}
+
+.contentArea p{text-align: center;line-height: 2em;margin-bottom: 60px}
+.contentArea p>span{color:#1b8ab3}
+
+/* 업무평가 */
+.assessment{padding:60px 0;width:2000px;position:relative;left: 50%;top:0;margin-left: -1000px;
+            background: url(../images/content4/background.jpg) 0 0 no-repeat}
+
+.assessment ul{overflow: hidden;width:1200px;padding:20px 80px;margin:0 auto}
+.assessment li{width:270px;float: left;margin:0 10px;background: rgba(255,255,255,.5);box-shadow: 5px 5px 15px 3px rgba(0,0,0,.1);}
+
+.assessment img{transition:all .5s ease-out}
+.assessment .imgBox{height:270px;overflow: hidden}
+.assessment li:hover img{transform: scale(1.05)}  
+
+.assessment dl{text-align: center;width:200px;height:90px;margin:0 auto;padding:20px 0}
+.assessment dt{color:#1b8ab3;margin-bottom:10px;font-size: 1.15em;font-weight: 500}
+.assessment dd{font-size: .9em}
+.assessment li:nth-child(1) dd{height:45px;line-height: 45px}
+
+/* 복리후생 */
+.insentive{width:1000px;margin: 0 auto;padding: 80px 0}
+.insentive h3{color:#0c4c7e;font-size: 1.52em;font-weight: 500;margin: 15px 0 15px 20px;position: relative}
+.insentive h3::before{content: '';width:8px;height: 8px;background: #1b8ab3;position:absolute;left: -11px;top:-2px;border-radius: 50%}
+.insentive ul{border-top: 3px solid #0c4c7e;border-bottom: 2px solid #666;margin-bottom: 50px;overflow: hidden}
+.insentive li{width:468px;border-bottom: 1px solid #ccc;float: left;
+              height:50px;line-height: 48px;padding-left: 30px}
+.insentive li:nth-child(1){border-right: 1px dashed #ccc}
+.insentive li:nth-child(2){background: #f8f8f8}
+.insentive li:nth-child(3){border-right: 1px dashed #ccc;background: #f8f8f8}
+.insentive li:nth-child(3),.insentive li:last-child{border-bottom: none}
+
+.insentive li i{margin-right: 15px}
+
+
+
+
+
+
+

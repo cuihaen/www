@@ -1,0 +1,40 @@
+/* content영역 */
+.contentArea{width:1200px;margin:0 auto;padding-top:80px;}
+.contentArea p{text-align: justify; line-height: 1.75em}
+.contentArea .summary{text-align: center}
+
+/* tab 영역 */
+.tab_menu{overflow: hidden;border:1px solid #ccc;margin:70px 0 30px;width:1202px}
+.tab_menu li{width:400px;height:66px;border-right:1px solid #ccc;float: left;text-align: center;
+        line-height: 66px;color:#0c3c4e;transition:all .5s ease-out}
+.tab_menu li a{display: block}
+.tab_menu li:last-child{border:none}
+
+.tab_menu li:hover{background: rgba(12,60,78,.9)}
+.tab_menu li:hover a{color:#fff}
+
+/* 공통부분 */
+.contentArea .contlist{width:1200px;margin:0 auto 120px}
+.contlist h3{font-size: 2em;padding:40px 0 0 60px;font-weight: 500;position:relative}
+.contlist h3::before{content:'';width:10px;height:10px;border-radius: 50%;position: absolute;left:43px;top:43px;background:rgb(33,157,203)}
+
+
+/* 본문내용 */
+.contlist ul{text-align: justify;line-height: 1.8em;width:1050px;margin:0 auto;overflow: hidden;padding:0 10px}
+.contlist li{overflow: hidden;margin:30px 0;transition:all .5s ease-out;width:1000px}
+
+.contlist li:hover{box-shadow: 3px 3px 0 3px rgba(12,60,78,.5)}
+
+.contlist .first{margin:20px 0}
+.contlist .first,.contlist .left{float: left}
+.contlist .right{float: right}
+
+.contlist .first img,.contentArea .left img{float: left;width:350px;margin-right:30px}
+.contlist .first dl,.contentArea .left dl{margin:50px 0 0 400px;width:550px;padding-right: 50px}
+.contlist .right dl{float: left;width:550px;margin:50px 50px 50px 0;padding-left: 50px}
+
+.contlist .first,.contlist .left{background: #f9f9f9;border-radius: 50px 0}
+.contlist .right{background: #f5f5f5;border-radius: 50px 0}
+.contlist li dt{font-size: 1.15em;color:#0c3c4e; font-weight: 500}
+.contlist .first dt,.contentArea .left dt{margin:20px 0}
+.contlist .right dt{margin-bottom:20px}

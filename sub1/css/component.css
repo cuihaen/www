@@ -1,0 +1,508 @@
+.book .bk-list {
+	list-style: none;
+	position: relative;
+}
+
+.book .bk-list li {
+	position: relative;
+	width: 180px;
+	float: left;
+	z-index: 10;
+	margin: 100px 100px;
+	perspective: 1800px;
+}
+
+.book .bk-list li:last-child {
+	margin-right: 0;
+}
+
+.book .bk-book {z-index: 10}
+
+.book .bk-info {
+	position: relative;
+	width:320px;
+	margin: 290px 0 0 -75px;
+	z-index: 0;
+}
+
+.book .bk-info .infoTitle {
+	padding: 25px 0 10px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid rgba(0,0,0,0.3);
+	font-size: 26px;
+	display: block;
+}
+
+.book .bk-info .infoTitle span:first-child {
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+	padding-bottom: 5px;
+	display: block;
+	color: #777;
+}
+
+.book .bk-info p {
+	line-height: 1.5em;
+	color: #444;
+	min-height: 160px;
+	text-align: justify;
+}
+
+.book .bk-info button {
+	background: #0c3c4e;
+	border: none;
+	color: #fff;
+	display: inline-block;
+	padding: 3px 15px;
+	font-weight: 700;
+	font-size: 14px;
+	text-transform: uppercase;
+	cursor: pointer;
+	margin-right: 4px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.15);
+}
+
+.book .bk-info button.bk-active,
+.book .bk-info button:active {
+	box-shadow: 
+		0 1px 0 rgba(255, 255, 255, 0.8), 
+		inset 0 -1px 1px rgba(0,0,0,0.2);
+}
+
+.book .bk-list li .bk-book {
+	position: absolute;
+	width: 100%;
+	height: 300px;
+	transform-style: preserve-3d;
+	transition: transform .5s;
+}
+
+.book .bk-list li .bk-book.bk-bookdefault:hover {
+	transform: rotate3d(0,1,0,35deg);
+}
+
+.book .bk-list li .bk-book > div,
+.bk-list li .bk-front > div {
+	display: block;
+	position: absolute;
+}
+
+.book .bk-list li .bk-front {
+	transform-style: preserve-3d;
+	transform-origin: 0% 50%;
+	transition: transform .5s;
+	transform: translate3d(0,0,20px);
+	z-index: 10;
+}
+
+.book .bk-list li .bk-front > div {
+	backface-visibility: hidden;
+	transform-style: preserve-3d;
+}
+
+.book .bk-list li .bk-page {
+	transform: translate3d(0,0,19px);
+	display: none;
+	width: 175px;
+	height: 227px;
+	top: 3px;
+	backface-visibility: hidden;
+	z-index: 9;
+	overflow: hidden
+}
+
+.book .bk-list li .bk-front,
+.bk-list li .bk-back,
+.bk-list li .bk-front > div {
+	width: 180px;
+	height: 234px;
+}
+
+.book .bk-list li .bk-left,
+.book .bk-list li .bk-right {
+	width: 40px;
+	left: -20px;
+}
+
+.book .bk-list li .bk-top,
+.book .bk-list li .bk-bottom {
+	width: 175px;
+	height: 20px;
+	top: -15px;
+	backface-visibility: hidden;
+}
+
+.book .bk-list li .bk-back {
+	transform: rotate3d(0,1,0,-180deg) translate3d(0,0,20px);
+	box-shadow: 10px 10px 30px rgba(0,0,0,0.3);
+	border-radius: 3px 0 0 3px;
+}
+
+.book .bk-list li .bk-cover-back {
+	background-color: #000;
+	transform: rotate3d(0,1,0,-180deg);
+}
+
+.book .bk-list li .bk-right {
+	height: 234px;
+	top: 5px;
+	transform: rotate3d(0,1,0,90deg) translate3d(0,0,295px);
+	backface-visibility: hidden;
+}
+
+.book .bk-list li .bk-left {
+	height: 234px;
+	transform: rotate3d(0,1,0,-90deg);
+}
+
+.book .bk-list li .bk-top {
+	transform: rotate3d(1,0,0,90deg);
+}
+
+.book .bk-list li .bk-bottom {
+	transform: rotate3d(1,0,0,-90deg) translate3d(0,0,390px);
+}
+
+/* Transform classes */
+
+.book .bk-list li .bk-viewinside .bk-front {
+	transform: translate3d(0,0,20px) rotate3d(0,1,0,-160deg);
+}
+
+.book .bk-list li:nth-child(1) .bk-book.bk-viewinside {
+	transform: translate3d(240px,170px,1100px) rotate3d(1,1,1,0deg);
+}
+
+.book .bk-list li:nth-child(2) .bk-book.bk-viewinside {
+	transform: translate3d(95px,170px,1100px) rotate3d(1,1,1,0deg);
+}
+
+.book .bk-list li:nth-child(3) .bk-book.bk-viewinside {
+	transform: translate3d(-40px,170px,1100px) rotate3d(1,1,1,0deg);
+} 
+
+.book .bk-list li .bk-book.bk-viewback {
+	transform: translate3d(0,0,0px) rotate3d(0,1,0,180deg);
+}
+
+.book .bk-list li .bk-viewback .bk-back {
+	z-index: 10;
+}
+
+/* Main colors and content */
+
+.book .bk-list li .bk-page,
+.book .bk-list li .bk-right,
+.book .bk-list li .bk-top,
+.book .bk-list li .bk-bottom {
+	background-color: #fff;
+}
+
+.book .bk-list li .bk-front > div {
+	border-radius: 0 3px 3px 0;
+	box-shadow: 
+		inset 4px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.book .bk-list li .bk-front:after {
+	content: '';
+	position: absolute;
+	top: 1px;
+	bottom: 1px;
+	left: -1px;
+	width: 1px;
+}
+
+.book .bk-list li .bk-cover:after,
+.book .bk-list li .bk-back:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 10px;
+	bottom: 0;
+	width: 3px;
+	background: rgba(0,0,0,0.06);
+	box-shadow: 1px 0 3px rgba(255, 255, 255, 0.1);
+}
+
+.book .bk-list li .bk-back:after {
+	left: auto;
+	right: 10px;
+}
+
+.book .bk-left .bk_leftTitle {
+	width: 400px;
+	height: 40px;
+	transform-origin: 0 0;
+	transform: rotate(90deg) translateY(-40px);
+}
+
+.book .bk-content {
+	position: absolute;
+	top: 25px;
+	left: 28px;
+	bottom: 26px;
+	right: 20px;
+	overflow: hidden;
+	background: #fff;
+	opacity: 0;
+	pointer-events: none;
+	backface-visibility: hidden;
+	transition: opacity 0.3s ease-in-out;
+	cursor: default;
+	transform: scale(1.3);
+}
+
+
+.book .bk-content-current {
+	opacity: 1;
+	pointer-events: auto;
+}
+.book .bk-content img{
+	height:100%
+}
+/* .book .bk-content p {
+	padding: 0 0 5px;
+	-webkit-font-smoothing: antialiased;
+	color: #000;
+	font-size: 1px;
+	line-height: 15em;
+	text-align: justify;
+	user-select: none;
+	transform: scale(.7);
+} */
+
+.book .bk-page .btnBox {
+	display: block;
+	text-align: center;
+	margin: 20px 10px;
+	position: relative;
+	z-index: 100;
+	cursor: pointer;
+}
+
+.book .bk-page .btnBox>span {
+	display:block;
+	width: 10px;
+	height: 10px;
+	color: #aaa;
+	position: absolute;
+	font-size: 1px;
+	transition:all .5s ease-out
+}
+
+.book .bk-page .btnBox>span:nth-child(1){
+	bottom:-190px;left:65px
+}
+
+.book .bk-page .btnBox>span:nth-child(2){
+	bottom:-190px;left:85px
+}
+
+.book .bk-page .btnBox>span:nth-child(3){
+	top:-15px;left:145px
+}
+
+.book .bk-page .btnBox>span:hover{
+	color:#1b83ba
+}
+
+/* Individual style & artwork */
+
+/* Book 1 */
+.book-1 .bk-front > div,
+.book-1 .bk-back,
+.book-1 .bk-left,
+.book-1 .bk-front:after {
+	background-color: rgb(33,157,203);
+}
+
+.book-1 .bk-cover {
+	background-repeat: no-repeat;
+	background-position: 10px 40px;
+}
+
+.book-1 .bk-cover h4 {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	padding: 30px;
+	background: rgba(255,255,255,0.2);
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.1);
+}
+
+.book-1 .bk-cover h4 span:first-child,
+.book-1 .bk-left .bk_leftTitle span{
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 18px;
+	padding-right: 20px;
+	font-family: 'Noto Serif KR', serif
+}
+
+.book-1 .bk-cover h4 span:first-child {
+	display: block;
+}
+
+.book-1 .bk-cover h4 span:last-child,
+.book-1 .bk-left .bk_leftTitle span {
+	font-family: 'Noto Serif KR', serif;
+	font-size: 13px
+} 
+
+.book-1 .bk-content p {
+	font-family: 'Noto Serif KR', serif;
+}
+
+.book-1 .bk-left .bk_leftTitle {
+	color: #fff;
+	font-size: 15px;
+	line-height: 40px;
+	padding-right: 10px;
+	text-align: right;
+}
+
+.book-1 .bk-back p {
+	color: #fff;
+	font-size: .6em;
+	line-height: 1.5em;
+	padding: 10px;
+	text-align: center;
+	font-weight: 700;
+}
+
+/* Book 2 */
+
+.book-2 .bk-front > div,
+.book-2 .bk-back,
+.book-2 .bk-left,
+.book-2 .bk-front:after {
+	background-color: rgb(240,83,51);
+}
+
+.book-2 .bk-cover {
+	background-repeat: no-repeat;
+	background-position: 98% 0%;
+}
+
+.book-2 .bk-cover h4, 
+.book-2 .bk-left .bk_leftTitle {
+	color: #fff;
+	font-weight: 400;
+	font-family: 'Noto Serif KR', serif
+
+}
+
+.book-2 .bk-cover h4 {
+	font-size: 1.2em;
+	line-height: 1.2em;
+	padding: 10px;
+}
+
+.book-2 .bk-cover h4 span:first-child {
+	position: relative;
+	display: block;
+	font-size: 13px;
+}
+
+.book-2 .bk-cover h4 span:last-child {
+	font-size: 1.2em;
+	line-height:1.3em;
+	display: block;
+	position: relative;
+}
+
+.book-2 .bk-left .bk_leftTitle {
+	font-size: 20px;
+	line-height: 40px;
+	padding-right: 10px;
+	text-align: right;
+}
+
+.book-2 .bk-back p {
+	color: #fff;
+	font-size: .6em;
+	padding: 10px;
+	text-align: center;
+}
+
+/* Book 3 */
+
+.book-3 .bk-front > div,
+.book-3 .bk-back,
+.book-3 .bk-left,
+.book-3 .bk-front:after {
+	background-color: rgb(156,178,39);
+}
+
+.book-3 .bk-cover {
+	background-repeat: no-repeat;
+	background-position: 100% 95%;
+}
+
+.book-3 .bk-cover h4 {
+	position: absolute;
+	top: 40px;
+	right: 20px;
+	left: 20px;
+	padding-top: 15px;
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.1);
+}
+
+.book-3 .bk-cover h4 span:first-child,
+.book-3 .bk-left .bk_leftTitle span:first-child {
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 1.3em;
+}
+
+.book-3 .bk-cover h4 span:first-child {
+	display: block;
+}
+
+.book-3 .bk-cover h4 span:last-child,
+.book-3 .bk-left .bk_leftTitle span:last-child{
+	font-family: 'Noto Serif KR', serif
+} 
+
+.book-3 .bk-left .bk_leftTitle {
+	color: #fff;
+	font-size: 14px;
+	line-height: 40px;
+	text-align: center;
+}
+
+.book-3 .bk-back img {
+	width: 200px;
+	display: block;
+	margin: 30px auto 0;
+}
+
+.book-3 .bk-back p {
+	color: #fff;
+	font-size: .7em;
+	line-height: 1.5em;
+	padding: 10px;
+	text-align: center;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.1);
+}
+
+/* Fallbacks */
+
+.no-csstransforms3d .bk-list li .bk-book > div,
+.no-csstransforms3d .bk-list li .bk-book .bk-cover-back {
+	display: none;
+}
+
+.no-csstransforms3d .bk-list li .bk-book > div.bk-front {
+	display: block;
+}
+
+.no-csstransforms3d .bk-info button,
+.no-js .bk-info button {
+	display: none;
+}

@@ -1,0 +1,51 @@
+/* content영역 */
+.contentArea{width:1200px;margin:0 auto;padding:80px 0 0}
+
+.summary{text-align: center}
+
+.intro{padding:100px 50px 80px;overflow: hidden}
+.intro img{border-radius: 50px 0; box-shadow: 5px 5px 20px 3px rgba(0,0,0,.1);float: left}
+.intro .textBox{width:550px;margin-left: 520px;text-align: justify;line-height: 2.5em;padding-top: 30px;}
+.intro .textBox p{margin:30px 0}
+
+.feature{position: relative;left:50%;top:0;margin-left: -1000px;width:2000px;height:800px;background: #f8f8f8;padding:80px 0}
+.featureInner{width:1200px;margin: 0 auto;position: relative}
+.featureInner img{position:absolute;left:495px; top:160px}
+.featureInner .title{font-size: 2em;color:#1b83ba;background:none;margin:0 475px}
+
+.featureInner ul{position: relative}
+.featureInner li{position: absolute}
+.featureInner li:nth-child(1){left:140px;top:120px}
+.featureInner li:nth-child(2){left:70px;top:340px}
+.featureInner li:nth-child(3){left:800px;top:120px}
+.featureInner li:nth-child(4){left:870px;top:340px}
+.featureInner li:nth-child(5){left:460px;top:580px}
+
+.featureInner li p{text-align: center; display: none; transition: all .5s ease-out}
+.featureInner li:nth-child(1) p{margin-left: -80px}
+.featureInner li:nth-child(2) p{margin-left: -47px}
+.featureInner li:nth-child(3) p{margin-left: -70px}
+.featureInner li:nth-child(4) p{margin-left: -45px}
+.featureInner li:nth-child(5) p{margin-left: -137px}
+
+.featureInner li:hover p{display: block}
+
+.featureInner span{display: block;text-align: center; font-size: 1.4em;font-weight: 500;color:#fff;
+                   background: #ccc;width:250px;height:40px;padding:8px 0 7px;border-radius: 30px;
+                   margin-bottom: 20px;transition: all .5s ease-out;}
+.featureInner li:hover span{background: #1b83ba;box-shadow: 5px 5px 15px 3px rgba(0,0,0,.1)}
+
+
+.reusePet{padding:80px 0 120px}
+.reusePet .slogan{font-size: 2.2em;color:#1b83ba;font-family: 'Noto Serif KR', serif;text-align: center;line-height: 2em}
+
+.reusePet img{-webkit-box-reflect:below -15px -webkit-gradient(linear,left top,left bottom, 
+      from(transparent),color-stop(0.7,transparent),to(white));
+          margin: 30px 352px 80px 352px}
+.reusePet p{text-align: center;line-height: 2.2em}
+.reusePet a{display: block;width:500px;height:40px;background: #ccc;color: #fff;text-align: center;
+      padding: 20px 0 10px; transition:all .5s ease-out;margin: 70px 0 30px 350px}
+.reusePet a:hover{background: #1b8ab3;box-shadow: 5px 5px 15px 3px rgba(0,0,0,.2)}
+.reusePet i{margin-left: 20px;width:35px;height:27px;border-radius: 50%;padding-top:9px;transition: all .5s ease-out}
+.reusePet a:hover i{background: #fff;color:#1b8ab3}
+

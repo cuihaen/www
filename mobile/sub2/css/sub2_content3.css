@@ -1,0 +1,52 @@
+/* content영역 */
+.contentArea p{line-height: 2em}
+.contentArea{width:100%;margin:0 auto;padding:50px 0;overflow: hidden}
+.summary{width:90%;margin:0 auto;text-align: center}
+.contentArea img{margin: 40px 0 20px;width:100%}
+
+.intro p{text-align: justify;width:85%;margin: 0 auto 20px}
+.contentArea .subPop_menu{padding:10px 0}
+.contentArea .subPop_menu .openPop{display: block;width:80%;height:40px;background: #ccc;color: #fff;text-align: center;
+                                   padding: 10px 0 5px;margin:20px auto;border-radius: 15px}
+.contentArea .subPop_menu .openPop i{margin-left: 20px;width:35px;height:27px;border-radius: 50%;padding-top:8px;transition: all .5s ease-out}
+.contentArea .btn1{margin-left: 280px}
+.contentArea .btn2{margin-left: 40px}
+
+
+/* popup창 */
+
+#content .modal_box{position: fixed; left: 0; top: 0; z-index: 40; width: 100%; height: 100%; 
+    background: rgba(0,0,0,.45); display: none}
+#content .sub_popup{position:fixed;top:0;left:0;width: 100%;height:100%;background: #fff;z-index: 85; display:none;
+                    overflow-y: scroll;padding-top: 50px}
+
+#content .sub_popup .pop_header{width:100%;height:45px;position:fixed;left: 0;top:0;background: #ecf3f5;box-shadow: 5px 5px 10px 2px rgba(0,0,0,.1);
+                        z-index: 100;text-align: center;line-height: 45px;font-size: 1.3em;color:rgba(33,157,203,.7)}
+#content .sub_popup .sub_close_btn{position: absolute; top: -10px; right: -3px; display: block; overflow: hidden; width: 50px; font-size: 1.5em;
+                                   height: 50px; padding: 9px 9px;color:rgba(33,157,203,.7);text-align: center;z-index: 90}
+
+#content .sub_popup h3{text-align: center;font-size: 1.2em; font-weight: 500; margin-top: 20px; color: #1b8ab3}
+#content .sub_popup h4{font-weight: 500;margin-bottom: 8px;color:#0c3c4e}
+
+#content .sub_popup.popup0 .top>span{text-align: center;font-weight: 500;color:#666;display: block;width:100%;margin-top: 8px}
+#content .sub_popup.popup0 .top ul{width:90%;margin: 40px auto}
+#content .sub_popup.popup0 .top ul li{font-size: .9em;overflow: hidden;margin: 8px 0;}
+#content .sub_popup.popup0 .top .circle{display: block;width:25%;height:30px;background: rgba(33,157,203,.4);
+                                 margin: 0 auto;font-size: 1.2em;font-weight: 500;line-height: 30px;text-align: center;
+                                 border-radius: 15px;border: 10px solid rgba(255,255,255,.5);float: left} 
+#content .sub_popup.popup0 .top .explain{display:block;margin-top:5px;width:65%;float: right}  
+#content .sub_popup.popup0 .top li:nth-child(2) .explain{display:block;margin-top: 13px}      
+
+#content .sub_popup.popup1 .top>span{text-align: center;font-weight: 500;color:#666;display: block;width:100%;margin: 8px 0 20px}
+#content .sub_popup.popup1 .top ul{width:85%;margin: 0 auto}
+#content .sub_popup.popup1 .top ul li{font-size: .9em;text-align: center;margin: 8px auto 25px}
+#content .sub_popup.popup1 .top .circle{display: block;height:40px;background: rgba(33,157,203,.4);
+                                 margin: 0 auto;font-size: 1.2em;font-weight: 500;line-height:40px;
+                                 border-radius: 20px;border: 10px solid rgba(255,255,255,.5)} 
+
+#content .sub_popup.popup1 .top .explain{display:block;margin-top: 8px}
+                                               
+#content .sub_popup .bottom{overflow: hidden;background: #ecf3f5;padding:20px 0 100px}
+#content .sub_popup .bottom .content{margin: 30px 30px 0}
+#content .sub_popup .bottom .content p{font-size: .85em;text-align: justify;line-height: 2em;margin-bottom: 5px}
+#content .sub_popup .bottom .content .lastTitle{margin-top: 25px}

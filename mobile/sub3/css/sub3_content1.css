@@ -1,0 +1,38 @@
+/* content영역 */
+.summary{padding:50px 0;text-align: center;line-height: 2em;width:85%;margin: 0 auto}
+
+/* 상단 부분 */
+.top{padding:50px 0 40px;background: url(../images/content1/background.jpg) center no-repeat;background-size: cover}
+.top .circle{width:250px;height:250px;border:2px solid rgba(33,157,203,.6);border-radius: 50%;margin:0 auto;position: relative}
+.top .imgBox{width:150px;height:150px;background: rgba(33,157,203,.6);border-radius: 50%;position:absolute;left: 50%;top:50%;margin: -75px 0 0 -75px}
+.top .imgBox img{margin-top: 55px;padding:10px}
+.top .circle span{display: block;width:80px;height:80px;border-radius: 50%;background: #ecf3f5;text-align: center;
+          line-height: 80px;color:#1b8ab3;font-weight: 500;position:absolute;left:50%;top:50%}
+.top .value01{margin-left: -40px;margin-top:-165px}
+.top .value02{margin-left:-145px;margin-top: 30px}
+.top .value03{margin-left: 65px;margin-top: 30px}
+
+/* 텍스트 */
+
+.textBox{padding:50px 0;width:90%;margin: 0 auto}
+.textBox p{text-align: justify;line-height: 2em;margin:0 auto 30px;width:95%}
+.textBox ul{width:100%;margin-bottom: 30px;overflow: hidden;}
+.textBox li{width:85%;margin:15px auto;text-align: center;border-radius: 20px;
+            box-shadow: 5px 5px 15px 3px rgba(0,0,0,.08);overflow: hidden;padding:10px}
+
+.textBox i{font-size: 3em;margin:20px 0;float: left}
+.textBox dl{border-left: 1px dashed #ddd;margin-left: 60px;padding-left: 10px;}
+.textBox dt{font-size: 1.15em;font-weight: 500;margin-bottom: 13px;transition: all .5s ease-out}
+.textBox dd{margin-bottom: 3px}
+
+.textBox li:nth-child(1) i{color:rgb(33,157,203)}
+.textBox li:nth-child(2) i{color:rgb(156,178,39)} 
+.textBox li:nth-child(3) i{color:rgb(240,83,51)}
+
+.textBox dt{position: relative}
+.textBox li dt::after{content: '';width:90px;height:16px;position: absolute;left: 50%;top:12px;margin-left: -45px}
+.textBox li:nth-child(1) dt::after{background:rgba(33,157,203,.2)}
+.textBox li:nth-child(2) dt::after{background:rgba(156,178,39,.2)}
+.textBox li:nth-child(3) dt::after{background:rgba(240,83,51,.2)}
+
+/* 목록 */

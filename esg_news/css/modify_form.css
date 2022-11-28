@@ -1,0 +1,34 @@
+input:focus,select:focus{outline: none}
+input::placeholder{color:#bbb}
+input,select{border:none;box-sizing: border-box}
+
+/* content영역 */
+.contentArea{width:1200px;margin:0 auto;padding:80px 0 0}
+
+.contentArea h3{font-size: 2em;padding:40px 0 0 60px;font-weight: 500;position:relative;color:#0c3c4e}
+.contentArea h3::before{content:'';width:10px;height:10px;border-radius: 50%;
+                         position: absolute;left:43px;top:43px;background:rgb(33,157,203)}
+.summary{text-align: center;margin-bottom: 20px}
+
+.write_content{margin: 50px 0;padding-bottom: 130px;position:relative}
+.write_content #write_form{border-bottom: 1px solid #999}
+
+.write_content #write_form dl{overflow: hidden;border-bottom: 1px solid #ccc}
+.write_content #write_form dl:last-child{border: none}
+.write_content #write_form .user_info{border-top: 1px solid #999}
+.write_content #write_form .user_info dd{padding:15px 36px 15px 20px}
+
+.write_content #write_form dl dt{float: left;width:200px;background: #ecf3f5;display: block;padding:12px 20px;text-align: center}
+.write_content #write_form dl dd{padding:12px 36px 12px 20px;margin-left: 240px}
+
+.write_content #write_form dl dd #title_box{width:100%;font-size: .85em;border: 2px solid #ccc;padding:5px}
+
+.write_content #write_form .textBox dt{height:301px;box-sizing: border-box;width:240px}
+.write_content #write_form .textBox dd{overflow: hidden}
+.write_content #write_form .textBox dd div{display: block;margin-bottom: 15px}
+.write_content #write_form .textBox dd textarea#board_content{border: 2px solid #ccc;width:100%;font-size: .85em;font-family: 'Noto Sans KR', sans-serif;box-sizing: border-box}
+
+.write_content #write_button{position:absolute;right:10px;bottom:60px;overflow: hidden;}
+.write_content #write_button a{margin: 0 2px;color:#fff;font-weight: 500;font-size: .9em;text-align: center;padding:5px 20px;background: #999}
+.write_content #write_button input{margin: 0 2px;color:#fff;font-weight: 500;font-size: .9em;text-align: center;padding:6px 20px;background: #1b8ab3}
+

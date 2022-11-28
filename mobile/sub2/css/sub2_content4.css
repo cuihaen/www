@@ -1,0 +1,62 @@
+/* content영역 */
+.contentArea{width:100%;margin:0 auto;padding:50px 0 0}
+
+.summary{text-align: center;width:85%;margin: 0 auto;line-height: 1.8em;}
+
+.intro{padding:50px 0}
+.intro>img{width:100%}
+.intro .textBox{width:85%;text-align: justify;line-height: 2em;padding-top: 30px;margin: 0 auto}
+.intro .textBox p{margin:10px 0}
+
+.feature{width:100%;background: #f8f8f8;padding:50px 0}
+.featureInner{width:90%;margin: 0 auto;position: relative}
+.featureInner>img{width:30%;margin: 0 auto 20px;display: block}
+.featureInner .title{font-size: 1.3em;color:#1b83ba;background:none;text-align: center;margin: 0 auto;}
+
+.featureInner li p{text-align: center;margin:0 auto 30px;width:90%}
+
+.featureInner span{display: block;text-align: center; font-size: 1.1em;font-weight: 500;color:#fff;
+                   background: #1b8ab3;width:65%;height:30px;border-radius: 20px;line-height: 30px;margin: 0 auto 15px}
+
+
+.reusePet{padding:50px 0}
+.reusePet .slogan{font-size: 1.4em;color:#1b83ba;font-family: 'Noto Serif KR', serif;text-align: center;line-height: 1.8em;width: 95%;margin: 0 auto}
+
+.reusePet>img{-webkit-box-reflect:below -15px -webkit-gradient(linear,left top,left bottom, 
+      from(transparent),color-stop(0.7,transparent),to(white));
+          margin:20px auto 40px;width:80%;display: block}
+.reusePet p{text-align: center;line-height: 2em;width:90%;margin: 0 auto}
+.reusePet .openPop{display: block;width:85%;height:40px;background: #999;color: #fff;text-align: center;
+      padding: 8px 0;margin: 20px auto}
+.reusePet .openPop span{line-height: 40px}
+.reusePet .openPop i{margin-left: 8px}
+
+/* popup창 */
+
+#content .modal_box{position: fixed; left: 0; top: 0; z-index: 50; width: 100%; height: 100%; 
+      background: rgba(0,0,0,.45); display: none}
+#content .sub_popup{position: fixed; top: 0; left: 0;width: 100%; height: 100%;background: #fff;
+                    z-index: 90; display:none;overflow-y: scroll;padding-top: 50px}
+
+
+
+#content .sub_popup .pop_header{width:100%;height:45px;position:fixed;left: 0;top:0;background: #ecf3f5;box-shadow: 5px 5px 10px 2px rgba(0,0,0,.1);
+                                z-index: 100;text-align: center;line-height: 45px;font-size: 1.3em;color:rgba(33,157,203,.7)}
+#content .sub_popup .sub_close_btn{position: absolute; top: -10px; right: -3px; display: block; overflow: hidden; width: 50px; font-size: 1.5em;
+                                   height: 50px; padding: 9px 9px;color:rgba(33,157,203,.7);text-align: center;z-index: 90}
+
+#content .sub_popup h3{text-align: center;font-size: 1.2em; font-weight: 500; margin-top: 40px; color: #1b8ab3}
+
+#content .sub_popup .top{overflow: hidden;width:100%;margin: 15px auto 0;background: #ecf3f5;padding:30px 0}
+#content .sub_popup .top li{width:90%;margin: 20px auto 10px}
+#content .sub_popup .top li span{display: block;text-align: center}
+#content .sub_popup .top li span:nth-child(1){font-size: 1.1em;color:#0c3c4e;margin-bottom: 10px;}
+#content .sub_popup .top li span:nth-child(1) i{font-size: 1.2em;color:#1b8ab3}
+#content .sub_popup .top li span:nth-child(2){margin: 0 auto}
+#content .sub_popup .top li span:nth-child(3){margin-top: 15px;font-size: .9em}
+
+#content .sub_popup .bottom ol{width: 90%;margin:30px auto}
+#content .sub_popup .bottom li{width:100%;height: 28px;background: rgba(27,138,179,.3);text-align: center;margin-bottom: 13px;
+                               padding: 4px 0;border-radius: 30px;line-height: 28px}
+
+#content .sub_popup .bottom img{display: block;width:100%;margin:0 auto}

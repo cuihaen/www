@@ -1,0 +1,89 @@
+<? session_start(); ?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>삼양홀딩스-찾아오시는길</title>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub6common.css">
+    <link rel="stylesheet" href="./css/sub6_content4.css">
+
+    <script src="https://kit.fontawesome.com/2b8b92cff2.js" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="../common/js/prefixfree.min.js"></script>
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=efb2daedf483f7f4f90467618a68b34a"></script>
+    <script src="./common/js/map.js"></script>
+    
+</head>
+<body>
+    <div id="skipNav">
+        <a href="#content">본문바로가기</a>
+        <a href="#gnb">글로벌네비게이션바로가기</a>
+    </div>
+    <? include "../common/sub_header.html" ?> 
+        <div class="main">
+            <h3>고객지원</h3>
+        </div>
+        <div class="subNav">
+            <ul>
+                <li><a href="../news/list.php">NEWS</a></li>
+                <li><a href="./sub6_2.html">FAQ</a></li>
+                <li><a href="./sub6_3.html">Contact Us</a></li>
+                <li><a class="current" href="./sub6_4.html">찾아오시는길</a></li>
+            </ul>
+        </div>
+        <article id="content">
+            <div class="titleArea">
+                <div class="lineMap">
+                    <span><i class="fa-solid fa-house-chimney"></i><span class="hidden">HOME</span></span>&gt;
+                    <span>  고객지원 </span>&gt;
+                    <span>  찾아오시는길</span>
+                </div>
+                <h2>찾아오시는길</h2>
+            </div>
+            <div class="contentArea">
+                <!-- 본문콘텐츠영역 -->
+                <div class="map">
+                    <h3>삼양홀딩스</h3>
+                    <div  id="company">
+                    </div>
+                </div>
+                    <ul class="companyAdress">
+                        <li>
+                            <dl class="adress">
+                                <dt><i class="fa-solid fa-building"></i> 주소 및 연락처</dt>
+                                <dd>
+                                    <span>주소</span>
+                                    <span>서울특별시 종로구 종로33길 31<br>
+                                    서울특별시 종로구 연지동 263 (지번)</span>
+                                </dd>
+                                <dd>
+                                    <span>우편번호</span>
+                                    <span>03129</span>
+                                    <span class="tel">Tel.</span>
+                                    <span>02-740-7111</span>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl class="subway">
+                                <dt><i class="fa-solid fa-train-subway"></i> 지하철 이용 시</dt>
+                                <dd><span>1</span>1호선 종로5가역 하차 후 1번 출구에서 도보 223m</dd>
+                            </dl>
+                            <dl class="bus">
+                                <dt><i class="fa-solid fa-bus"></i> 버스 이용 시</dt>
+                                <dd>종로5가. 효제초등학교 정류장 하차 후 도보 109m</dd>
+                                <dd class="bus01"><span>간선</span> 100, 102, 104, 106, 140, 150, 160, 273</dd>
+                                <dd class="bus02"><span>지선</span>7025</dd>
+                            </dl>
+                        </li>
+                    </ul>
+
+            </div>
+        </article>
+    <? include "../common/sub_footer.html" ?>       
+</body>
+</html>

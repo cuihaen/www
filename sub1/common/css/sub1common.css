@@ -1,0 +1,31 @@
+/* 서브페이지 공통영역 */
+.main{width:2000px;height:400px;background: url(../images/main.jpg)0 -50px no-repeat;
+      background-attachment: fixed; position: relative;left: 50%;top:50%;margin-left: -1000px}
+.main h3{font-size: 1.6em;color: #fff;text-align: center;font-weight: 400;
+         position: absolute;left: 50%;top:260px;margin-left: -50px;letter-spacing: 2px}
+
+.subNav{border-bottom: 1px solid #ccc}
+.subNav ul{width:1000px;margin: 0 auto;overflow: hidden}
+.subNav li{float: left;width:200px;text-align: center;position:relative}
+.subNav li a{display: block;padding:20px 0;
+            font-weight: 500;transition: all .5s ease-out}
+.subNav li a::after{content: '';display: block;width:2px;height: 12px;background:#1b8ab3;
+                  ;position: absolute;right:0px;top:28px}
+.subNav li:last-child a:after{display: none}
+.subNav li a:hover{color:#1b8ab3}
+.subNav li a:hover::before{content:'';display: block;width:60px;height:4px;
+                        background: #1b8ab3;position: absolute;left:50%;top:0;
+                        margin-left: -30px}
+.subNav li .current{color:#1b8ab3}
+.subNav li .current::before{content:'';display: block;width:60px;height:4px;
+                              background: #1b8ab3;position: absolute;left:50%;top:0;
+                              margin-left: -30px}
+
+#content{width: 1200px;margin:0 auto}
+#content .titleArea .lineMap{margin: 40px 0 30px 950px;font-size: .9em;color: #999}
+#content .titleArea .lineMap i{margin-right: 5px}
+#content .titleArea .lineMap span:nth-last-child(1){font-weight: 500}
+#content .titleArea h2{font-size: 2.78em;font-weight: 500;
+                       text-align: center;margin:100px 0 20px;position: relative}
+#content .titleArea h2::after{content:'';display:block;width:60px;height:4px;background: #1b8ab3;
+                              position:absolute;left:50%;top:120px;margin-left: -30px}

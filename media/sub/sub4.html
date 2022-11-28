@@ -1,0 +1,240 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<title>HARRY POTTER</title>
+	<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+	<link rel="apple-touch-icon-precomposed" href="./app_icon.png">
+	<link rel="apple-touch-startup-image" href="./startup.png">
+    <link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="./common/css/sub_common.css">
+    <link rel="stylesheet" href="./common/css/sub4.css">
+    <script src="https://kit.fontawesome.com/2b8b92cff2.js" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="../js/prefixfree.min.js"></script>
+	<script src="./js/masonry-docs.min.js"></script>
+	<script>
+		// <![CDATA[
+			try {
+				window.addEventListener('load', function(){
+					setTimeout(scrollTo, 0, 0, 1); 
+				}, false);
+			} catch(e) {}
+		// ]]>
+	</script>
+	<script> 
+		$(document).ready(function() {
+			var documentHeight =  $(document).height();
+				
+			$(".btn").click(function() {
+			$("#nav").animate({right:0,opacity:1}, 'fast').css('height',documentHeight);
+			$("#nav").fadeIn();
+			});
+			
+			$(".close").click(function() {
+				$("#nav").animate({right:'-100%',opacity:0}, 'fast').css('height',80);
+				$("#nav").hide();
+			});
+			
+			
+			var current=0;
+			$(window).resize(function(){
+				var screenSize = $(window).width(); 
+				if( screenSize > 640){
+				current=1;
+				$("#nav").css({right:0,opacity:1}).show();
+				}
+				if(current==1 && screenSize < 640){
+					$("#nav").css({right:'-100%',opacity:0});
+					current=0;
+				}
+			}); 
+		});
+	</script>
+</head>
+<body>
+	<div id="skipNav">
+		<a href="#content">본문바로가기</a>
+		<a href="#gnb">네비게이션바로가기</a>
+	</div>
+	
+	<div id="wrap">
+		<div class="imgBox">
+			<img src="./images/content4/main2.jpg" id="imgBIG" alt="main_background">
+			<img src="./images/content4/main.jpg" id="imgBG" alt="main_background">
+			<span class="mainTxt">GALLERY</span>
+			<a class="down" href="#"><span><img src="./common/images/hat.svg" alt="scroll down"></span>SCROLL ME</a>
+		</div>
+    <? include "../sub_header.html" ?>
+	<article id="content">
+		<h2 class="hidden">본문콘텐츠영역</h2>
+		<section class="intro">
+			<h3>GALLERY</h3>
+			<p>Invite you to the magical world in Harry Potter, which has long been loved by countless fans around the world.</p>
+			<div class="duo example">
+				<div class="duo__cell example__demo">
+				 	<div class="grid grid--images" data-js="imagesloaded-progress">
+						<div class="grid-sizer"></div>
+						<div class="grid-image-item">
+							<img src="./images/content4/1.jpg" alt="harryPotterImage">
+							<p>These Makeup Wipes are for Fancy Lazy People</p>
+						</div>
+						<div class="grid-image-item">
+							<img src="./images/content4/2.jpg" alt="harryPotterImage">
+							<p>8 Celebrities Wearing Scrunchies, Because ‘90s Forever</p>
+						</div>
+						<div class="grid-image-item">
+							<img src="./images/content4/3.jpg" alt="harryPotterImage">
+							<p>8 Things to Know About Bella Hadid’s Mystery Man</p>
+						</div>
+						<div class="grid-image-item">
+							<img src="./images/content4/4.jpeg" alt="harryPotterImage">
+							<p>J.Lo Says a Father’s Day Celebration with Both A-Rod and Marc Anthony Isn’t Out of the Question</p>
+						</div>
+						<div class="grid-image-item">
+							<img src="./images/content4/5.jpg" alt="harryPotterImage">
+							<p>Scarlett Johansson Shows Her 72-Year-Old Doppelgänger the Time of Her Life</p>
+						</div>
+						<div class="grid-image-item">
+							<img src="./images/content4/6.webp" alt="harryPotterImage">
+							<p>Elle Fanning’s Secret to Style Domination on the Red Carpet: “I Go with My Gut!”</p>
+						</div>
+						<div class="grid-image-item">
+							<img src="./images/content4/7.jpeg" alt="harryPotterImage">
+							<p>The Beguiled L.A. Premiere Was a Stylish Star-Studded Affair</p>
+						</div>
+						<div class="grid-image-item">
+							<img src="./images/content4/8.jpeg" alt="harryPotterImage">
+							<p>Scarlett Johansson Glittered at the Rough Night Premiere in a Disco </p>
+						</div>
+						<div class="grid-image-item">
+							<img src="./images/content4/9.jpg" alt="harryPotterImage">
+							<p>Behold: The Best Tiara Moments in Film</p>
+						</div>
+						<div class="grid-image-item">
+							<img src="./images/content4/10.jpeg" alt="harryPotterImage">
+							<p>Here’s the Only Place Serena Williams Could Find a Swimsuit ‘That Would Fit’</p>
+						</div>
+						<div class="grid-image-item">
+							<img src="./images/content4/11.jpeg" alt="harryPotterImage">
+							<p>See Every Swimsuit the Kardashian-Jenner Squad Has Made Waves in</p>
+						</div>
+						<div class="grid-image-item">
+							<img src="./images/content4/12.jpeg" alt="harryPotterImage">
+							<p>See Every Swimsuit the Kardashian-Jenner Squad Has Made Waves in</p>
+						</div>
+						<div class="grid-image-item">
+							<img src="./images/content4/13.jpeg" alt="harryPotterImage">
+							<p>Priyanka Chopra: “When I Was a Baby, I Was Already Blinged Out!”</p>
+						</div>
+						<div class="grid-image-item">
+							<img src="./images/content4/15.jpeg" alt="harryPotterImage">
+							<p>Jennifer Meyer’s Home Is Oh So California Cool</p>
+						</div>
+						<div class="grid-image-item">
+							<img src="./images/content4/16.jpeg" alt="harryPotterImage">
+							<p>The Obamas Purchase the Gorgeous D.C. Home They’ve Been Renting</p>
+						</div>
+						<div class="grid-image-item">
+							<img src="./images/content4/17.jpg" alt="harryPotterImage">
+							<p>Kristin Cavallari and Jay Cutler List Their Chicago Home for $4.7 Million</p>
+						</div>
+						<div class="grid-image-item">
+							<img src="./images/content4/18.jpeg" alt="harryPotterImage">
+							<p>Kim Kardashian West Jumps on the Braless Bandwagon in N.Y.C. </p>
+						</div>
+						<div class="grid-image-item">
+							<img src="./images/content4/19.jpeg" alt="harryPotterImage">
+							<p>Kim Kardashian West Jumps on the Braless Bandwagon in N.Y.C. </p>
+						</div>
+						<div class="grid-image-item">
+							<img src="./images/content4/20.webp" alt="harryPotterImage">
+							<p>Kim Kardashian West Jumps on the Braless Bandwagon in N.Y.C. </p>
+						</div>
+						<div class="grid-image-item">
+							<img src="./images/content4/21.jpg" alt="harryPotterImage">
+							<p>Kim Kardashian West Jumps on the Braless Bandwagon in N.Y.C. </p>
+						</div>
+						<div class="grid-image-item">
+							<img src="./images/content4/22.jpeg" alt="harryPotterImage">
+							<p>Kim Kardashian West Jumps on the Braless Bandwagon in N.Y.C. </p>
+						</div>
+						<div class="grid-image-item">
+							<img src="./images/content4/23.jpg" alt="harryPotterImage">
+							<p>Kim Kardashian West Jumps on the Braless Bandwagon in N.Y.C. </p>
+						</div>
+						<div class="grid-image-item">
+							<img src="./images/content4/24.png" alt="harryPotterImage">
+							<p>Kim Kardashian West Jumps on the Braless Bandwagon in N.Y.C. </p>
+						</div>
+						<div class="grid-image-item">
+							<img src="./images/content4/25.jpeg" alt="harryPotterImage">
+							<p>Kim Kardashian West Jumps on the Braless Bandwagon in N.Y.C. </p>
+						</div>
+						<div class="grid-image-item">
+							<img src="./images/content4/26.jpg" alt="harryPotterImage">
+							<p>Kim Kardashian West Jumps on the Braless Bandwagon in N.Y.C. </p>
+						</div>
+						<div class="grid-image-item">
+							<img src="./images/content4/27.jpg" alt="harryPotterImage">
+							<p>Kim Kardashian West Jumps on the Braless Bandwagon in N.Y.C. </p>
+						</div>
+						<div class="grid-image-item">
+							<img src="./images/content4/28.jpg" alt="harryPotterImage">
+							<p>Kim Kardashian West Jumps on the Braless Bandwagon in N.Y.C. </p>
+						</div>
+						<div class="grid-image-item">
+							<img src="./images/content4/29.jpg" alt="harryPotterImage">
+							<p>Kim Kardashian West Jumps on the Braless Bandwagon in N.Y.C. </p>
+						</div>
+						<div class="grid-image-item">
+							<img src="./images/content4/30.jpg" alt="harryPotterImage">
+							<p>Kim Kardashian West Jumps on the Braless Bandwagon in N.Y.C. </p>
+						</div>
+						<div class="grid-image-item">
+							<img src="./images/content4/31.jpg" alt="harryPotterImage">
+							<p>Kim Kardashian West Jumps on the Braless Bandwagon in N.Y.C. </p>
+						</div>
+						<div class="grid-image-item">
+							<img src="./images/content4/32.jpg" alt="harryPotterImage">
+							<p>Kim Kardashian West Jumps on the Braless Bandwagon in N.Y.C. </p>
+						</div>
+						<div class="grid-image-item">
+							<img src="./images/content4/33.jpg" alt="harryPotterImage">
+							<p>Kim Kardashian West Jumps on the Braless Bandwagon in N.Y.C. </p>
+						</div>
+						<div class="grid-image-item">
+							<img src="./images/content4/34.jpg" alt="harryPotterImage">
+							<p>Kim Kardashian West Jumps on the Braless Bandwagon in N.Y.C. </p>
+						</div>
+						<div class="grid-image-item">
+							<img src="./images/content4/35.jpg" alt="harryPotterImage">
+							<p>Kim Kardashian West Jumps on the Braless Bandwagon in N.Y.C. </p>
+						</div>
+						<div class="grid-image-item">
+							<img src="./images/content4/36.jpg" alt="harryPotterImage">
+							<p>Kim Kardashian West Jumps on the Braless Bandwagon in N.Y.C. </p>
+						</div>
+						<div class="grid-image-item">
+							<img src="./images/content4/37.jpg" alt="harryPotterImage">
+							<p>Kim Kardashian West Jumps on the Braless Bandwagon in N.Y.C. </p>
+						</div>
+						<div class="grid-image-item">
+							<img src="./images/content4/38.jpg" alt="harryPotterImage">
+							<p>Kim Kardashian West Jumps on the Braless Bandwagon in N.Y.C. </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</article>
+	<? include "../sub_footer.html" ?>
+</div>
+<script src="./js/sub4.js"></script>
+</body>
+</html>

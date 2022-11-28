@@ -1,0 +1,118 @@
+<!-- footer 공통요소 -->
+    <footer id="footerArea">
+        <div class="footerInner">
+            <a class="topMove" href="#"><span class="hidden">top</span><i class="fa-solid fa-arrow-up"></i></a>
+            <img src="../common/svg/samyang_CI.svg" alt="삼양홀딩스 로고">
+            <ul class="listMenu">
+                <li><a href="../sub6/sub6_4.html">찾아오시는 길</a></li>
+                <li><a href="#">윤리경영</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이메일무단수집거부</a></li>
+                <li><a href="../sub6/sub6_2.html">FAQ</a></li>
+                <li><a href="../sub6/sub6_3.html">Contact Us</a></li>
+            </ul>
+            <address>
+                <p>서울특별시 종로구 종로33길 31  |  경기도 성남시 분당구 판교로 295<br>
+                TEL:(02)740-7111  |  FAX:(02)740-7699</p>
+            </address>
+            <p>COPYRIGHT&copy;2018 SAMYANG HODINGS CORPORATION. ALL RIGHTS RESERVED.</p>
+            <div class="family">
+                <a class="arrow" href="#">
+                    <span>family site  <i class="fa-solid fa-caret-up"></i> </span>
+                </a> 
+                <ul class="aList">
+                    <li><a href="https://www.samyangcorp.com" title="삼양사(화학) 사이트가 새창에 열림" target="_blank">삼양사(화학)</a></li>
+                    <li><a href="http://www.samnam.co.kr" title="삼남석유화학 사이트가 새창에 열림" target="_blank">삼남석유화학</a></li>
+                    <li><a href="https://www.samyangbiopharm.com" title="삼양바이오팜 사이트가 새창에 열림" target="_blank">삼양바이오팜</a></li>
+                    <li><a href="https://samyangpackaging.co.kr" title="삼양패키징 사이트가 새창에 열림" target="_blank">삼양패키징</a></li>
+                    <li><a href="https://www.kciltd.com" title="㈜KCI 사이트가 새창에 열림" target="_blank">㈜KCI</a></li>
+                </ul>
+            </div>
+            <ul class="sns">
+                <li>
+                    <a href="#">
+                        <span class="hidden">페이스북</span>
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="hidden">인스타그램</span>
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="hidden">유튜브</span>
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="hidden">포스트</span>
+                        <i class="fa-solid fa-pen"></i>
+                    </a>
+                <li>
+                    <a href="#">
+                        <span class="hidden">블로그</span>
+                        <i class="fa-solid fa-bold"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <div class="pop">
+        <div class="popup_box"></div>
+        <div class="popup">
+            <dl>
+                <dt>삼양그룹의 다양한 제품들을 검색해보세요.</dt>
+                <dd class="searchArea">
+                    <!-- <form>
+                        <label for="search" class="hidden">검색어 입력</label>
+                        <input id="search" name = "search" type="text" placeholder="검색어를 입력해주세요">
+                        <input class ="btn" type="submit" value="">
+                    </form> -->
+                    <form method="post" action="../products/list.php?mode=search&table=products">
+                        <label class="hidden" for="find">필드명</label>
+                        <input type="hidden" name="find" value="subject">
+                        <label for="search" class="hidden">검색어 입력</label>
+                        <input id="search" name = "search" type="text" placeholder="검색어를 입력해주세요">
+                        <input class ="btn" type="submit" value="">
+                        <!-- <input type="text" name="search" id="search" list="dataList_id">
+                        <datalist id="dataList_id">
+                                <option value="1"></option>
+                                <option value="2"></option>
+                                <option value="3"></option>
+                                <option value="제품"></option>
+                                <option value="게시판"></option>
+                            </datalist>
+                        <input type="submit" value="검색"> -->
+                    </form>
+                </dd>
+                <!-- <dd>
+                    <dl>
+                        <dt>추천검색어</dt>
+                        <dd>
+                            <span># 내열병</span>
+                            <span># 이온교환수지</span>
+                            <span># AM BU</span>
+                            <span># 갈색설탕</span>
+                        </dd>
+                        <dd>
+                            <span># 상압병</span>
+                            <span># 내열내압병</span>
+                            <span># 내압병</span>
+                        </dd>
+                   </dl>
+                </dd> -->
+            </dl>
+            <a href="#" class="close_btn"><span class="hidden">닫기</span><i class="fa-solid fa-xmark"></i></a>
+        </div>
+    </div>
+</div>
+<script src="../common/js/jquery-1.12.4.min.js"></script>
+<script src="../common/js/jquery-migrate-1.4.1.min.js"></script>
+<script src="../common/js/jquery.easing.1.3.js"></script>
+<script src="../common/js/fullNav.js"></script>
+<script src="../common/js/select.js"></script>
+

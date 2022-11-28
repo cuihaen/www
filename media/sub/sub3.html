@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<title>HARRY POTTER</title>
+	<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+	<link rel="apple-touch-icon-precomposed" href="./app_icon.png">
+	<link rel="apple-touch-startup-image" href="./startup.png">
+    <link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="./common/css/sub_common.css">
+    <link rel="stylesheet" href="./common/css/sub3.css">
+	<link rel="stylesheet" href="./common/css/magnific-popup.css">
+    <script src="https://kit.fontawesome.com/2b8b92cff2.js" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="../js/prefixfree.min.js"></script>
+	<script>
+		// <![CDATA[
+			try {
+				window.addEventListener('load', function(){
+					setTimeout(scrollTo, 0, 0, 1); 
+				}, false);
+			} catch(e) {}
+		// ]]>
+	</script>
+	<script> 
+		$(document).ready(function() {
+			var documentHeight =  $(document).height();
+				
+			$(".btn").click(function() {
+			$("#nav").animate({right:0,opacity:1}, 'fast').css('height',documentHeight);
+			$("#nav").fadeIn();
+			});
+			
+			$(".close").click(function() {
+				$("#nav").animate({right:'-100%',opacity:0}, 'fast').css('height',80);
+				$("#nav").hide();
+			});
+			
+			
+			var current=0;
+			$(window).resize(function(){
+				var screenSize = $(window).width(); 
+				if( screenSize > 640){
+				current=1;
+				$("#nav").css({right:0,opacity:1}).show();
+				}
+				if(current==1 && screenSize < 640){
+					$("#nav").css({right:'-100%',opacity:0});
+					current=0;
+				}
+			}); 
+		});
+	</script>
+</head>
+<body>
+	<div id="skipNav">
+		<a href="#content">본문바로가기</a>
+		<a href="#gnb">네비게이션바로가기</a>
+	</div>
+	
+	<div id="wrap">
+		<div class="imgBox">
+			<img src="./images/content3/main2.jpg" id="imgBIG" alt="main_background">
+			<img src="./images/content3/main.jpg" id="imgBG" alt="main_background">
+			<span class="mainTxt">TRAILER</span>
+			<a class="down" href="#"><span><img src="./common/images/hat.svg" alt="scroll down"></span>SCROLL ME</a>
+		</div>
+    <? include "../sub_header.html" ?>
+	<article id="content">
+		<h2 class="hidden">본문콘텐츠영역</h2>
+		<section class="intro">
+			<h3>TRAILER</h3>
+			<p>Harry Potter novels were brought to life on screen in eight films  and went on to inspire the Fantastic Beasts film series, taking us into a new era of the Wizarding World.</p>
+			
+			<div class="subPop">
+				<ul class="subPop_menu">
+					<li>
+						<a class="openPop" href="#">
+							<div class="video">
+								<img src="../images/youtube1.jpg" alt="Wizard Duel: Draco Malfoy vs Harry Potter">
+								<span><i class="fa-brands fa-youtube"></i></span>
+							</div>
+							<dl>
+								<dt>Wizard Duel: Draco Malfoy vs Harry Potter</dt>
+								<dd>At the encouragement of Professor Snape and Professor Gilderoy Lockhart, Harry and Draco face off in their first wizard duel.</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a class="openPop" href="#">
+							<div class="video">
+								<img src="../images/youtube2.jpg" alt="First Flying Lesson">
+								<span><i class="fa-brands fa-youtube"></i></span>
+							</div>
+							<dl>
+								<dt>First Flying Lesson</dt>
+								<dd>All the first years have their first flying lesson.</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a class="openPop" href="#">
+							<div class="video">
+								<img src="../images/youtube3.jpg" alt="Ron's Slug Spell Backfires">
+								<span><i class="fa-brands fa-youtube"></i></span>
+							</div>
+							<dl>
+								<dt>Ron's Slug Spell Backfires</dt>
+								<dd>Ron Weasley needs to have a little more practice with this particular spell.</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a class="openPop" href="#">
+							<div class="video">
+								<img src="../images/youtube4.jpg" alt="Ron receives a Howler">
+								<span><i class="fa-brands fa-youtube"></i></span>
+							</div>
+							<dl>
+								<dt>Ron receives a Howler</dt>
+								<dd>Ron Weasley receives a Howler from his mother. Is there anything more terrifying?</dd>
+							</dl>
+						</a>
+					</li>
+				</ul>
+				<div class="sub_modal_box"></div>
+				<div class="sub_popup">
+					<a href="#" class="sub_close_btn"><span class="hidden">닫기</span><i class="fa-solid fa-xmark"></i></a>
+					<div class="txt"></div> 
+				</div>
+			</div>
+		</section>
+		<div class="backimg"></div>
+		<section class="ost">
+			<h3>MOVIE OST</h3>
+			<div class="tabs">
+				<ul>
+					<li>
+						<a class="tab tab1" href="#">
+							<img src="./images/content3/music/music1.jpg" alt="">
+						</a>
+						<span></span>
+					</li>
+					<li>
+						<a class="tab tab2" href="#">
+							<img src="./images/content3/music/music2.jpg" alt="">
+						</a>
+						<span></span>
+					</li>
+					<li>
+						<a class="tab tab3" href="#">
+							<img src="./images/content3/music/music3.jpg" alt="">
+						</a>
+						<span></span>
+					</li>
+					<li>
+						<a class="tab tab4" href="#">
+							<img src="./images/content3/music/music4.jpg" alt="">
+						</a>
+						<span></span>
+					</li>
+				</ul>
+				<div class="lpPlayer">
+					<div class="player">
+						<div class="contlist">
+							<div class="lp">
+								<span><img src="./images/content3/music/player_2.png" alt=""></span>
+							</div>
+							<div class="audioBox">
+								<dl>
+									<dt>Harry Potter OST - 1</dt>
+									<dd>Hedwig's Theme</dd>
+								</dl>
+								<audio id="music">
+									<source src="./images/content3/music/music_01.mp3" type="audio/mp3">
+								</audio>
+								<a class="onoff" href="#">
+									<img src="./images/content3/music/player_4.png" alt="">
+									<span>play</span>
+								</a>
+							</div>
+							<img class="palyer_bar" src="./images/content3/music/player_1.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+	</article>
+	<? include "../sub_footer.html" ?>
+</div>
+<script src="./js/sub3.js"></script>
+</body>
+</html>

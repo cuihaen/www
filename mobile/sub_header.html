@@ -1,0 +1,110 @@
+<div id="skipNav">
+    <a href="#content">본문바로가기</a>
+    <a href="#gnb">네비게이션바로가기</a>
+  </div>
+  <div id="wrap">
+      <header id="headerArea">
+        <div class="headerInner"> 
+            <h1><a href="../index.html">삼양홀딩스 로고</a></h1>
+            <a href="#" class="menu_ham">
+                <span>햄버거</span>
+            </a>
+            <nav id="gnb">
+              <h2 class="hidden">글로벌네비게이션영역</h2>
+
+              <ul class="mainMenu">  
+                  <li class="depth1"><h3><a href="#">그룹소개<span><i class="fa-solid fa-angle-down"></i></span></a></h3>
+                      <ul>
+                          <li><a href="../sub1/sub1_1.html">삼양홀딩스</a></li>
+                          <li><a href="../sub1/sub1_2.html">CEO인사말</a></li>
+                          <li><a href="../sub1/sub1_3.html">삼양가치</a></li>
+                          <li><a href="../sub1/sub1_4.html">주요연혁</a></li>
+                      </ul>
+                  </li>
+                  <li class="depth1"><h3><a href="#">사업영역<span><i class="fa-solid fa-angle-down"></i></span></a></h3>
+                      <ul>
+                          <li><a href="../sub2/sub2_1.html">화학사업</a></li>
+                          <li><a href="../sub2/sub2_2.html">식품사업</a></li>
+                          <li><a href="../sub2/sub2_3.html">의약바이오사업</a></li>
+                          <li><a href="../sub2/sub2_4.html">패키징사업</a></li>
+                      </ul>
+                  </li>
+                  <li class="depth1"><h3><a href="#">사회공헌<span><i class="fa-solid fa-angle-down"></i></span></a></h3>
+                      <ul>
+                          <li><a href="../sub3/sub3_1.html">사회공헌개요</a></li>
+                          <li><a href="../sub3/sub3_2.html">주요활동</a></li>
+                          <li><a href="../sub3/sub3_3.html">재단</a></li>
+                          <li><a href="../sub3/sub3_4.html">사이클팀</a></li>
+                      </ul>
+                  </li>
+                  <li class="depth1"><h3><a href="#">고객지원<span><i class="fa-solid fa-angle-down"></i></span></a></h3>
+                      <ul>
+                        <li><a href="../news/list.php">NEWS</a></li>
+                        <li><a href="../sub4/sub4_2.html">FAQ</a></li>
+                        <li><a href="../sub4/sub4_3.html">찾아오시는길</a></li>
+                        <li><a href="../sub4/sub4_4.html">인재채용</a></li>
+                    </ul>
+                  </li>
+              </ul>
+              <ul class="btnBox">
+                <li class="btn">
+                  <?
+                    @extract($_POST);
+                    @extract($_GET);
+                    @extract($_SESSION);
+                    
+                    //$userid=$_SESSION['userid']; 정식 문법!
+                      
+                    if(!$userid)
+                    {
+                  ?>
+                  <a href="../login/login_form.php">LOGIN</a>
+                  <a href="../member/member_check.html">JOIN</a>
+                  <?
+                    }
+                    else
+                    {
+                  ?>
+                  <a href="../login/logout.php">LOGOUT</a>
+                  <a href="../member/member_form_modify.php">정보수정</a>
+                  <?
+                    }
+                  ?>
+                </li>
+                <li class="sns">
+                  <ul>
+                    <li>
+                        <a href="#">
+                            <span class="hidden">페이스북</span>
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="hidden">인스타그램</span>
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="hidden">유튜브</span>
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="hidden">포스트</span>
+                            <i class="fa-solid fa-pen"></i>
+                        </a>
+                    <li>
+                        <a href="#">
+                            <span class="hidden">블로그</span>
+                            <i class="fa-solid fa-bold"></i>
+                        </a>
+                    </li>
+                </ul>
+                </li>
+              </ul>
+          </nav>
+        </div>      
+    </header>

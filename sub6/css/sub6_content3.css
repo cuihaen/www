@@ -1,0 +1,36 @@
+/* content영역 */
+.contentArea{width:1200px;margin: 0 auto}
+
+.contentArea dt{color:#1b8ab3;font-weight: 500}
+.contentArea dd{margin:10px 0}
+.contentArea  dd i{margin-right: 10px}
+
+/* 삼양홀딩스 영역 */
+.contentArea .mainCom{width:1000px;margin:120px auto 80px;overflow: hidden}
+.contentArea .mainCom dl{float: left;width:560px;text-align: justify;line-height: 2em;margin-left: 20px}
+.contentArea .mainCom dt{font-size: 1.8em;margin: 20px 0}
+.contentArea .mainCom p{margin-bottom: 10px}
+.contentArea .map{width:350px;height:325px;position: relative;float: right;background: #ecf3f5;
+                  text-align: center;padding-top: 25px}
+.contentArea .map img{width:300px;height:300px}
+.contentArea .map i,.contentArea .map span{position:absolute;color:#666;}
+.contentArea .map i{top:53px;left:115px;font-size: 1.8em;transition:all .3s ease-out}
+.contentArea .map span{top:73px;left: 140px;font-weight: 500}
+
+.contentArea .map:hover>i{color:#0c3c4e;font-size: 2.3em;top:43px;left:112px}
+.contentArea .map:hover>span{color:#0c3c4e}
+
+/* 계열사 */
+.contentArea .info{position:relative;top:0;left:50%;margin-left: -1000px;width:2000px;background: #f8f8f8;padding:80px 0}
+.contentArea .info ul,.info02{width:1200px;margin:0 auto}
+.contentArea .info li,.info02 li{overflow: hidden}
+.contentArea .info h3,.info02 h3{margin:30px 0 20px 70px;font-size: 1.3em;font-weight: 500;position: relative}
+.contentArea .info h3::before,.info02 h3::before{content:'';display: block;width:8px;height:8px;border-radius: 50%;
+                              background: #1b8ab3;position: absolute;left: -13px;top:2px}
+.contentArea .info li dl,.info02 li dl{float: left;width:500px;margin:20px 50px}
+.contentArea .info li dt,.info02 li dt{border-bottom: 2px solid #0c3c4e;height:40px;font-size: 1.15em}
+.contentArea .info dd,.info02 dd{margin:15px 0 15px}
+
+.info02{margin:80px 0 100px;width:1200px;background: url(../images/content3/world_map.svg)center no-repeat}
+.info02 .adress{overflow: hidden}
+.info02 .adress i{margin:6px 17px 20px 0;float: left}

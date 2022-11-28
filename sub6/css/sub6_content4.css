@@ -1,0 +1,25 @@
+/* content영역 */
+.contentArea p{text-align: center;line-height: 2em}
+
+/* 회사지도영역 */
+.map{width:1000px;margin:50px auto 0;padding:80px 0 60px}
+.map h3{font-size: 1.5em;text-align: center;margin-bottom: 60px}
+.map #company{width:100%;height:500px;border:1px solid #ccc}
+
+/* 주소 및 교통편 안내 */
+.companyAdress{width:1000px;margin:0 auto;padding-bottom:100px}
+.companyAdress dl{margin-bottom: 40px;}
+.companyAdress dt{margin:20px 0;font-weight: 500; color:#1b8ab3;font-size: 1.1em}
+.companyAdress dd{color:#666;overflow: hidden}
+.companyAdress span{float:left;margin:8px 0}
+.companyAdress span:nth-child(1),.adress .tel{display:block;font-weight: 500;margin-right:20px}
+.adress .tel{margin-left: 20px;}
+
+.subway span{width:28px;height:28px; border-radius: 50%; background:rgb(38, 60, 150);
+             color:#fff;text-align: center; margin:0 0}
+.bus span{width:40px;height:28px; border-radius: 5px; color:#fff;text-align: center; margin:0 0}
+.bus .bus01{margin-top: 30px}
+.bus .bus02{margin-top: 10px}
+.bus .bus01 span{background:#2958a7}
+.bus .bus02 span{background:#009c3d}
+.contentArea{background: url(../images/content4/company.png) right bottom no-repeat;}

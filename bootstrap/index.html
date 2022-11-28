@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mashall</title>
+
+    <link rel="shortcut icon"  type="image/x-icon"  href="./favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="./app_icon.png">
+    <link rel="apple-touch-startup-image" href="./startup.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/layout.css">
+
+    <script src="./js/prefixfree.min.js"></script>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    
+
+<script>
+	try {
+    window.addEventListener('load', function(){
+          setTimeout(scrollTo, 0, 0, 1); 
+      }, false);
+  } catch(e) {}
+
+</script>
+
+</head>
+<body data-spy="scroll" data-target="#headerArea" data-offset="10">
+    <div id="skipNav">
+        <a href="#content">본문 바로가기</a>
+        <a href="#navbar">글로벌 네비게이션 바로가기</a>
+    </div>
+    <header id="headerArea">
+        <div class="container-fluid">
+        <h1 class="hidden">mashall</h1>
+        <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+            <a class="navbar-brand" href="./index.html"><h1><span class="hidden">mashall logo</span></h1></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExample04">
+            <ul class="navbar-nav navbar-right me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                <a class="nav-link" href="#best_item"><h2>best item</h2></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#limited_edition"><h2>Limited Edition</h2></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#products"><h2>products</h2></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#brandStory"><h2>Brand story</h2></a>
+                </li>
+            </ul>
+            <form role="search">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            </form>
+            </div>
+        </nav>
+        </div>
+    </header>
+    <div class="main_visual">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/main1.jpg" alt="mashall_mainBG1">
+                <div class="container">
+                  <div class="carousel-caption">
+                    <span class="display-6">TRAVELS LIGHT, SOUNDS HEAVY</span>
+                    <p>20+ HOURS OF PORTABLE PLAYTIME</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/main2.jpg" alt="mashall_mainBG2">
+                <div class="container">
+                  <div class="carousel-caption">
+                    <span class="display-6">PACKS A PUNCH</span>
+                    <p>30+ HOURS OF PORTABLE PLAYTIME</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/main3.jpg" alt="mashall_mainBG2">
+                <div class="container">
+                  <div class="carousel-caption">
+                    <span class="display-6">MIGHTY SOUND, EVERYWHERE</span>
+                    <p>15+ HOURS OF PORTABLE PLAYTIME</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+    <article id="content" data-bs-spy="scroll" data-bs-target="#navbar">
+          <h2 class="hidden">본문 콘텐츠영역</h2>
+          <section id="best_item" class="best row move">
+              <h3>YOUR NEW OBSESSION</h3>
+              <p>Let us introduce you to your new obsession. Get sound that stands out.</p>
+              <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="imgBox">
+                  <img src="./images/best1.jpg" alt="best_item1">
+                </div>
+                <span class="product_name">willen</span>
+                <p>MIGHTY SOUND, EVERYWHERE<span>15+ HOURS OF PORTABLE PLAYTIME</span></p>
+                <button class="btn" data-bs-toggle="modal" data-bs-target="#myModal1">VIEW MORE</button>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="imgBox">
+                  <img src="./images/best3.jpg" alt="best_item2">
+                </div>          
+                <span class="product_name">emberton II</span>
+                <p>PACKS A PUNCH<span>30+ HOURS OF PORTABLE PLAYTIME</span></p>
+                <button class="btn" data-bs-toggle="modal" data-bs-target="#myModal2">VIEW MORE</button>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4 col-md-4">
+                <div class="imgBox">
+                  <img src="./images/best2.jpg" alt="best_item3">
+                </div>          
+                <span class="product_name">STANMORE II</span>
+                <p>TRAVELS LIGHT, SOUNDS HEAVY<span>20+ HOURS OF PORTABLE PLAYTIME</span></p>
+                <button class="btn" data-bs-toggle="modal" data-bs-target="#myModal3">VIEW MORE</button>
+              </div><!-- /.col-lg-4 -->
+          </section>
+          <section id="limited_edition" class="limited move">
+            <div class="imgBox col-lg-6 col-md-5">
+              <img src="./images/limited.jpg" alt="limited edition products">
+            </div>
+            <div class="txtBox col-lg-6 col-md-7">
+              <h3 class="display-6">DIAMOND JUBILEE EDITION</h3>
+              <p><span>Six decades</span> in the business requires a special kind of <span>CELEBRATION</span>. 
+                Which is why we created our limited edition Black Diamond collection. 
+                The perfect way to mark our Diamond Jubilee, and 60 years of loud.</p>
+            </div>
+          </section>
+          <section id="products" class="move">
+            <h3>Products</h3>
+            <p>Lend us your ears and We’ll play you a song</p>
+            <ul id="pills-tab" class="tab_menu" role="tablist">
+                <li class="tab_list float-start" role="presentation">
+                  <button class="tab_btn active" data-bs-toggle="pill" data-bs-target="#pills-headphone" type="button" role="tab" aria-controls="pills-headphone" aria-selected="true">HEADPHONES</button>
+                </li>
+                <li class="tab_list float-end" role="presentation">
+                  <button class="tab_btn" data-bs-toggle="pill" data-bs-target="#pills-speakers" type="button" role="tab" aria-controls="pills-speakers" aria-selected="false">SPEAKERS</button>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-headphone" role="tabpanel" aria-labelledby="pills-headphone" tabindex="0">
+                    <div id="carouselHeadphone" class="carousel slide headphones" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <ul class="carousel-item active">
+                                <li class="col-lg-4">
+                                  <a href="#">
+                                    <img src="./images/headphone1.jpg" alt="headphone1">
+                                    <dl>
+                                      <dt>MONITOR II A.N.C.</dt>
+                                      <dd>$359</dd>
+                                    </dl>
+                                  </a>
+                                </li>
+                                <li class="col-lg-4">
+                                  <a href="#">
+                                  <img src="./images/headphone2.jpg" alt="headphone1">
+                                  <dl>
+                                    <dt>MOTIF A.N.C.</dt>
+                                    <dd>$219</dd>
+                                  </dl>
+                                  </a>
+                                </li>
+                                <li class="col-lg-4">
+                                  <a href="#">
+                                  <img src="./images/headphone3.jpg" alt="headphone1">
+                                  <dl>
+                                    <dt>MAJOR IV</dt>
+                                    <dd>$179</dd>
+                                  </dl>
+                                  </a>
+                                </li>
+                            </ul>
+                            <ul class="carousel-item">
+                                <li class="col-lg-4">
+                                  <a href="#">
+                                  <img src="./images/headphone5.jpg" alt="headphone1">
+                                  <dl>
+                                    <dt>MINOR III</dt>
+                                    <dd>$139</dd>
+                                  </dl>
+                                  </a>
+                                </li>
+                                <li class="col-lg-4">
+                                  <a href="#">
+                                  <img src="./images/headphone4.jpg" alt="headphone1">
+                                  <dl>
+                                    <dt>MONITOR II A.N.C.</dt>
+                                    <dd>$389</dd>
+                                  </dl>
+                                  </a>
+                                </li>
+                                <li class="col-lg-4">
+                                  <a href="#">
+                                  <img src="./images/headphone6.jpg" alt="headphone1">
+                                  <dl>
+                                    <dt>MOTIF A.N.C.</dt>
+                                    <dd>$239</dd>
+                                  </dl>
+                                  </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselHeadphone" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselHeadphone" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+                <div class="tab-pane fade" id="pills-speakers" role="tabpanel" aria-labelledby="pills-speakers" tabindex="0">
+                    <div id="carouselSpeakers" class="carousel slide speakers" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <ul class="carousel-item active">
+                                <li class="col-lg-4">
+                                  <a href="#">
+                                  <img src="./images/speaker1.jpg" alt="headphone1">
+                                  <dl>
+                                    <dt>MAJOR IV</dt>
+                                    <dd>$179</dd>
+                                  </dl>
+                                  </a>
+                                </li>
+                                <li class="col-lg-4">
+                                  <a href="#">
+                                    <img src="./images/speaker2.jpg" alt="headphone1">
+                                    <dl>
+                                      <dt>MAJOR IV</dt>
+                                      <dd>$179</dd>
+                                    </dl>
+                                  </a>
+                                </li>
+                                <li class="col-lg-4">
+                                  <a href="#">
+                                    <img src="./images/speaker3.jpg" alt="headphone1">
+                                    <dl>
+                                      <dt>MAJOR IV</dt>
+                                      <dd>$179</dd>
+                                    </dl>
+                                  </a>
+                                </li>
+                            </ul>
+                            <ul class="carousel-item">
+                                <li class="col-lg-4">
+                                  <a href="#">
+                                    <img src="./images/speaker4.jpg" alt="headphone1">
+                                    <dl>
+                                      <dt>MAJOR IV</dt>
+                                      <dd>$179</dd>
+                                    </dl>
+                                  </a>
+                                </li>
+                                <li class="col-lg-4">
+                                  <a href="#">
+                                    <img src="./images/speaker5.jpg" alt="headphone1">
+                                    <dl>
+                                      <dt>MAJOR IV</dt>
+                                      <dd>$179</dd>
+                                    </dl>
+                                  </a>
+                                </li>
+                                <li class="col-lg-4">
+                                  <a href="#">
+                                    <img src="./images/speaker6.jpg" alt="headphone1">
+                                    <dl>
+                                      <dt>MAJOR IV</dt>
+                                      <dd>$179</dd>
+                                    </dl>
+                                  </a>
+                                </li>
+                            </ul>
+                            <ul class="carousel-item">
+                                <li class="col-lg-4">
+                                  <a href="#">
+                                    <img src="./images/speaker7.jpg" alt="headphone1">
+                                    <dl>
+                                      <dt>MAJOR IV</dt>
+                                      <dd>$179</dd>
+                                    </dl>
+                                  </a>
+                                </li>
+                                <li class="col-lg-4">
+                                  <a href="#">
+                                    <img src="./images/speaker8.webp" alt="headphone1">
+                                    <dl>
+                                      <dt>MAJOR IV</dt>
+                                      <dd>$179</dd>
+                                    </dl>
+                                  </a>
+                                </li>
+                                <li class="col-lg-4">
+                                  <a href="#">
+                                    <img src="./images/speaker9.jpg" alt="headphone1">
+                                    <dl>
+                                      <dt>MAJOR IV</dt>
+                                      <dd>$179</dd>
+                                    </dl>
+                                  </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselSpeakers" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselSpeakers" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+              </div>
+        </section>
+        <section id="brandStory" class="move">
+            <h3><span class="hidden">Brand story -</span>Never stop listening</h3>
+            <p>Can a sound last 60 years? for six decades, the legacy of MARSHALL has grown - chord to chord, person to person, generation to generation.</p>
+            <div class="youtubeBox">
+              <div>
+                <iframe src="https://www.youtube.com/embed/O3Eht-j75uI" title="youtube video" frameborder="0" allowfullscreen=""></iframe>
+              </div>
+            </div>
+            <div class="imgBox">
+              <span>the power to create change</span>
+            </div>
+            <div class="bottom">
+              <h4>60 YEARS OF LOUD</h4>
+              <p>A sound that started when Jim Marshall took the time to listen to the youth in his shop and together 
+                produced a new sound, the sound of their generation. One that didn’t stop there. One that every tim
+                e heard, inspired thenext. Till it was more than just a sound, more than just a name, it was the power
+                to unite.</p>
+                <div class="gridArea">
+                  <div class="imageBox grid-item1">
+                    <img src="./images/img1.jpg" alt="image1">
+                  </div>
+                  <div class="grid-item2">
+                    <p>Today, you can still hear it as loud as it began. On 
+                      stage, in homes and in the streets. An unwavering 
+                      force founded on one simple act, listening. So the 
+                      question isn’t: Can a sound last 60 years? 
+                      The real question is:</p>
+                      <span>WHEN YOU HEAR IT,<br>
+                        WHAT WILL YOU DO?</span>
+                  </div>     
+                  <div class="imageBox grid-item3">
+                    <img src="./images/img2.jpg" alt="imgRight">
+                  </div>
+                  <div class="imageBox grid-item4">
+                    <img src="./images/last1.webp" alt="image1">
+                  </div>
+                  <div class="imageBox grid-item5">
+                    <img src="./images/last2.jpg" alt="image2">
+                  </div>
+                  <div class="imageBox grid-item6">
+                    <img src="./images/last3.webp" alt="image3">
+                  </div>
+                  <div class="imageBox grid-item7">
+                    <img src="./images/last4.jpg" alt="image4">
+                  </div>
+                </div>
+            </div>
+        </section>
+    </article>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center border-top">
+        <div class="col-md-6 d-flex align-items-center">
+          <a href="./index.html" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <img class="bi" src="./images/marshall-logo-gold.svg" alt="mashall logo">
+          </a>
+          <span class="copyright">
+            &copy;2022 ZOUND INDUSTRIES. <br>
+            ALL RIGHTS RESERVED.</span>
+        </div>
+        <ul class="sns col-md-3 list-unstyled d-flex">
+          <li><a href="#"><i class="bi bi-spotify"></i></a></li>
+          <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+          <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+          <li><a href="#"><i class="bi bi-pinterest"></i></a></li>
+        </ul>
+    </footer>
+    <div class="modal fade" id="myModal1" tabindex="-1" aria-labelledby="willen" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="modal-title fs-5" id="willen">willen</span>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <ul class="modal-pop-menu" id="pills-tab1" role="tablist">
+              <li class="tabBtn willen-cream" role="presentation">
+                <button class="nav-link active" id="pills-willen1-tab" data-bs-toggle="pill" data-bs-target="#pills-cream" type="button" role="tab" aria-controls="pills-cream" aria-selected="true">cream</button>
+              </li>
+              <li class="tabBtn willen-black" role="presentation">
+                <button class="nav-link" id="pills-willen2-tab" data-bs-toggle="pill" data-bs-target="#pills-black" type="button" role="tab" aria-controls="pills-black" aria-selected="false">black</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent1">
+              <div class="tab-pane fade show active" id="pills-cream" role="tabpanel" aria-labelledby="pills-willen1-tab" tabindex="0">
+                <div class="modal_imgBox">
+                  <img src="./images/obsession01-1.png" alt="willen-cream">
+                </div>
+                <dl>
+                  <dt>willen<span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> 71 reviews</span></dt>
+                  <dd>Willen is the mighty wireless speaker that is made to go everywhere with you. This speaker brings you the heavy Marshall sound you love with one 2’’ full range driver and two passive radiators. This outdoor speaker couldn’t care less about what you throw at it with its top-of-class IP67 dust- and water-resistance rating. Willen brings together the iconic Marshall design with a ruggedness that dares you to push its limits. All this, plus its hefty 15+ hours of listening on a single charge and mounting strap mean that Willen is raring to go wherever you go.</dd>
+                  <dd>$119</dd>
+                </dl>
+              </div>
+              <div class="tab-pane fade" id="pills-black" role="tabpanel" aria-labelledby="pills-willen2-tab" tabindex="0">
+                <div class="modal_imgBox">
+                  <img src="./images/obssesion01-2.png" alt="willen-black">
+                </div>
+                <dl>
+                  <dt>willen<span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> 71 reviews</span></dt>
+                  <dd>Willen is the mighty wireless speaker that is made to go everywhere with you. This speaker brings you the heavy Marshall sound you love with one 2’’ full range driver and two passive radiators. This outdoor speaker couldn’t care less about what you throw at it with its top-of-class IP67 dust- and water-resistance rating. Willen brings together the iconic Marshall design with a ruggedness that dares you to push its limits. All this, plus its hefty 15+ hours of listening on a single charge and mounting strap mean that Willen is raring to go wherever you go.</dd>
+                  <dd>$119</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="myModal2" tabindex="-1" aria-labelledby="emberton2" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="modal-title fs-5" id="emberton2">emberton II</span>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <ul class="modal-pop-menu" id="pills-tab2" role="tablist">
+              <li class="tabBtn willen-cream" role="presentation">
+                <button class="nav-link active" id="pills-emberton1-tab" data-bs-toggle="pill" data-bs-target="#pills-emberton1" type="button" role="tab" aria-controls="pills-emberton1" aria-selected="true">cream</button>
+              </li>
+              <li class="tabBtn willen-black" role="presentation">
+                <button class="nav-link" id="pills-emberton2-tab" data-bs-toggle="pill" data-bs-target="#pills-emberton2" type="button" role="tab" aria-controls="pills-emberton2" aria-selected="false">black</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent2">
+              <div class="tab-pane fade show active" id="pills-emberton1" role="tabpanel" aria-labelledby="pills-emberton1-tab" tabindex="0">
+                <div class="modal_imgBox">
+                  <img src="./images/obsession02-1.png" alt="emberton2-cream">
+                </div>
+                <dl>
+                  <dt>EMBERTON II<span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>132 reviews</span></dt>
+                  <dd>Emberton II now packs an even bigger punch than before. The bestselling Marshall outdoor speaker now comes with 10 more hours of playtime than its predecessor so you can enjoy 30+ hours of listening. This new generation has Stack Mode so you can amplify your session by connecting to other Emberton II speakers. There’s also the addition of app support, giving you more control over your sound. Two 2’’ full range drivers, two passive radiators and True Stereophonic mean this wireless speaker brings you the heavy Marshall sound you know and love.</dd>
+                  <dd>$189</dd>
+                </dl>
+              </div>
+              <div class="tab-pane fade" id="pills-emberton2" role="tabpanel" aria-labelledby="pills-emberton2-tab" tabindex="0">
+                <div class="modal_imgBox">
+                  <img src="./images/obsession02-2.webp" alt="emberton2-black">
+                </div>
+                <dl>
+                  <dt>EMBERTON II<span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>132 reviews</span></dt>
+                  <dd>Emberton II now packs an even bigger punch than before. The bestselling Marshall outdoor speaker now comes with 10 more hours of playtime than its predecessor so you can enjoy 30+ hours of listening. This new generation has Stack Mode so you can amplify your session by connecting to other Emberton II speakers. There’s also the addition of app support, giving you more control over your sound. Two 2’’ full range drivers, two passive radiators and True Stereophonic mean this wireless speaker brings you the heavy Marshall sound you know and love.</dd>
+                  <dd>$189</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="myModal3" tabindex="-1" aria-labelledby="stanmore2" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="modal-title fs-5" id="stanmore2">STANMORE II</span>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <ul class="modal-pop-menu" id="pills-tab3" role="tablist">
+              <li class="tabBtn willen-cream" role="presentation">
+                <button class="nav-link active" id="pills-stanmore1-tab" data-bs-toggle="pill" data-bs-target="#pills-stanmore1" type="button" role="tab" aria-controls="pills-stanmore1" aria-selected="true">cream</button>
+              </li>
+              <li class="tabBtn willen-black" role="presentation">
+                <button class="nav-link" id="pills-stanmore2-tab" data-bs-toggle="pill" data-bs-target="#pills-stanmore2" type="button" role="tab" aria-controls="pills-stanmore2" aria-selected="false">black</button>
+              </li>
+              <li class="tabBtn willen-black" role="presentation">
+                <button class="nav-link" id="pills-stanmore3-tab" data-bs-toggle="pill" data-bs-target="#pills-stanmore3" type="button" role="tab" aria-controls="pills-stanmore3" aria-selected="false">brown</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent3">
+              <div class="tab-pane fade show active" id="pills-stanmore1" role="tabpanel" aria-labelledby="pills-stanmore1" tabindex="0">
+                <div class="modal_imgBox">
+                  <img src="./images/obsession03-2.png" alt="willen-cream">
+                </div>
+                <dl>
+                  <dt>STANMORE II<span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>144 reviews</span></dt>
+                  <dd>Classic Marshall details such as a textured vinyl covering, salt & pepper fret and the iconic script logo adorn the sturdy wooden frame of Stanmore II.The brass plate is proudly etched with the establishment date of 1962 – a subtle nod to the brand’s heritage and 60 years of loud.</dd>
+                  <dd>$419</dd>
+                </dl>
+              </div>
+              <div class="tab-pane fade" id="pills-stanmore2" role="tabpanel" aria-labelledby="pills-stanmore2" tabindex="0">
+                <div class="modal_imgBox">
+                  <img src="./images/obsession03-1.webp" alt="willen-black">
+                </div>
+                <dl>
+                  <dt>STANMORE II<span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>144 reviews</span></dt>
+                  <dd>Classic Marshall details such as a textured vinyl covering, salt & pepper fret and the iconic script logo adorn the sturdy wooden frame of Stanmore II.The brass plate is proudly etched with the establishment date of 1962 – a subtle nod to the brand’s heritage and 60 years of loud.</dd>
+                  <dd>$419</dd>
+                </dl>
+              </div>
+              <div class="tab-pane fade" id="pills-stanmore3" role="tabpanel" aria-labelledby="pills-stanmore3" tabindex="0">
+                <div class="modal_imgBox">
+                  <img src="./images/obsession03-3.png" alt="willen-black">
+                </div>
+                <dl>
+                  <dt>STANMORE II<span><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>144 reviews</span></dt>
+                  <dd>Classic Marshall details such as a textured vinyl covering, salt & pepper fret and the iconic script logo adorn the sturdy wooden frame of Stanmore II.The brass plate is proudly etched with the establishment date of 1962 – a subtle nod to the brand’s heritage and 60 years of loud.</dd>
+                  <dd>$419</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#top" class="topMove"><span>top</span></a>
+    <script src="./js/common.js"></script>
+</body>
+</html>

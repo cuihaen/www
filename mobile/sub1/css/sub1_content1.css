@@ -1,0 +1,42 @@
+/* content영역 */
+.contentArea p{text-align: justify;line-height: 1.8em;width:90%;margin:0 auto}
+
+/* 회사소개 영역 */
+.intro{padding:50px 0}
+.intro span{color: #1b8ab3;font-weight: 500}
+.intro .movie{width:90%;margin:30px auto 0}
+.intro video{width:100%}
+
+/* 삼양 비전 */
+.vision{background: #ecf3f5;padding: 50px 0;width:100%}
+.visionInner{width:100%}
+.vision dl{text-align: center;width:95%;margin: 0 auto}
+.vision dt{font-family: 'Noto Serif KR', serif;font-size: 1.3em;color: #1b8ab3}
+.vision dd{margin: 20px 0;letter-spacing: -.8px;}
+.vision dd span{font-size: 1.05em;font-weight: 500}
+.visionInner ul li{overflow: hidden;width: 95%;margin: 0 auto}
+.visionInner ul li p{text-align: justify}
+.visionInner ul li:nth-child(2){margin-top: 15px}
+.visionInner ul li img{float: left;width:40%;margin: 10px 10px 0 10px;border-radius: 10px}
+
+
+
+/* 창업자와 창업정신 */
+.history{ background: url(../images/content1/old_building.png) right bottom no-repeat;background-size: 52%;padding:50px 0}
+.history h3{font-size: 1.2em;font-weight: 500;margin-left:5%}
+.history p{line-height: 1.7em;text-align: justify;width:90%;margin: 15px auto 20px}
+.history .slogan{font-family: 'Noto Serif KR', serif;color:#333;text-align: center;text-shadow: 1px 1px 1px rgba(255,255,255,.9);width:100%}
+.history .openPop{display: block;color:#1b8ab3;width:140px;height:30px;margin-top: 30px;
+                background: url(../images/content1/arrow.png)right center no-repeat;background-size: 21%}
+
+
+/* popup창 */
+
+#content .modal_box{position: fixed; left: 0; top: 0; z-index: 50; width: 100%; height: 100%; 
+                    background: rgba(0,0,0,.45); display: none}
+#content .sub_popup{position: fixed; top: 50%; left: 50%; margin: -400px 0 0 -600px; 
+                    width: 1200px; height: 800px;background: #fff; box-shadow: 5px 5px 20px 3px rgba(0,0,0,.3);
+                    z-index: 60; display:none;overflow: hidden;padding:30px;overflow: hidden;border-top: 6px solid #0c3c4e}           
+
+#content  .sub_popup .sub_close_btn{position: absolute; top: -3px; right: 3px; display: block; overflow: hidden; width: 50px; 
+                                    height: 50px; padding: 9px 9px;color:rgba(33,157,203,.7);text-align: center;font-size: 2em;z-index: 70}

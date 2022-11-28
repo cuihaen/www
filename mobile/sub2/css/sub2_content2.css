@@ -1,0 +1,33 @@
+/* content영역 */
+.contentArea p{text-align: justify; line-height: 1.75em}
+.contentArea{width:100%;padding-top:50px}
+.contentArea .summary{text-align: center;width:85%;margin: 0 auto}
+
+/* 식품사업소개 */
+.intro{width:85%;margin: 0 auto;overflow: hidden;padding-bottom: 50px}
+.intro img{border-radius: 20px 0;box-shadow: 5px 5px 20px 3px rgba(0,0,0,.1);width:40%;float: left;margin:10px 10px 10px 0}
+.foodBusiness{width:100%}
+.foodBusiness p{line-height: 2em;margin:10px 0}
+.foodBusiness span{font-family: 'Noto Serif KR', serif;text-align: center;
+                   font-size: 1.3em;color: #1b8ab3;font-weight: 500;
+                   margin-bottom: 20px;display: block}
+
+/* 브랜드 */
+.brand{width:100%;background: #f3efec;padding-bottom: 50px;overflow: hidden}
+.brandInner{width: 85%;margin: 0 auto}
+.brandInner .qone{width:40%;margin: 50px auto 0;display: block}
+.brandInner dl{text-align: center}
+.brandInner dt{font-family: 'Noto Serif KR', serif;font-size : 1.5em;margin-bottom: 20px}
+.brandInner dt span{color:#bd0202;font-weight: 500}
+.brandInner ul{width: 90%;margin: 0 auto}
+.brandInner .brand01,.brandInner .brand02{font-size: 1.25em;font-weight: 500;
+                                          color: #bd0202;display: block;
+                                          text-align: center;margin-top: 20px}
+
+.brandInner li:first-child{margin-top: 40px;}
+.brandInner li{width:100%; background: #fff;margin: 0 auto 20px;overflow: hidden}
+.brandInner li img{display: block;margin: 13px auto;border: 3px solid #eee}
+.brandInner li p{width:90%;margin: 8px auto;color:#666}
+.brandInner li p span{color:#333}
+.brandInner li a{display: block;margin: 12px 0;color: #bd0202;font-size: .9em;height:30px;font-weight: 500;text-align: center}
+.brandInner li a i{margin-left: 5px}

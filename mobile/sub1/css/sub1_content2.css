@@ -1,0 +1,14 @@
+/* content영역 */
+.contentArea p{text-align: justify; line-height: 1.75em}
+.contentArea{width:100%;margin:0 auto;padding:50px 0; position:relative}
+
+/* 인사말 */
+.greeting{width:85%;margin:0 auto;}
+.greeting .slogan{font-size: 1.4em;color:#1b8ab3;text-align:center;
+                  font-family:'Noto Serif KR', serif;font-weight: 500;letter-spacing: -.5px}
+.greeting p{margin:20px 0}
+
+/* CEO이미지 */
+.ceoImg{position:absolute;bottom:0;right:0;width:55%}
+.ceoSign{margin-left:10%; padding:60px 0 40px;}
+.ceoSign img{width:40%}

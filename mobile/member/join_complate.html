@@ -1,0 +1,50 @@
+<?
+	session_start();
+    @extract($_POST);
+    @extract($_GET);
+    @extract($_SESSION);
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon-precomposed" href="../app_icon.png">
+    <link rel="apple-touch-startup-image" href="../startup.png">
+    <title>회원가입-이용약관</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="./css/join_complate.css">
+    <script src="https://kit.fontawesome.com/2b8b92cff2.js" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="../js/prefixfree.min.js"></script>
+    <script src="./js/member_check.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1 class=hidden>삼양홀딩스 홈페이지 가입완료</h1>
+            <a class="logo" href="../index.html"><img src="../svg/samyang_CI.svg" alt="삼양홀딩스로고"></a> 
+        </header>             
+        <article id="content">           
+            <h2 class=hidden>가입완료</h3>
+            <div class="lineMap">
+                <span>약관동의</span>
+                <span>정보입력</span>
+                <span class="current">가입완료</span>
+            </div>
+            <section>
+                <h3 class="hidden">회원가입 완료메세지</h3>
+                <p><span>삼양홀딩스</span>회원가입이 완료되었습니다. 감사합니다.</p>
+                <div class="button">
+                    <a href="../login/login_form.php" class="login">로그인하기</a>
+                    <a href="../index.html" class="home">메인으로</a>
+                    
+                </div>
+            </section> 
+        </article>
+    </div>
+</body>
+</html>

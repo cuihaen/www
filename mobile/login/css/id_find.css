@@ -1,0 +1,52 @@
+input:focus,select:focus{outline: none}
+input::placeholder{color:#bbb}
+input,select{border:none}
+
+body{background: #ecf3f5}
+/* body{background: #ecf3f5} */
+
+.logo{margin: 50px auto 0; display: block; width:250px}
+#content{width: 500px; margin: 50px auto;padding: 70px;background: #fff;box-shadow: 5px 5px 30px 3px rgba(0,0,0,.05)} 
+#content h2{text-align: center;font-size: 1.4em;color:rgb(12,60,78);position:relative}
+#content h2::after{content:'';width:40px;height:3px;background: #1b8ab3;display: block;position:absolute;bottom:-20px;
+                   left:50%;transform: translateX(-50%)}
+#content #title>p{font-size: .8em;text-align: center;margin: 50px 0 30px}
+
+#content #id_input_button{width:90%;margin: 0 auto}
+
+#content #name{width:450px;padding:15px 5px 15px 20px;margin-bottom: 5px;box-sizing: border-box;border: 2px solid #eee;font-size: .9em}
+#content .telBox{font-size: .8em;border:2px solid #eee}
+#content .telBox #hp1{width:90px;padding:15px 10px;text-align: center;margin-right: 2px}
+#content .telBox #hp2,#content .telBox #hp3{width:105px;padding:15px 20px}
+
+#content fieldset .find{width: 100%;line-height: 24px;padding: 12px 0;border: 2px solid rgb(12,60,78);
+                        background: rgb(12,60,78);color: #fff;font-size: 14px;cursor: pointer;
+                        box-sizing: border-box;text-align: center;margin: 15px 0 20px}
+
+
+#content .go{overflow: hidden;width:60%;margin: 0 auto}
+#content .go li{width:50%;float: left;text-align: center;box-sizing: border-box;position:relative;font-size: .9em}
+#content .go li a{color: #666}
+#content .go li:nth-child(1)::after{content:'';background: #bbb;width:2px;height:13px;position:absolute;right: 0;top:50%;
+                                        transform: translateY(-50%)}  
+                                        
+#content #join_button{width:60%;margin: 30px auto 0}
+#content #join_button span{color:#999;font-size: .8em;margin-right: 10px}
+#content #join_button a{padding:8px;color:#1b8ab3;font-weight: 500;font-size: .95em}
+
+#content .modal_bg{position: fixed; left: 0; top: 0; z-index: 50; width: 100%; height: 100%; background: rgba(0,0,0,.45); display: none}
+#content .popup{position: fixed; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%); width: 500px; height:400px; background: #fff; box-shadow: 5px 5px 20px 3px rgba(0,0,0,.3);
+                z-index: 60; display:none;overflow: hidden;padding:30px;overflow: hidden;border-top: 6px solid #0c3c4e}
+
+#content .popup .close_btn{position: absolute; top: -3px; right: 3px; display: block; overflow: hidden; width: 50px; 
+                  height: 50px; padding: 9px 9px;color:rgba(33,157,203,.7);text-align: center;font-size: 2em;z-index: 70}
+
+#content .popup #loadtext strong{display: block;font-size: 1.2em;color:#0c3c4e;text-align: center;margin: 40px 0 20px}
+#content .popup #loadtext dl{padding:20px 30px;margin: 10px;overflow: hidden;background: #ecf3f5;font-size: .9em}
+#content .popup #loadtext dt{float: left;font-weight: 500;margin-right: 20px;color:#1b8ab3}
+#content .popup .login_btn{width: 95%;line-height: 24px;padding: 12px 0;border: 2px solid rgb(12,60,78);
+                            background: rgb(12,60,78);color: #fff;font-size: 14px;display: block;
+                            box-sizing: border-box;text-align: center;margin: 15px auto 20px}
+#content .popup .find_ps{width:53%;margin: 0 auto}
+#content .popup .find_ps span{color:#999;font-size: .8em;margin: 70px 0 10px}
+#content .popup .find_ps a{padding:8px;color:#1b8ab3;font-weight: 500;font-size: .95em}

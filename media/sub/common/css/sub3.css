@@ -1,0 +1,213 @@
+@keyframes step {
+	0% {opacity:0}
+	80% {opacity:.5}
+	100% {opacity:1}
+}
+
+/* #content{width:80%; margin:0 auto} */
+section{padding:100px 0}
+section h3{font-size: 2vw;background-color:rgba(243,189,25,1);font-weight: bold;position: relative;
+           background-image: linear-gradient(135deg, rgba(249,189,25,1) 0%,rgba(249,242,149,1) 25%,rgba(222,174,71,1) 62%,rgba(237,201,103,1) 100%);
+           background-size: 100%;-webkit-background-clip: text;-webkit-text-fill-color: transparent;font-family:'Quintessential', cursive}
+.intro{padding: 100px 10%;position:relative}
+.intro h3{margin-bottom: 20px}
+.intro h3, .intro p{text-align: center}
+.intro p{width:80%;margin: 0 auto 50px;line-height: 2em}
+
+.subPop .subPop_menu{display: grid;grid-template-columns: repeat(2,1fr);grid-gap:20px}
+.subPop .subPop_menu li{overflow: hidden;border:3px solid #000;transition:all .5s ease-out}
+.subPop .subPop_menu li .openPop{display: block;padding:5%}
+.subPop .subPop_menu li .video{position: relative;overflow: hidden}
+.subPop .subPop_menu li .video img{object-fit: cover;width:100%;height:100%;object-position: 50% 50%}
+.subPop .subPop_menu li .video span{font-size: 4em;position:absolute;left: 50%;top:50%;transform: translateX(-50%) translateY(-50%);color:rgba(189, 2, 2,.3);transition: all .5s ease-out}
+
+.subPop .subPop_menu li:hover{border-color: rgba(243,189,25,1);background: rgba(55, 55, 55,.5)}
+.subPop .subPop_menu li:hover .video span{color:rgba(189, 2, 2,1)}
+
+.subPop .subPop_menu li dl{padding: 5% 0 5% 5%;text-align: center}
+.subPop .subPop_menu li dt{font-family: 'Quintessential',cursive;font-size: 1.7vw}
+.subPop .subPop_menu li dd{color:#999;margin-top: 15px;font-weight: 300}
+
+.subPop .sub_modal_box{position: fixed; left: 0; top: 0; z-index: 50; width: 100%; height: 100%; 
+                       background: rgba(0,0,0,.45); display: none}
+.subPop .sub_pop_btn{position: fixed; left: 0; top: 50%;  width: 100%; height: 0;  display: none;font-size: 3em;z-index: 50;margin-top: -30px}
+.subPop .sub_pop_btn a{display: block; position: absolute; top:50%; left:50%; color: rgba(255,255,255,4); margin-top: -10px;transition: all .5s;z-index: 60}
+.subPop .sub_pop_btn a:hover{color:rgba(255,255,255,8)}
+.subPop .sub_pop_btn .pre{margin-left: -560px}
+.subPop .sub_pop_btn .next{margin-left: 530px}
+
+.subPop  .sub_popup{position: fixed; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%); 
+                    width: 60%; max-height:100%; background: #141714; box-shadow: 5px 5px 20px 3px rgba(0,0,0,.3);
+                    z-index: 60; display:none;overflow: hidden;padding: 50px 30px 30px;overflow: hidden;border-top: 6px solid rgba(243,189,25,1)}
+.subPop .sub_popup .txt{overflow: hidden;width:100%;position: relative}
+.subPop .sub_popup .youtube_box{width:60%;float: left}
+.subPop .sub_popup .youtube_box div{position: relative;width: 100%;height:0;padding-top: 56.25%}
+.subPop .sub_popup .youtube_box div iframe{position: absolute;left: 0;top: 0;width: 100%;height: 100%}
+
+.subPop .sub_popup .txt dl{padding:5% 0 5% 3%;width:34%;float: right}
+.subPop .sub_popup .txt dl dt{font-family: 'Quintessential',cursive;font-size: 1.4vw;color:rgba(243,189,25,1)}
+.subPop .sub_popup .txt dl dd{margin-top: 15px;font-weight: 300;font-size: 1.1vw}
+.subPop .sub_popup .txt dl dd a{display: block;position:absolute; right:3%;bottom:8%;padding:5px 8px;transition: all .5s ease-out}
+.subPop .sub_popup .txt dl dd a:hover{background: rgba(237,201,103,.2)}
+.subPop .sub_popup .txt dl dd a i{margin-left: 5px;}
+.subPop .sub_popup .sub_close_btn{position: absolute; top: -3px; right: 3px; display: block; overflow: hidden; width: 50px; 
+                                  height: 50px; padding: 9px 9px;color:rgba(243,189,25,1);text-align: center;font-size: 2em;z-index: 70;}
+
+.backimg{position:relative;width:100%;height: 300px;background: url(../images/back3.jpg) center bottom no-repeat;background-attachment: fixed;background-size:100%}
+
+/* music */
+.ost{padding: 150px 0 150px 10%;position:relative;background: url(../images/music_bg.jpg) 0 0 no-repeat;background-size: cover}
+section.ost h3{text-align: right;margin-right: 15%}
+.ost .tabs{overflow: hidden}
+.ost .tabs ul{float: left;margin-top: 80px}
+.ost .tabs li{margin: 5px 0;position: relative}
+.ost .tabs li .tab{width:120px;height:120px;display: block;margin: 10px 0;border:1px solid rgba(243,189,25,0);box-sizing: border-box;transition:all .5s ease-out;z-index: 10;position:relative}
+.ost .tabs li .tab img{object-fit: cover;width:100%;height:100%;object-position: 50% 50%}
+
+.ost .tabs li span{width:110px;height:110px;position:absolute;left:50%;top:50%;background:url(../images/lp.png) 0 0 no-repeat;background-size: cover;border-radius: 50%;margin-left: -55px;margin-top: -55px;z-index: 0;animation: rotate_image 7s linear infinite;transition: all .5s ease-out}
+.ost .tabs li span.active{margin-left: 5px}
+
+.lpPlayer .player{position: relative}
+
+
+.lpPlayer .player{float: right;width:80%;height: 600px;background: url(../images/player_bg.png) 0 0 no-repeat;background-size: cover;border-radius: 40px 0 0 40px;box-shadow: 5px 5px 30px 5px rgba(0,0,0,.8);margin: 50px 0}
+.ost .lpPlayer .lp{width: 650px;height:650px;position:absolute;left: -80px;top:50%;margin-top: -325px;border-radius: 50%;overflow: hidden;box-shadow: 5px 5px 20px 5px rgba(0,0,0,.7);transition: all .3s ease;background: url(../images/music1.jpg) 0 0 no-repeat;background-size: cover}
+/* .ost .lpPlayer .lp.music2{background: url(../images/music2.jpg) 0 0 no-repeat;background-size: cover}
+.ost .lpPlayer .lp.music3{background: url(../images/music3.jpg) 0 0 no-repeat;background-size: cover}
+.ost .lpPlayer .lp.music4{background: url(../images/music4.jpg) 0 0 no-repeat;background-size: cover} */
+.ost .lpPlayer .contlist .audioBox{position:absolute;left:620px;bottom:80px;width:26%;height:70px;background: #000;border-radius: 20px;padding:3%;color:#aaa;box-shadow: inset 3px 3px 15px 5px rgba(36, 35, 35, 0.3);overflow: hidden}
+.ost .lpPlayer .contlist .audioBox dl{float: left}
+.ost .lpPlayer .contlist .audioBox dt{font-size: 1.2vw;margin-bottom: 10px}
+
+.ost .lpPlayer .contlist .audioBox .onoff{float: right;margin-top: -15px;}
+.ost .lpPlayer .contlist .audioBox .onoff span{display: block;color:#fff;text-transform: uppercase;text-align: center}
+
+
+.ost .lpPlayer .lp span{width:100px;height:100px;position:absolute;left: 50%;top:50%;transform: translateX(-50%) translateY(-50%);border-radius: 50%;display: block;background: rgba(0,0,0,.8);}
+.ost .lpPlayer .lp span img{width:15px;height:15px;border-radius: 50%;position:absolute;left: 50%;top:50%;transform: translateX(-50%) translateY(-50%)}
+
+@keyframes rotate_image{
+    100%{transform: rotate(360deg)}
+}
+.ost .lpPlayer .contlist.play .lp{animation: rotate_image 7s linear infinite}
+
+
+.ost .lpPlayer .palyer_bar{position:absolute;left:650px;top:45px;width:140px;transform: rotate(13deg);transform-origin: 80px 120px;transition: all .5s ease-out}
+.ost .lpPlayer .contlist.play .palyer_bar{position:absolute;left:650px;top:45px;width:140px;transform: rotate(50deg)}
+
+/* 일반 pc */
+@media screen and (max-width:1280px){
+/* #content{width:90%; margin:0 auto} */
+section{padding: 80px 5%}
+section h3{font-size: 2.6vw}
+/* section .moreBtn{width:45px;height:45px;line-height: 38px;font-size: 2em} */
+.intro{padding: 100px 5%}
+.subPop  .sub_popup{width:80%}
+.subPop .subPop_menu li dl{padding:5% 3%}
+
+.subPop .sub_popup .txt dl dt{font-size: 1.8vw}
+.subPop .sub_popup .txt dl dd{font-size: 1.4vw}
+
+/* music */
+
+.lpPlayer .player{width:75%}
+
+.ost .lpPlayer .contlist .audioBox{height: 150px;width:140px;left: 600px}
+.ost .lpPlayer .contlist .audioBox dl{float: none;width:200px}
+.ost .lpPlayer .contlist .audioBox .onoff{float: none;margin: 0 auto}
+.ost .lpPlayer .contlist .audioBox .onoff img{display: block;margin: 8px auto}
+
+.ost .lpPlayer .palyer_bar{position:absolute;left:570px;top:45px;width:190px}
+.ost .lpPlayer .contlist.play .palyer_bar{position:absolute;left:600px;top:20px;width:190px;transform: rotate(50deg);transform-origin: 40% 20%}
+
+
+.backimg{position:relative;width:100%;height: 300px;background: url(../images/back3.jpg) center bottom no-repeat;background-attachment: fixed;background-size:100%}
+
+}
+
+/* 테블릿 1024px */
+@media screen and (max-width:1024px) {
+.imgBox h3{font-size: 2.2vw}
+section h3{font-size: 2.8vw}
+
+section.ost{padding:150px 0 0}
+.ost .tabs{width:auto}
+.ost .tabs ul{float: none;overflow: hidden;margin: 80px auto;width:544px;padding-top:80px}
+.ost .tabs ul li{float: left;margin: 0 8px}
+.ost .tabs li span{margin-left: -55px;margin-top: -55px}
+.ost .tabs li span.active{margin-top:-70px;margin-left: -55px;margin-top: -100px}
+
+.lpPlayer .player{float: none;width:65%;height: 600px;background-size: cover;border-radius: 40px 40px 0 0;box-shadow: 5px 5px 30px 5px rgba(0,0,0,.8);margin: 0 auto;padding-bottom: 240px}
+.ost .lpPlayer .lp{left: 50%;top:0;margin-top: -60px;margin-left: -325px}
+
+.ost .lpPlayer .contlist .audioBox{left:50%;bottom:70px;width:260px;height:100px;margin-left: -80px}
+.ost .lpPlayer .contlist .audioBox dl{float: left;margin-top: 20px;width: 170px}
+.ost .lpPlayer .contlist .audioBox dt{font-size: 1.9vw;margin-bottom: 10px}
+.ost .lpPlayer .contlist .audioBox .onoff{float: right;margin-top: -15px}
+
+.ost .lpPlayer .palyer_bar{position:absolute;left:18px;top:680px;width:190px;transform: rotate(235deg);transform-origin: 40% 20%}
+.ost .lpPlayer .contlist.play .palyer_bar{position:absolute;left:43px;top:670px;width:190px;transform: rotate(205deg);transform-origin: 40% 20%}
+
+
+.backimg{position:relative;width:100%;height: 250px;background: url(../images/back1.jpg) center no-repeat;background-attachment:scroll;background-size:100%}
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+section.move h3{font-size: 3.2vw}
+.down{font-size: 2vw;}
+
+/* about(768px) */
+.intro p{font-size: 1.7vw;line-height: 3.3vw}
+
+.subPop  .sub_popup{width:90%}
+.subPop .sub_popup .youtube_box,.subPop .sub_popup .txt dl{float: none;width:auto}
+.subPop .sub_popup .txt dl dt{font-size: 2.2vw;}
+.subPop .sub_popup .txt dl dd a{right:3%;bottom:0;font-size: 2vw;}
+
+section.ost{padding:100px 0 0}
+.ost .tabs ul{padding-top: 50px;width:470px}
+.ost .tabs ul li{margin: 0 8px 0 15px}
+.ost .tabs li .tab{width:90px;height:90px}
+.ost .tabs li span{width:80px;height:80px;margin-left: -40px;margin-top: -40px}
+.ost .tabs li span.active{margin-top:-70px;margin-left: -40px;}
+
+
+.ost .lpPlayer .palyer_bar{display: none}
+.lpPlayer .player{padding-bottom: 200px}
+.ost .lpPlayer .contlist .audioBox{left:50%;bottom:70px;width:260px;height:100px;margin-left: -130px}
+.ost .lpPlayer .contlist .audioBox .onoff{float: right;margin-top: -10px}
+.ost .lpPlayer .lp{width: 600px;height:600px;margin-left: -300px}
+
+.backimg{height:200px}
+}
+
+
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+section h3{font-size: 3.7vw}
+
+/* about(640px) */
+.intro p{font-size: 3vw;line-height: 5.5vw}
+
+section.ost{padding:80px 0 0}
+.ost .lpPlayer .lp{width: 430px;height:430px;margin-left: -215px}
+.lpPlayer .player{padding-bottom: 0}
+.ost .lpPlayer .contlist .audioBox{margin-left: -140px}
+
+
+}
+
+
+/* 최소 사이즈 처리 */
+@media screen and (max-width:480px) {
+#wrap {min-width:320px}
+section h3{font-size: 5vw}
+
+
+
+
+}
+
+

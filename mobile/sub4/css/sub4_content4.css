@@ -1,0 +1,55 @@
+/* content영역 */
+.contentArea{width:100%;margin:0 auto}
+.summary p{text-align: center;line-height: 2em;margin-bottom: 30px}
+.summary,.rightPeople{padding:50px 0 0}
+.contentArea h3{font-size: 1.3em;color: #0c3c4e;font-weight: 500;text-align: center}
+
+/* 가치체계 의미구조 */
+.valueChain{width:100%;background: url(../images/content4/background.jpg)center  no-repeat;padding:50px 0 50px;background-size: cover}
+.valueChain .innerBox{width:90%;margin: 0 auto}
+.innerBox h3{color:#fff}
+.innerBox li{width:90%;height:99px;padding:10px;margin:30px auto 30px;background: rgba(255,255,255,.4);
+             border: 3px solid #ecf3f5;position: relative}
+
+.innerBox span{text-align: center;display: block;margin-top: 10px;font-weight: 500;color:#0c3c4e}
+.valueChain .innerBox p{font-family: 'Noto Serif KR', serif;margin-top: 10px;transition: all .5s ease-out; color: #0c3c4e;font-weight: 500;font-size: 1.08em;margin-top: 15px;line-height: 1.5em;text-align: center}
+
+/* 인재상 */
+.rightPeople{margin:0 auto;text-align: center}
+
+.rightPeople ul{display: grid;grid-template-columns: repeat(3,1fr);grid-gap: 0;grid-auto-rows: 230px;margin: 20px auto;width:90%}
+.rightPeople li{float: left;border-right: 1px dashed #ccc;padding:20px 5px;overflow: hidden;letter-spacing: -.3px;}
+.rightPeople li:last-child{border-right: none}
+.rightPeople li span{display: block;font-family:'Noto Serif KR', serif;font-weight: 500;font-size: 1.15em}
+
+.rightPeople li:nth-child(1) i{color:rgb(33,157,203)}
+.rightPeople li:nth-child(2) i{color:rgb(240,83,51)}
+.rightPeople li:nth-child(3) i{color:rgb(156,178,39)}
+.rightPeople i{font-size: 3.5em;margin-bottom: 20px}
+
+/* 대졸공채 */
+
+.tabs{position:relative;padding:80px 0;width:100%;background-size: cover;background: url(../images/content4/background01.jpg) center no-repeat;margin-bottom: 30px;}
+
+.tabs ul{margin-top: 30px;position: relative}
+
+.tabs i{display: block;font-size: 1.8em;margin-bottom: 10px}
+.tabs .text1{font-size: .7em;color:#fff;display: block;
+                   margin-top: 5px; transition: all .5s ease-out}
+
+.tabs h3{margin-bottom: 90px;color:#fff}
+.tabs p{text-align: center;margin:30px 0 20px;color:#fff}
+
+.tabs h4{position: absolute;top:140px;left:50%;font-weight: 500;display: block;height:40px;width:150px;background: #ecf3f5;color:#666;
+         border-radius: 30px;text-align: center;line-height: 38px}
+.tabs .title01{margin-left: -155px}
+.tabs .title02{margin-left: 0}
+
+.contlist{width:85%;margin: 0 auto}
+.contlist ol{display: grid;grid-gap: 5px;grid-auto-rows: 100px;text-align: center;margin:0 auto}
+
+.tabs .content01 ol{grid-template-columns: repeat(4,1fr)}
+.tabs .content02 ol{grid-template-columns: repeat(3,1fr)}
+.tabs>div li{height: 70px;background: rgba(255,255,255,.8);padding: 10px 0;border-radius: 15px;border:3px solid rgba(255,255,255,.8);margin-bottom: 10px}
+.tabs>div li span{display: block}
+.tabs>div li .text1{color:rgba(255,255,255,.1)}

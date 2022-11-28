@@ -1,0 +1,275 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<title>HARRY POTTER</title>
+	<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+	<link rel="apple-touch-icon-precomposed" href="./app_icon.png">
+	<link rel="apple-touch-startup-image" href="./startup.png">
+    <link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="./common/css/sub_common.css">
+    <link rel="stylesheet" href="./common/css/sub1.css">
+	<link rel="stylesheet" href="../css/swiper.min.css">
+    <script src="https://kit.fontawesome.com/2b8b92cff2.js" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="../js/prefixfree.min.js"></script>
+	<script src="./js/snap.svg-min.js"></script>
+	<script>
+		// <![CDATA[
+			try {
+				window.addEventListener('load', function(){
+					setTimeout(scrollTo, 0, 0, 1); 
+				}, false);
+			} catch(e) {}
+		// ]]>
+	</script>
+	<script> 
+		$(document).ready(function() {
+			var documentHeight =  $(document).height();
+				
+			$(".btn").click(function() {
+			$("#nav").animate({right:0,opacity:1}, 'fast').css('height',documentHeight);
+			$("#nav").fadeIn();
+			});
+			
+			$(".close").click(function() {
+				$("#nav").animate({right:'-100%',opacity:0}, 'fast').css('height',80);
+				$("#nav").hide();
+			});
+			
+			
+			var current=0;
+			$(window).resize(function(){
+				var screenSize = $(window).width(); 
+				if( screenSize > 640){
+				current=1;
+				$("#nav").css({right:0,opacity:1}).show();
+				}
+				if(current==1 && screenSize < 640){
+					$("#nav").css({right:'-100%',opacity:0});
+					current=0;
+				}
+			}); 
+		});
+	</script>
+</head>
+<body>
+	<div id="skipNav">
+		<a href="#content">본문바로가기</a>
+		<a href="#gnb">네비게이션바로가기</a>
+	</div>
+	
+	<div id="wrap">
+		<div class="imgBox">
+			<img src="./images/content1/main2.jpg" id="imgBIG" alt="main_background">
+			<img src="./images/content1/main.jpg" id="imgBG" alt="main_background">
+			<span class="mainTxt">ABOUT</span>
+			<a class="down" href="#"><span><img src="./common/images/hat.svg" alt="scroll down"></span>SCROLL ME</a>
+		</div>
+    <? include "../sub_header.html" ?>
+	<article id="content">
+		<h2 class="hidden">본문콘텐츠영역</h2>
+		<section class="about">
+			<h3>ABOUT</h3>
+			<div class="aboutInner">
+				<div class="authorImg">
+					<img src="./images/content1/j.webp" alt="J.K. Rowling">
+				</div>
+				<div class="txtBox">
+					<p>Harry Potter is a series of seven fantasy novels written by British author J. K. Rowling. 
+					The novels chronicle the lives of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, 
+					all of whom are students at Hogwarts School of Witchcraft and Wizardry. The main story arc concerns Harry's struggle against Lord Voldemort, 
+					a dark wizard who intends to become immortal, overthrow the wizard governing body known as the Ministry of Magic and subjugate all wizards 
+					and Muggles (non-magical people).</p>
+
+					<p>Since the release of the first novel, Harry Potter and the Philosopher's Stone, on 26 June 1997, the books have found immense popularity, 
+					positive reviews, and commercial success worldwide. They have attracted a wide adult audience as well as younger readers and are often considered 
+					cornerstones of modern young adult literature. As of February 2018, the books have sold more than 500 million copies worldwide, making them the 
+					best-selling book series in history, and have been translated into more than eighty languages. The last four books consecutively set records as 
+					the fastest-selling books in history, with the final instalment selling roughly 2.7 million copies in the United Kingdom and 8.3 million copies in 
+					the United States within twenty-four hours of its release.</p>
+
+					<p>The original seven books were adapted into an eight-part namesake film series by Warner Bros. Pictures. In 2016, the total value of the Harry Potter 
+					franchise was estimated at $25 billion, making Harry Potter one of the highest-grossing media franchises of all time. Harry Potter and the Cursed Child 
+					is a play based on a story co-written by Rowling.</p>
+				</div>
+			</div>
+			<span class="foot footprint1"></span>
+			<span class="foot footprint2"></span>
+			<span class="foot footprint3"></span>
+			<span class="foot footprint4"></span>
+			<span class="foot footprint5"></span>
+		</section>
+		<section id="grid" class="grid clearfix">
+			<h3>BOOK SERIES</h3>
+			<a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+				<figure>
+					<img src="./images/content1/book1.webp" alt="Harry Potter and the Philosopher's Stone">
+					<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+					<figcaption>
+						<h2>BOOK1</h2>
+						<p>Harry Potter and the Philosopher's Stone</p>
+					</figcaption>
+				</figure>
+			</a>
+			<a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+				<figure>
+					<img src="./images/content1/book2.webp" alt="Harry Potter and the Chamber of Secrets">
+					<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+					<figcaption>
+						<h2>BOOK2</h2>
+						<p>Harry Potter and the Chamber of Secrets</p>
+					</figcaption>
+				</figure>
+			</a>
+			<a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+				<figure>
+					<img src="./images/content1/book3.webp" alt="Harry Potter and the Prisoner of Azkaban">
+					<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+					<figcaption>
+						<h2>BOOK3</h2>
+						<p>Harry Potter and the Prisoner of Azkaban</p>
+					</figcaption>
+				</figure>
+			</a>
+			<a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+				<figure>
+					<img src="./images/content1/book4.webp" alt="Harry Potter and the Goblet of Fire">
+					<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+					<figcaption>
+						<h2>BOOK4</h2>
+						<p>Harry Potter and the Goblet of Fire</p>
+					</figcaption>
+				</figure>
+			</a>
+			<a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+				<figure>
+					<img src="./images/content1/book5.webp" alt="Harry Potter and the Order of the Phoenix">
+					<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+					<figcaption>
+						<h2>BOOK5</h2>
+						<p>Harry Potter and the Order of the Phoenix</p>
+					</figcaption>
+				</figure>
+			</a>
+			<a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+				<figure>
+					<img src="./images/content1/book6.webp" alt="Harry Potter and the Half-Blood Prince">
+					<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+					<figcaption>
+						<h2>BOOK6</h2>
+						<p>Harry Potter and the Half-Blood Prince</p>
+					</figcaption>
+				</figure>
+			</a>
+			<a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+				<figure>
+					<img src="./images/content1/book7.webp" alt="Harry Potter and the Deathly Hallows">
+					<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+					<figcaption>
+						<h2>BOOK7</h2>
+						<p>Harry Potter and the Deathly Hallows</p>
+					</figcaption>
+				</figure>
+			</a>
+			<span class="foot footprint1"></span>
+			<span class="foot footprint2"></span>
+			<span class="foot footprint3"></span>
+			<span class="foot footprint4"></span>
+			<span class="foot footprint5"></span>
+		</section>
+		<section class="movies">
+			<h3>MOVIE SERIES</h3>
+			<div class="txtBox2">
+				<p>Harry Potter is a film series based on the eponymous novels by J. K. Rowling. The series is produced and distributed by Warner Bros. Pictures and consists of eight fantasy films, beginning with Harry Potter and the Philosopher's Stone (2001) and culminating with Harry Potter and the Deathly Hallows - Part 2 (2011). A spin-off prequel series, planned to consist of five films, started with Fantastic Beasts and Where to Find Them (2016), marking the beginning of the Wizarding World shared media franchise.</p>
+				<p>The series was mainly produced by David Heyman, and stars Daniel Radcliffe, Rupert Grint, and Emma Watson as the three leading characters: Harry Potter, Ron Weasley, and Hermione Granger. Four directors worked on the series: Chris Columbus, Alfonso Cuarón, Mike Newell, and David Yates. Michael Goldenberg wrote the screenplay for Harry Potter and the Order of the Phoenix (2007), while the remaining films' screenplays were written by Steve Kloves. Production took place over ten years, with the main story arc following Harry's quest to overcome his arch-enemy Lord Voldemort.</p>
+			</div>	
+			<div class="moviePoster">
+				<div class="swiper mySwiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="./images/content1/movie1.jpeg" alt="Harry Potter and the Philosopher's Stone">
+						</div>
+						<div class="swiper-slide">
+							<img src="./images/content1/movie2.jpeg" alt="Harry Potter and the Chamber of Secrets">
+						</div>
+						<div class="swiper-slide">
+							<img src="./images/content1/movie3.jpeg" alt="Harry Potter and the Prisoner of Azkaban">
+						</div>
+						<div class="swiper-slide">
+							<img src="./images/content1/movie4.jpeg" alt="Harry Potter and the Goblet of Fire">
+						</div>
+						<div class="swiper-slide">
+							<img src="./images/content1/movie5.jpeg" alt="Harry Potter and the Order of the Phoenix">
+						</div>
+						<div class="swiper-slide">
+							<img src="./images/content1/movie6.jpeg" alt="Harry Potter and the Half-Blood Prince">
+						</div>
+						<div class="swiper-slide">
+							<img src="./images/content1/movie7.jpeg" alt="Harry Potter and the Deathly Hallows1">
+						</div>
+						<div class="swiper-slide">
+							<img src="./images/content1/movie8.jpeg" alt="Harry Potter and the Deathly Hallows2">
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+		</section>
+		<div class="backimg"></div>
+	</article>
+	<? include "../sub_footer.html" ?>
+</div>
+<script src="./js/sub1.js"></script>
+<script>
+	(function() {
+	
+	function init() {
+		var speed = 250,
+			easing = mina.easeinout;
+
+		[].slice.call ( document.querySelectorAll( '#grid > a' ) ).forEach( function( el ) {
+			var s = Snap( el.querySelector( 'svg' ) ), path = s.select( 'path' ),
+				pathConfig = {
+					from : path.attr( 'd' ),
+					to : el.getAttribute( 'data-path-hover' )
+				};
+
+			el.addEventListener( 'mouseenter', function() {
+				path.animate( { 'path' : pathConfig.to }, speed, easing );
+			} );
+
+			el.addEventListener( 'mouseleave', function() {
+				path.animate( { 'path' : pathConfig.from }, speed, easing );
+			} );
+		} );
+	}
+
+	init();
+
+})();
+</script>
+<script src="../js/swiper.min.js"></script>
+<script>
+	var swiper = new Swiper(".mySwiper", {
+	  effect: "cube",
+	  loop:true,
+	  grabCursor: true,
+	  cubeEffect: {
+		shadow: true,
+		slideShadows: true,
+		shadowOffset: 100,
+		shadowScale: 1.2,
+	  },
+	  pagination: {
+		el: ".swiper-pagination",
+	  },
+	});
+  </script>
+</body>
+</html>

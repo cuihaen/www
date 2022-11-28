@@ -1,0 +1,52 @@
+/* content영역 */
+.contentArea p{line-height: 1.75em}
+.contentArea{width:1200px;margin:0 auto;padding-top:80px}
+.contentArea .summary p{text-align: center;line-height: 2em}
+.contentArea .summary p>span{font-size: 1.3em;color:#1b8ab3;font-family: 'Noto Serif KR', serif;font-weight: 500}
+
+.contentArea h3{color:#1b8ab3;font-size: 1.3em;font-weight: 500;text-align: center}
+
+/* 공통부분 */
+.tabs, .occasional{padding:80px 0;position: relative}
+
+.contentArea ul{margin-top: 30px;position: relative}
+
+.contentArea i{display: block;font-size: 1.8em;margin-bottom: 10px}
+.contentArea .text1{font-size: .7em;color:#fff;display: block;
+                   margin-top: 5px; transition: all .5s ease-out}
+/* 대졸공채 */
+.tabs{position: relative;width: 2000px;left: 50%;top:0;margin:50px 0 0 -1000px;background: url(../images/content2/background01.jpg)0 0 no-repeat}
+.tabs h3{margin-bottom: 90px;color:#fff}
+.tabs p{text-align: center;margin:30px 0 20px;color:#fff}
+
+.tabs h4{position: absolute;top:140px;left:50%;font-weight: 500;display: block;height:40px;width:200px;background: #ecf3f5;color:#666;
+         border-radius: 30px;text-align: center;line-height: 38px}
+.tabs .title01{margin-left: -220px;transition: all .5s ease-out}
+.tabs .title02{margin-left: 10px;transition: all .5s ease-out}
+
+.tabs h4:hover{background:#1b8ab3}
+.tabs h4:hover a{color:#fff}
+
+.contlist{width:1200px;margin:0 auto;position: relative}
+.contlist ol{height:190px;position: relative;text-align: center;margin:0 auto}
+
+.tabs .content01 ol{width:1200px}
+.tabs .content02 ol{width:910px}
+.tabs>div li{width:145px;height:125px;float: left;background: rgba(255,255,255,.8);margin:10px;
+                padding-top: 50px;border-radius: 25px;border:3px solid rgba(255,255,255,.8);
+                transition: all .5s ease-out}
+.tabs>div li .text1{color:rgba(255,255,255,.1)}
+
+.tabs>div li:hover{border-color: #1b8ab3;box-shadow: 5px 5px 15px rgba(0,0,0,.1);color:#1b8ab3;background:rgba(255,255,255,.9)}
+.tabs>div li:hover .text{color:#333}                     
+
+/* 수시채용 */
+.occasional p{text-align: center;margin:30px 0 20px;color:#333}
+.occasional ul{overflow: hidden}
+.occasional li{float: left;width:210px; height:140px;margin:20px;text-align: center;border: 20px solid #ccc;
+               border-radius: 50%;padding-top: 70px;position: relative;transition: all .5s ease-out}
+.occasional li>span{font-size: 1.2em}
+
+.occasional i:last-child{position: absolute;right:-48px;top:94px;color:#666}
+
+.occasional li:hover{border-color: #1b8ab3;color:#1b8ab3}

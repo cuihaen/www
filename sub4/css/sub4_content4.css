@@ -1,0 +1,86 @@
+/* content영역 */
+.contentArea{width:1200px;margin:0 auto;padding:80px 0 0}
+
+.contentArea .slogan{text-align: center;font-size: 1.7em;font-family:'Noto Serif KR', serif;
+                     color:rgb(33,157,203);line-height: 2em}
+.contentArea h3{font-size: 2em;padding:40px 0 0 60px;font-weight: 500;position:relative;color:#0c3c4e}
+.contentArea h3::before{content:'';width:10px;height:10px;border-radius: 50%;
+                         position: absolute;left:43px;top:43px;background:rgb(33,157,203)}
+/* 선수단장 인사말 */
+.greeting{overflow: hidden;padding:40px 0 80px}
+
+.greeting .text1{width:650px;float: left;margin:0 50px;overflow: hidden}
+.greeting .text1 p{line-height: 2em;text-align: justify;margin: 15px 0}
+.greeting .text1 p:last-child{float: right;font-size: 1.15em}
+.greeting .text1 p:last-child strong{font-size:1.2em;margin-left: 10px;font-weight: 500}
+
+.greeting .imgBox{position:relative}
+.greeting img{border-radius: 50%}
+.greeting .imgBox::after{content:'';width:150px;height:150px;background: rgba(33,157,203,.3);
+                    border-radius: 50%;position: absolute;right:20px;top:-35px}
+
+/* 선수단 소개 */
+.team{position:relative;width:2000px;left: 50%;top:0;margin-left: -1000px;background: #f8f8f8;padding:40px 0 80px;height:470px;overflow: hidden}
+.teamInner{width:1200px;margin:0 auto;position:relative}
+.team .teamBox{position:relative;left:0;top:0;width:4000px;overflow: hidden}
+.team .member{height:290px;padding-top: 30px;float: left}
+.team .member li{float: left;transition:all .5s ease-out;position:relative}
+.team .member li img{transform: scale(.8);}
+.team .member li>span{display: block;font-size: 1.15em;color:#666;margin-top: 10px;font-weight: 500;text-align: center}
+
+.team .member .info01{position:absolute;right:0;top:0;display: none}
+.team .member .info02{position:absolute;left:0;top:0;display: none}
+.team .member div{background: rgba(27,138,179,.6);border-radius: 50%;width:230px;height:230px;transition: all .5s ease-out}
+.team .member div span{display: block;font-size: .9em;margin:3px 25px 0;color:#fff}
+.team .member div span:nth-child(1){margin-top: 80px}
+
+.team .member li:hover div{display: block}
+.team .member .left:hover{margin-left: -80px;padding-right: 80px;text-align: right}
+.team .member .right:hover{margin-right: -80px;padding-left: 80px}
+.team .member .left:hover img,.team .member .right:hover img{transform: scale(1)}
+.team .member .left:hover>span,.team .member .right:hover>span{color:#1b83ab;font-size: 1.35em}
+
+.team .btn{width:1200px;margin:0 auto;position:relative;height:0}
+.team .btn li{width:50px;height:50px;border-radius: 50%;text-align: center;padding:10px}
+.team .btn li:nth-child(1){position:absolute;top:-200px;left:55px}
+.team .btn li a{display: block}
+.team .btn li:last-child{position:absolute;top:-200px;right:55px}
+.team .btn li i{font-size: 2.8em;color:rgba(0,0,0,.2);transition: all .5s ease-out}
+.team .btn li:hover i{color:rgba(33,157,203,.5)}
+
+
+/* .partner{width:945px; clear:both; overflow: hidden;
+    border:1px solid #999; padding:10px 0; margin:50px 300px ;}
+.partner .partnerBox{ position:relative; left:0; top:0; width:1890px;overflow:hidden} 
+.partner ul{ float:left}
+.partner li{ float:left; width:105px; height:33px} */
+
+/* 뉴스영역 */
+.news{padding:40px 0 120px}
+.news ul{overflow: hidden;margin-top: 30px;}
+.news li{float: left;width:220px;height:208px;margin:0 39px 30px;overflow: hidden;
+         background: #f8f8f8;border:1px solid #eee;transition: all .5s ease-out;}
+.news li img{transform: scale(1.1);transform-origin: left bottom;transition: all .5s ease-out}
+.news li span{display: block;font-size: .85em;font-weight: 500;margin:8px 10px}
+.news li span:last-child{font-size: .6em;color:#666;font-weight: 400}
+
+.news li:hover{box-shadow: 5px 5px 15px 3px rgba(0,0,0,.1);border-color: #1b83ab}
+.news li:hover img{transform: scale(1.13);transform-origin: left bottom}
+.news li:hover span{color: #1b83ab}
+.news li:hover span:last-child{color: #333}
+
+/* popup창 */
+.subPop .sub_modal_box{position: fixed; left: 0; top: 0; z-index: 50; width: 100%; height: 100%; 
+    background: rgba(0,0,0,.45); display: none}
+.subPop .sub_pop_btn{position: fixed; left: 0; top: 50%;  width: 100%; height: 0;  display: none;font-size: 3em;z-index: 50;margin-top: -30px}
+.subPop .sub_pop_btn a{display: block; position: absolute; top:50%; left:50%; color: rgba(255,255,255,4); margin-top: -10px;transition: all .5s;z-index: 60}
+.subPop .sub_pop_btn a:hover{color:rgba(255,255,255,8)}
+.subPop .sub_pop_btn .pre{margin-left: -560px}
+.subPop .sub_pop_btn .next{margin-left: 530px}
+
+.subPop  .sub_popup{position: fixed; top: 50%; left: 50%; margin: -310px -470px; 
+    width: 880px; height:560px; background: #fff; box-shadow: 5px 5px 20px 3px rgba(0,0,0,.3);
+    z-index: 60; display:none;overflow: hidden;padding:30px;overflow: hidden;border-top: 6px solid #0c3c4e}
+
+.subPop .sub_popup .sub_close_btn{position: absolute; top: -3px; right: 3px; display: block; overflow: hidden; width: 50px; 
+                    height: 50px; padding: 9px 9px;color:rgba(33,157,203,.7);text-align: center;font-size: 2em;z-index: 70;}

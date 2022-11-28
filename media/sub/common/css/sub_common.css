@@ -1,0 +1,73 @@
+.imgBox{width:100%;height:100%; overflow:hidden; position:absolute}
+.imgBox .mainTxt{position:absolute;top:50%;left:50%;text-align: center;font-family: 'Quintessential', cursive;transform:translateX(-50%) translateY(-50%);
+           text-shadow: 3px 3px 5px rgba(0,0,0,.1);width:80%;font-size: 4.5vw;background-color:rgba(243,189,25,1);font-weight: bold;color:#fff;
+           background-image: linear-gradient(135deg, rgba(249,189,25,1) 0%,rgba(249,242,149,1) 25%,rgba(222,174,71,1) 62%,rgba(237,201,103,1) 100%);
+           background-size: 100%;-webkit-background-clip: text;-webkit-text-fill-color: transparent}
+#imgBIG {
+   position:absolute; /*고정=>fixed/ 스크롤처리=>absolute */
+   left:50%;
+   top:50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+   width:auto;
+   min-width:100%; /*동영상 너비를 꽉차게*/
+   height:auto;
+   min-height:100%; /*동영상 높이를 꽉차게*/
+   transform:translateX(-50%) translateY(-50%);
+   z-index:-100; /*다른요소보다 아래에 위치*/
+  
+}
+
+#imgBG{
+	position:absolute; /*고정=>fixed/ 스크롤처리=>absolute */
+   left:50%;
+   top:10%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+   width:auto;
+   min-width:100%; /*동영상 너비를 꽉차게*/
+   height:auto;
+   min-height:100%; /*동영상 높이를 꽉차게*/
+   transform:translateX(-50%) translateY(-10%);
+   z-index:-100;
+   display:none
+}
+#imgBG img{margin-bottom: -50px}
+
+.down{display: block; font-size: .9vw; position: absolute;left:50%; transform: translateX(-50%); bottom: 8%;opacity: 0.8;
+      background-color:rgba(243,189,25,1);font-weight: bold;
+      background-image: linear-gradient(135deg, rgba(249,189,25,1) 0%,rgba(249,242,149,1) 25%,rgba(222,174,71,1) 62%,rgba(237,201,103,1) 100%);
+      background-size: 100%;-webkit-background-clip: text;-webkit-text-fill-color: transparent;font-family:'Quintessential', cursive;
+	   animation:ani 1s infinite  alternate;text-align: center}
+.down span{display: block;margin: 0 auto 5%}
+@keyframes ani {
+	0% {transform:scale(.75); opacity:0.8;bottom:8%}
+	100% {transform:scale(1); opacity:1;bottom:10%}
+}
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+}
+
+/* 테블릿 1024px */
+@media screen and (max-width:1024px) {
+   .imgBox .mainTxt{font-size: 5.5vw}
+
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+
+}
+
+
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+   .imgBox .mainTxt{font-size: 7vw}
+
+}
+
+
+/* 최소 사이즈 처리 */
+@media screen and (max-width:480px) {
+#wrap {min-width:320px}
+
+
+}

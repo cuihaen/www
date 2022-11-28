@@ -1,0 +1,24 @@
+input:focus,select:focus{outline: none}
+input::placeholder{color:#bbb}
+input,select{border:none;box-sizing: border-box}
+
+/* content영역 */
+.contentArea{width:1200px;margin:0 auto;padding:80px 0 0}
+
+.contentArea h3{font-size: 2em;padding:40px 0 0 60px;font-weight: 500;position:relative;color:#0c3c4e}
+.contentArea h3::before{content:'';width:10px;height:10px;border-radius: 50%;
+                         position: absolute;left:43px;top:43px;background:rgb(33,157,203)}
+.summary{text-align: center;margin-bottom: 20px}
+
+.selected_content{margin: 50px 0;padding-bottom: 150px;position:relative}
+
+.selected_content #view_title #view_title1{padding:15px 30px;border-top: 1px solid #999;background: #ecf3f5;font-size: 1.2em}
+.selected_content #view_title #view_title2{padding:10px 30px;border-top:1px solid #ccc;overflow: hidden}
+.selected_content #view_title #view_title2 li:nth-child(1){float: left;padding:0 20px 0 0;border-right: 2px solid #ddd;color:#1b8ab3}
+.selected_content #view_title #view_title2 li:nth-child(2){float: left;padding:0 20px}
+.selected_content #view_title #view_title2 li:last-child{float: right;border: none}
+.selected_content #view_content{border-top: 1px solid #ccc;border-bottom: 1px solid #999;padding:20px 30px}
+.selected_content #view_button{position:absolute;right:10px;bottom:60px}
+.selected_content #view_button a{margin: 0 2px;color:#fff;font-weight: 500;font-size: .9em;text-align: center;padding:5px 20px;background: #999}
+.selected_content #view_button .write{background: #1b8ab3}
+.selected_content #view_button .list{background: #0c3c4e}

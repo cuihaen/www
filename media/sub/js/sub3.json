@@ -1,0 +1,56 @@
+{
+    "trailer":  [
+        {
+            "title":"Wizard Duel:Draco Malfoy vs Harry Potter", 
+            "text":"At the encouragement of Professor Snape and Professor Gilderoy Lockhart, Harry and Draco face off in their first wizard duel.", 
+            "url":"https://www.youtube.com/embed/0Dj2kq5Neus", 
+            "link":"https://youtu.be/0Dj2kq5Neus"
+        },
+        {
+            "title":"First Flying Lesson", 
+            "text":"All the first years have their first flying lesson.", 
+            "url":"https://www.youtube.com/embed/6iCJ7FlkaB8", 
+            "link":"https://youtu.be/6iCJ7FlkaB8"
+        },
+        {
+            "title":"Ron's Slug Spell Backfires", 
+            "text":"Ron Weasley needs to have a little more practice with this particular spell.", 
+            "url":"https://www.youtube.com/embed/nbxnO-Drp1E", 
+            "link":"https://youtu.be/nbxnO-Drp1E"
+        },
+        {
+            "title":"Ron receives a Howler", 
+            "text":"Ron Weasley receives a Howler from his mother. Is there anything more terrifying?", 
+            "url":"https://www.youtube.com/embed/fBziSx7RtqY", 
+            "link":"https://youtu.be/fBziSx7RtqY"
+        }
+      ],
+    "music":  [
+        {
+            "title":"Harry Potter OST - 1", 
+            "text":"Hedwig's Theme", 
+            "mp3":"./images/content3/music/music_01.mp3", 
+            "image":"./images/content3/music/player_4.png"
+        },
+        {
+            "title":"Harry Potter OST - 2", 
+            "text":"Reunion Of Friends",
+            "mp3":"./images/content3/music/ost.m4a", 
+            "image":"./images/content3/music/player_4.png"
+        },
+        {
+            "title":"Harry Potter OST - 3", 
+            "text":"Secrets Of The Castle", 
+            "mp3":"./images/content3/music/music_01.mp3", 
+            "image":"./images/content3/music/player_4.png"
+        },
+        {
+            "title":"Harry Potter OST - 4", 
+            "text":"Christmas at Hogwarts", 
+            "mp3":"./images/content3/music/music_01.mp3", 
+            "image":"./images/content3/music/player_4.png",
+            "player_bar":"./images/content3/music/player_1.png"
+        }
+    ]
+}
+

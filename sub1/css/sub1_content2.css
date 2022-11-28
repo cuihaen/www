@@ -1,0 +1,14 @@
+/* content영역 */
+.contentArea p{text-align: justify; line-height: 1.75em}
+.contentArea{width:1200px;margin:0 auto;padding:80px 0; position:relative}
+
+/* 인사말 */
+.greeting{width:1000px;margin:0 auto;position: relative}
+.greeting .slogan{margin: 50px 0;font-size: 1.7em;color:#1b8ab3;text-align: center;
+                  font-family:'Noto Serif KR', serif;font-weight: 500}
+.greeting p{margin:20px 0}
+
+/* CEO이미지 */
+.ceoImg{position: absolute;right:-170px;bottom:-150px;transform: scale(.8)}
+.ceoSign{margin-left:120px; padding:60px 0 40px;position: relative}
+.ceoSign img{transform: scale(.25);position:absolute;left:-45px;bottom:-25px}

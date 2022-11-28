@@ -1,0 +1,103 @@
+/* main */
+.swiper-container {width: 100%;height: 100%}
+.swiper-slide {display: flex;justify-content: center;align-items: center;position:relative}
+.swiper-slide img{animation: ani 30s linear infinite;width: 100%;transform-origin:left bottom;overflow: hidden}
+@keyframes ani {
+    from {transform: scale(1)}
+    to {transform: scale(1.2)}
+}
+@keyframes maintext{
+    from{top:35%;opacity: 0}
+    50%{top:45%;opacity: 1}
+    to{top:45%;opacity: .8}
+}
+.swiper-slide span{position:absolute;top:35%;opacity: 0;animation: maintext 3s linear infinite;animation-fill-mode: forwards;left:3%;color:#fff;font-size: 1.1em;letter-spacing: -.5px;text-align: left}
+.swiper-slide span strong{display: block;font-size: 1.5em;font-weight: 500;margin-bottom: 8px}
+
+/* 공통 */
+#content h3{color:#1b8ab3;font-weight: 500;font-size:1.75em;margin: 30px 0 8px 6%}
+#content p{font-size: 1.1em;margin:0 0 5px 6%}
+
+/* 사업영역 */
+.business .tab_menu{display: grid;grid-template-columns: repeat(4,1fr);grid-auto-rows: 80px;grid-gap: 8px;padding:10px 3%}
+.business .tab_menu li{display: block;text-align: center;border-radius: 13px;
+                      background-size: cover;overflow: hidden}
+.business .tab_menu li a{display: block}     
+.business .tab_menu li:nth-child(1){background: url(../images/business01.png) top center no-repeat}
+.business .tab_menu li:nth-child(2){background: url(../images/business02.png) top  center no-repeat}
+.business .tab_menu li:nth-child(3){background: url(../images/business03.png) top center no-repeat}
+.business .tab_menu li:last-child{background: url(../images/business04.png) top center no-repeat}
+.business .tab_menu li span{margin:30px auto;display: block;color:#fff;font-weight: 500;font-size: 1.1em;letter-spacing: -.5px}
+
+.business .contlist{width:94%;height:300px;margin: 0 3%;background-size: cover;margin-bottom: 40px;
+                    border-radius: 13px;box-shadow: 3px 3px 10px 3px rgba(0,0,0,.15)}
+.business .content1{background: url(../images/business01_bg.png) top center repeat-x}
+.business .content2{background: url(../images/business02_bg.png) top center no-repeat}
+.business .content3{background: url(../images/business03_bg.png) top center no-repeat}
+.business .content4{background: url(../images/business04_bg.png) top center no-repeat}
+
+.business .contlist dl{width:100%;height:300px;background:rgba(12, 60, 78,.6);border-radius: 13px;
+                       text-align: center;color:#fff;overflow: hidden;position: relative}
+.business .contlist dt{font-size: 1.6em;margin: 50px 0 15px 0}
+.business .contlist dd{width:85%;margin: 0 auto;font-weight: 400;line-height: 1.5em;text-align: justify}
+.business .contlist dd a{display: block;width: 116px;font-size: 1.2em;color:#ffea01;position:absolute;
+                         left: 50%;bottom:50px;margin-left: -58px}
+.business .contlist dd a i{margin-left: 6px}     
+
+/* 삼양가치 */
+.value {background: #0c3c4e}
+.value .innerBox{overflow: hidden;position:relative}
+#content .value .innerBox>h3{text-align: center;margin-left: 0}
+#content .value .innerBox>p{color:#fff;text-align: center;margin-left: 0;font-weight: 300;line-height: 1.7em;width:90%;margin: 0 auto;font-size: 1em}
+#content .value .innerBox a{display: block;width: 116px;font-size: 1.2em;color:#ffea01;position:absolute;
+                            left: 50%;bottom:50px;margin-left: -58px}
+#content .value .innerBox a i{margin-left: 6px}
+
+.value .innerBox .valueBox{width:80%;margin: 50px auto 130px;position:relative}
+.value .innerBox .valueBox>li:nth-child(1){width:120px;height:120px;display: block;background: rgba(236, 243, 245,.4);overflow: hidden;border-radius: 50%;
+                                           position:absolute;top:65px;left: 50%;margin-left: -60px}
+.value .innerBox .valueBox>li:nth-child(1) span{width:100px;;height:100px;display: block;background: url(../svg/samyang_white.svg) center no-repeat;margin: 10px auto}
+.value .innerBox .valueBox>li:nth-child(2){border:2px solid rgba(255,255,255,.5);width:250px;height:250px;border-radius: 50%;position:relative;top:0;left: 50%;margin-left: -127px}
+
+.value .innerBox .valueList li{display: block;width:80px;height:80px;background: #fff;border-radius: 50%;position:absolute;left:50%;text-align: center;color:#1b8ab3;font-size: 2.5em}
+
+.value .innerBox .valueList li:nth-child(1){top:-30px;margin-left: -40px}
+.value .innerBox .valueList li:nth-child(2){top:30px;margin-left: -150px}
+.value .innerBox .valueList li:nth-child(3){top:30px;margin-left: 70px}
+.value .innerBox .valueList li:nth-child(4){top:150px;margin-left: -150px}
+.value .innerBox .valueList li:nth-child(5){top:150px;margin-left: 70px}
+.value .innerBox .valueList li:nth-child(6){top:210px;margin-left: -40px}
+
+.value .innerBox .valueList li span{display: block;color:#0c3c4e;font-size: .45em;margin-top: 8px;font-weight: 500}
+.value .innerBox .valueList li i{display:block;margin-top: 2px}
+
+/* 지속가능경영 */
+.swiper-container.esg_swiper {width: 100%;height: 100%;margin: 20px 0 50px}
+.swiper-slide{width:40%;overflow: hidden;text-align: center;
+              display: flex;justify-content: center;align-items: center}
+.swiper-slide img{width:100%}
+
+/* 뉴스 */
+.news{background: #eee;overflow: hidden;position:relative}
+#content .news h3,#content .news>p{text-align: center;margin-left: 0}
+.news .newsBox{background: #fff;border-radius: 20px;box-shadow: 5px 5px 15px 3px rgba(0,0,0,.1);
+               width:84%;margin: 15px 5%;padding:3%}
+.news .newsBox li{border-bottom: 1px dashed #ccc;padding:10px 0;overflow: hidden}
+.news .newsBox li:last-child{border-bottom: none}
+
+.news .newsBox li .imgBox{width:30%;height:70px;float: left;margin-right: 10px;overflow: hidden}
+.news .newsBox li .imgBox img{object-fit: cover;width:100%;height:100%;object-position: 50% 50%}
+
+.news .newsBox li dt{font-size: 1.1em;font-weight: 500;color:#1b8ab3; text-overflow: ellipsis; overflow: hidden;white-space: nowrap}
+.news .newsBox li dd{color:#666}
+#content .news .newsBox li dd p{display:-webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 1;text-overflow: ellipsis;overflow: hidden;font-size: .9em}
+#content .news .newsBox li dd span{display: block}
+.news .newsMore{position:absolute;top:30px;right:7%;display: block;width:40px;height:40px;background: rgba(12, 60, 78,.8);border-radius: 50%;
+                box-shadow: 3px 3px 10px 3px rgba(0,0,0,.1);text-align: center;color:#fff;line-height: 40px;font-size: 1.2em}
+/* 인재채용 */
+.recruit{background: url(../images/recruit_02x2.png) 0 0 no-repeat;background-size: 100%;height:150px;
+         overflow: hidden;margin: 30px 0;}
+#content .recruit h3, #content .recruit p{color:#fff}
+#content .recruit h3{margin: 28px 0 5px 6%}
+#content .recruit a{display: block;width: 116px;font-size: 1.2em;color:#ffea01;margin: 8px 0 0 6%}
+#content .recruit a i{margin-left: 6px}
