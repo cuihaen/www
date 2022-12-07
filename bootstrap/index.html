@@ -21,16 +21,50 @@
     
 
 <script>
+  $(document).ready(function(){
+      // intro
+      setTimeout(function(){
+          $('.pageintro').fadeOut();
+      }, 3000);
+  });
 	try {
     window.addEventListener('load', function(){
           setTimeout(scrollTo, 0, 0, 1); 
       }, false);
-  } catch(e) {}
+  } catch(e) {
+
+  }
 
 </script>
+<style>
+   
+  @keyframes intro_logo {
+  0%{filter:blur(40px); transform:translateY(50px); opacity: 0}
+  20%{filter:blur(0); transform:translateY(0); opacity: 1}
+  80%{filter:blur(0); transform:translateY(0); opacity: 1}
+  100%{filter:blur(40px); transform:translateY(0) scale(2, 1); opacity: 0}
+  }
+  @keyframes intro_text {
+  10%{filter:blur(40px); transform:translateY(50px); opacity: 0}
+
+  30%{filter:blur(0); transform:translateY(0); opacity: 1}
+  80%{filter:blur(0); transform:translateY(0); opacity: 1}
+  100%{filter:blur(40px); transform:translateY(0) scale(2, 1); opacity: 0}
+  }
+
+  .pageintro{position:fixed; left: 0; top: 0; width: 100%; height: 100%; background:#fff; z-index: 9999}
+  .pageintro .mashallLogo{position:fixed; left: 50%; top: 50%; width: 100%; transform: translate(-50%, -50%); text-align:center}
+  .pageintro .mashallLogo img{width:100%; max-width: 400px; opacity: 0;
+  animation:intro_logo 1 3s; animation-delay: .3s; animation-fill-mode: forwards}
+  .pageintro .mashallLogo::after{content:'Let us introduce you to your new obsession.'; display: block; color:#000; font-size: 1rem; letter-spacing:0.5rem; margin:3rem 0 0; opacity: 0;
+  animation:intro_text 1 3s; animation-delay: .3s; animation-fill-mode: forwards}
+</style>
 
 </head>
 <body data-spy="scroll" data-target="#headerArea" data-offset="10">
+    <div class="pageintro">
+      <div class="mashallLogo"><img src="./images/intro_mashall.png" alt="mashall logo"></div>
+    </div>
     <div id="skipNav">
         <a href="#content">본문 바로가기</a>
         <a href="#navbar">글로벌 네비게이션 바로가기</a>
