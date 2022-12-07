@@ -12,7 +12,7 @@
    
   
 
-   if(!$id) {   //아무값도 입력되지 않았냐?
+   if(!$id) {   //입력된 값이 없으면
      echo("
            <script>
              window.alert('아이디를 입력하세요.');
@@ -51,7 +51,7 @@
          ");
          exit; 
     }
-    else    //해당 아이디가 검색되었으면..   (green/1234)
+    else    //해당 아이디가 검색되었으면
     {
 		     $row = mysql_fetch_array($result);  // 검색된 레코드를 $row 배열에 담는다
              //$row[id] , $row[pass] , .... $row[level]
