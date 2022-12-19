@@ -44,7 +44,6 @@
             </div>
             <div class="contentArea">
                 <!-- 본문콘텐츠영역 -->
-                
                 <div class="question">
                   <div class="hgroup">  
                     <h3>자주 묻는 질문</h3>
@@ -91,11 +90,61 @@
                 <h3>직접 문의하기</h3>
                 <div class="moreQuestion">
                   <p>원하시는 답변이 없으시면 직접 문의해주세요.</p>
-                  <a href="#"><span>문의하기</span><i class="fa-solid fa-paper-plane"></i></a>
+                  <div class="mail_content">
+                    <form name="sentMessage" id="contactForm" novalidate>
+                      <div class="row control-group">
+                          <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label for="name">이름</label>
+                            <input type="text" class="form-control" placeholder="이름을 입력하세요" id="name" required data-validation-required-message="이름을 입력하세요.">
+                            <p class="help-block text-danger"></p>
+                          </div>
+                        </div>
+                        <div class="row control-group">
+                          <div class="form-group col-xs-12 floating-label-form-group controls">
+                                  <label for="phone">연락처</label>
+                                  <input type="tel" class="form-control" placeholder="연락처를 입력하세요." id="phone" required data-validation-required-message="연락처를 입력하세요.">
+                                  <p class="help-block text-danger"></p>
+                          </div>
+                        </div>
+                      <div class="row control-group email">
+                        <div class="form-group col-xs-12 floating-label-form-group controls"></dl>
+                            <label for="email">이메일</label>
+                            <input type="email" class="form-control" placeholder="이메일 주소를 입력하세요." id="email" required data-validation-required-message="이메일 주소를 입력하세요.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                      </div>
+                      <div class="row control-group message">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                          <label for="message">내용</label>
+                          <textarea rows="5" class="form-control" placeholder="문의사항을 입력하세요." id="message" required data-validation-required-message="문의사항을 입력하세요."></textarea>
+                          <p class="help-block text-danger"></p>
+                        </div>
+                      </div>
+                      <div id="success"></div>
+                      <div class="row">
+                        <div class="col-xs-12 send">
+                            <button type="submit" class="btn btn-success btn-lg"><span>문의사항 전송하기</span></button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
                 </div>
             </div>
         </article>
     <? include "../common/sub_footer.html" ?>
-    <script src="./common/js/faq.js"></script>     
+  <script src="./common/js/faq.js"></script>
+  <script src="./common/js/bootstrap.min.js"></script>
+  <script src="./common/js/jqBootstrapValidation.js"></script>
+  <script src="./common/js/contact_form.js"></script>
+
+  <script>
+    $('.form-group').focusin(function(){
+        $(this).addClass('focus');
+    });
+    
+    $('.form-group').focusout(function(){
+        $(this).removeClass('focus');
+    });
+  </script>
 </body>
 </html>

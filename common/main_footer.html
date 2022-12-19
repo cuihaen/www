@@ -73,8 +73,8 @@
                         <input class ="btn" type="submit" value="">
                     </form> -->
                     <form method="post" action="./products/list.php?mode=search&table=products">
-                        <label class="hidden" for="find">필드명</label>
-                        <input type="hidden" name="find" value="subject">
+                        <!-- <label for="find" class="hidden">필드명</label> -->
+                        <input  id="find" type="hidden" name="find" value="subject">
                         <label for="search" class="hidden">검색어 입력</label>
                         <input id="search" name = "search" type="text" placeholder="검색어를 입력해주세요">
                         <input class ="btn" type="submit" value="">

@@ -1,3 +1,8 @@
+input:focus{outline: none}
+input::placeholder,textarea::placeholder{color:#bbb;font-family: 'Noto Sans KR', sans-serif;font-weight: 300;font-size: .85em}
+input:focus,textarea:focus{outline: none}
+input,textarea{border:none;resize: none}
+
 /* content영역 */
 .contentArea{width:1000px;margin:90px auto 120px}
 .contentArea h3{color:#0c3c4e;font-size: 1.35em;font-weight: 500;margin:30px 0 20px 30px;position: relative}
@@ -27,11 +32,30 @@
 
 
 /* 추가 문의 */
-.moreQuestion{height:90px;margin: 0 auto;padding:80px;color:#fff;
-              background:url(../images/content2/background.jpg) center no-repeat}
-.moreQuestion p{text-align: center;font-size: 1.35em}
-.moreQuestion a{display: block;width:180px;height:45px;background: rgba(12,60,78,.7);
-                text-align: center;line-height: 45px;border-radius: 25px;color:#fff;margin: 20px auto}
-.moreQuestion a i{margin-left: 10px}
+.moreQuestion{margin: 0 auto;padding:80px 100px;color:#333;
+              background:url(../images/content2/background.jpg) center no-repeat;background-size: cover}
+.moreQuestion p{text-align: center;font-size: 1.2em}
+.moreQuestion .mail_content{background: rgba(12,60,78,.7);padding:20px 150px;
+                text-align: center;line-height: 45px;border-radius: 25px;color:#0c3c4e;margin: 20px auto}
+.moreQuestion .mail_content .form-group{padding: 5px 10px; background-color: #fff; margin: 10px 0; border-radius: 15px; overflow: hidden;
+                                        box-shadow: inset 3px 3px 5px 2px rgba(0,0,0,.1);position:relative}
+.moreQuestion .mail_content .form-group label{float: left;width:30%;display: block}
+.moreQuestion .mail_content .form-group input,.moreQuestion .mail_content .form-group textarea{width:58%;display: block;padding:10px 20px;
+                                            font-size: .9em;margin-top: 3px;border-left: 2px solid #eee;outline: none}
+.moreQuestion .mail_content .row .send .btn.btn-success.btn-lg{background: rgba(33,157,203);padding:5px 50px 3px;font-size: 1em;
+    text-align: center;line-height: 45px;border-radius: 20px;color:#fff;margin: 20px auto;border:none;cursor: pointer;transition: all .5s ease-out}
+.moreQuestion .mail_content .row .send .btn.btn-success.btn-lg span{font-weight: 600}
+.moreQuestion .mail_content .row .send .btn.btn-success.btn-lg:hover{background: #ecf3f5;color:#0c3c4e}
+
+/* 경고 */
+.moreQuestion .mail_content .form-group .text-danger{position:absolute; right: 0; top: 5px; color:rgba(217,83,79,.7);font-size: 0.75em}
+.moreQuestion .mail_content .form-group .text-danger ul{margin-right:15px}
 
 
+/* 전송메세지 */
+.moreQuestion .mail_content #success{clear:both; padding: 5px;}
+.moreQuestion .mail_content #success .alert{position:relative; font-size:1rem; background:#ecf3f5; color:#1b8ab3; border-radius:2px; box-sizing:border-box; margin-top:10px;}
+.moreQuestion .mail_content #success .alert button{position:absolute; right:15px; top:50%; margin-top:-10px; width:20px; height:20px; line-height:20px; font-size:1.5rem; text-align:center; border:0 none; background:none; padding: 0; color:rgba(0,0,0,0.4); cursor: pointer;}
+.moreQuestion .mail_content #success .alert strong{display:block; font-weight: normal; padding:17px 25px; /*color:#31708f;*/}
+    /* 실패 시 */
+.moreQuestion .mail_content #success .alert.alert-danger{background:#f2dede; border-color:#ebccd1; color:#a94442;}
